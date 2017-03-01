@@ -9,12 +9,16 @@
   </head>
   <body>
     <main>
-      <form action="?" method="post">
+      <form id="client-questonaire" action="?" method="post">
         <div>
           <h1>Intro</h1>
           <label for="site-title">Site Title</label>
           <input id="site-title" name="site-title">
+        </div>
+        <div>
           <p>Site Title - Short Discription</p>
+          <label for="site-title">Site Title</label>
+          <textarea id="site-title" name="site-title"></textarea>
         </div>
         <div>
           <h1>About</h1>
