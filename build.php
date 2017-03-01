@@ -17,8 +17,8 @@
         </div>
         <div>
           <p>Site Title - Short Discription</p>
-          <label for="site-title">Site Title</label>
-          <textarea id="site-title" name="site-title"></textarea>
+          <label for="site-paragraph">Site Title</label>
+          <textarea id="site-paragraph" name="site-paragraph"></textarea>
         </div>
         <div>
           <h1>About</h1>
