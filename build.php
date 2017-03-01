@@ -1,5 +1,16 @@
 <?php
+  print_r($globals);
+
+  echo "<br><br><br>";
+
   print_r($_POST);
+
+  //make DB connection
+
+  //set var from $_POST ArrayAccess
+
+  //Santi
+
  ?>
 <!DOCTYPE html>
 <html>
