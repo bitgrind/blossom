@@ -7,8 +7,10 @@
     <title>Blossom Build</title>
   </head>
   <body>
+    <header>
+      <h1>This is the Header</h1>
+    </header>
     <main>
-      <h1>LETS BUILD SOME SHIT!</h1>
       <div>
         <h1>Intro</h1>
         <p>Site Title</p>
