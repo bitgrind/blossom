@@ -8,6 +8,7 @@
   </head>
   <body>
     <main>
+      <h1>LETS BUILD SOME SHIT!</h1>
       <div>
         <h1>Intro</h1>
         <p>Site Title</p>
