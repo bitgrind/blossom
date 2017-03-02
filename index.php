@@ -10,6 +10,7 @@
     <header>
       <h1>This is the Header Change</h1>
       <h2>Adding header</h2>
+      <h3>add another</h3>
     </header>
     <main>
       <div>
