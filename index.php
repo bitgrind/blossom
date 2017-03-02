@@ -9,6 +9,7 @@
   <body>
     <header>
       <h1>This is the Header Change</h1>
+      <h2>Adding header</h2>
     </header>
     <main>
       <div>
