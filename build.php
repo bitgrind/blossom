@@ -1,5 +1,5 @@
 <?php
-  print_r($globals);
+  print_r($GLOBALS);
 
   echo "<br><br><br>";
 
@@ -9,7 +9,7 @@
 
   //set var from $_POST ArrayAccess
 
-  //Santi
+  //Santize var 
 
  ?>
 <!DOCTYPE html>
