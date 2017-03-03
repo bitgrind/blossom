@@ -7,5 +7,5 @@
  if ( $_POST['payload'] ) {
   shell_exec("./pull.sh");
 }
-
+echo ini_get("disable_functions");
 ?>
