@@ -11,3 +11,4 @@ echo ini_get("disable_functions");
 ?>
 <h1>Auto.php</h1>
 <?php echo ini_get("disable_functions"); ?>
+<h2>Auto Deployment</h2>
