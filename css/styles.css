@@ -1,0 +1,28 @@
+
+.container{
+  width: 95%;
+  height: 50vh;
+}
+
+.container#info{
+  text-align: center;
+}
+
+#info h2{
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+#info li{
+  list-style: none;
+  font-size: 20px;
+}
+
+#domainName{
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+#learnButton{
+  text-align: center;
+  margin-top: 2%;
+}
