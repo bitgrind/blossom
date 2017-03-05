@@ -3,7 +3,7 @@
 
 #### OG date was Feb 25 2017. v.1.0
 
-#### By _Alex Lee_ , _Keith Stedman_ , _Ryan Jones_ , _Kaya Winn_
+#### By _Alex Lee_, _Keith Stedman_, _Ryan Jones_, _Kaya Winn_
 
 ## Description
 
