@@ -2,8 +2,10 @@
 <html>
 
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- BOOTSTRAP CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!--GOOGLE FONTS-->
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rasa" rel="stylesheet">
 
@@ -23,18 +25,20 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">BLOSSOM</a>
+          <a class="navbar-brand" href="index.html" id="logo">BLOSSOM</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a data-toggle="modal" data-target="#logIn">Login</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
       </div>
       <!--/.container-fluid -->
     </nav>
+
+
     <div id="landingContent">
       <div id="heading">
         <h1>Blossom makes website for you</h1>
@@ -46,6 +50,8 @@
       </div>
     </div>
   </section>
+  <!--page1-->
+
   <section class="container" id="page2">
     <div class="row">
       <h1>Here's how it works</h1>
@@ -69,6 +75,8 @@
     </div>
     <a href="#page3" class="page-scroll"><button type="button" class="btn btn-default">Who is it for?</button></a>
   </section>
+  <!--page2-->
+
   <section class="container" id="page3">
     <div class="row">
       <h1>Who should use Blossom?</h1>
@@ -129,8 +137,107 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
     </div>
+
   </section>
-  </section>
+  <!---page3-->
+
+
+  <div class="form-box">
+    <div class="form-top">
+      <div class="form-top-left">
+        <h3>Sign in to Blossom</h3>
+      </div>
+      <div class="form-top-right">
+        <i class="fa fa-pencil"></i>
+      </div>
+    </div>
+    <div class="form-bottom">
+      <form id="login" role="form" action="" method="post" class="registration-form">
+        <div class="form-group">
+          <label class="sr-only" for="form-username">Username</label>
+          <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="form-password">Password</label>
+          <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+        </div>
+        <button type="submit" class="btn">Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL HERE -->
+  <div id="logIn" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign in to Blossom</h4>
+        </div>
+        <div class="modal-body">
+          <form id="login" role="form" action="" method="post" class="registration-form">
+            <div class="form-group">
+              <label class="sr-only" for="form-username">Username</label>
+              <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-password">Password</label>
+              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default" data-dismiss="modal">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF LOG IN MODAL-->
+
+  <!-- MODAL HERE -->
+  <div id="signUp" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign up for free!</h4>
+        </div>
+        <div class="modal-body">
+          <form id="register" role="form" action="" method="post" class="registration-form">
+            <div class="form-group">
+              <label class="sr-only" for="form-name">Name</label>
+              <input type="text" name="form-name" placeholder="Name..." class="form-name form-control" id="form-name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-email">Email</label>
+              <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-username">Username</label>
+              <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-password">Password </label>
+              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-password2">Confrim password</label>
+              <input type="password" placeholder="Confirm password..." class="form-password2 form-control" id="form-password2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default" data-dismiss="modal">Sign me up!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF SING UP MODAL-->
+
 </body>
+
+
 
 </html>

@@ -16,6 +16,14 @@ h1{
 h2{
   font-size: 2em;
 }
+
+#logo{
+  font-size: 4em;
+  font-weight: bolder;
+}
+#navbar li{
+  font-size: 2em;
+}
 /* PAGE1 CSS */
 
 #page1 h1{
@@ -42,6 +50,10 @@ h2{
 
 /* PAGE2 CSS */
 
+#page2 h1{
+  font-size: 5em;
+  margin-top: 3%;
+}
 #page2 p{
   font-size: 1.8em;
   margin-bottom: 10%;
