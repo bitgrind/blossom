@@ -1,6 +1,5 @@
 body {
-  padding: 0;
-  margin: 0;
+ 
 }
 
 .header {
@@ -28,4 +27,21 @@ body {
 .side-nav1 {
   background-color: coral;
   padding-bottom: 300px;
+}
+
+ul.sideNav {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.sideNav a {
+  color: #333;
+}
+
+.sideNav a:hover {
+  
+}
+
+.account {
+  display: none;
 }
