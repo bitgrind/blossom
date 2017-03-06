@@ -19,7 +19,7 @@
   <title>Blossom CMS</title>
 </head>
 <body>
-  <section class="container">
+  <section class="container" id="page1">
     <!-- Static navbar -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -38,33 +38,42 @@
     <div id="landingContent">
       <div id="heading">
         <h1>Blossom makes website for you</h1>
-        <p>We make it easy for anyone to create and publish websites within minutes.</p>
+        <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
       </div>
       <div id="buttons">
-        <a href="register.html"><button type="button" class="btn btn-primary">Start Demo</button></a>
-        <a href="#info" class="page-scroll"><button type="button" id="learn" class="btn btn-primary">Learn more</button></a>
+        <a href="register.html"><button type="button" class="btn btn-primary">Register now!</button></a>
+        <a href="#page2" class="page-scroll"><button type="button" id="learn" class="btn btn-primary">How it works</button></a>
       </div>
     </div>
   </section>
-  <section class="container" id="info">
+  <section class="container" id="page2">
     <div class="row">
       <h1>Here's how it works</h1>
-      <div class="row">
-        <h2>1. Choose a website template. </h2>
-        <img src="img/placeholder.png" alt="" />
+        <div class="col-md-8" id="steps">
+          <div class="row">
+            <img src="img/placeholder.png" alt="" />
+            <h2>1. Choose a website template. </h2>
+          </div>
+          <div class="row">
+            <img src="img/placeholder.png" alt="" />
+            <h2>2. Fill out content for your website.</h2>
+          </div>
+          <div class="row">
+            <img src="img/placeholder.png" alt="" />
+            <h2>3. Preview and publish!</h2>
+          </div>
+        </div>
+        <div class="col-md-4" id="info">
+          <p>
+            After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations.</p>
+            <p> Uploads are permitted but limited to specific image file types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
+
+
+        </div>
+        <a href="#page3" class="page-scroll"><button type="button" class="btn btn-primary">Who is it for?</button></a>
       </div>
-      <div class="row">
-        <h2>2. Fill out content for your website.</h2>
-        <img src="img/placeholder.png" alt="" />
-      </div>
-      <div class="row">
-        <h2>3. Preview and publish!</h2>
-        <img src="img/placeholder.png" alt="" />
-      </div>
-      <a href="#whoUse" class="page-scroll"><button type="button" class="btn btn-primary">Down</button></a>
-    </div>
-  </section>
-    <section class="container" id="whoUse">
+    </section>
+    <section class="container" id="page3">
       <div class="row">
         <h1>Who should use Blossom?</h1>
         <div class="col-md-4 portfolio-item">
