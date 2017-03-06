@@ -9,10 +9,14 @@
 /*** Build.js Section ***/
 //////////////////////////
 
-$('#client-questions').submit(function() {
-  alert("Form has been submitted!");
+$('.client-question-form').submit(function(event) {
+  event.preventDefault();
+  // code when the submit occurs goes here..
+  
 });
 
-$('#previewBtn').submit(function() {
+$('#previewBtn').click(function() {
   alert("Preview was clicked!");
+  // code when the preview is clicked goes here..
+  
 });
