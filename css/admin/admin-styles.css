@@ -25,6 +25,10 @@ body {
   display: inline;
 }
 
-.side-nav {
-  
+.side-nav1 {
+  background-color: coral;
+}
+
+.side-nav1 h2 {
+  background-color: aqua;
 }
