@@ -1,40 +1,55 @@
 
+h1{
+  font-size: 5em;
+  margin-bottom: 3%;
+  margin-top: 10%;
+}
 .container{
   width: 95%;
   height: 100vh;
 }
 
-.jumbotron{
-  height: 60vh;
-}
-.container#info{
-  text-align: center;
-}
-
-.jumbotron #buttons{
-  margin-top: 10%;
-  margin-left: 30%;
+h2{
+  font-size: 3em;
 }
 
 #buttons button{
-  font-size: 3em;
-  margin-left: 5%;
+  margin-top: 7%;
+  font-size: 2em;
+  margin-left: 2%;
 }
-#info h2{
-  font-size: 40px;
-  margin-bottom: 5%;
-}
-#info li{
-  list-style: none;
-  font-size: 20px;
-}
-
-#domainName{
-  width: 80%;
-  margin-bottom: 2%;
-}
-
-#learnButton{
+#landingContent{
   text-align: center;
+}
+
+#landingContent p{
+  font-size: 2em;
+}
+
+/* PAGE2 CSS */
+#info h1{
   margin-top: 2%;
+}
+
+#info h2{
+  position:absolute;
+}
+#info img{
+  margin-bottom: 3%;
+  width: 17%;
+  float: right;
+}
+#info button{
+  font-size: 2em;
+  margin-left: 48%;
+}
+
+
+/* PAGE 3 CSS*/
+#whoUse img{
+  width: 100%;
+}
+#whoUse h1{
+  margin-top:2%;
+  margin-bottom: 5%;
 }
