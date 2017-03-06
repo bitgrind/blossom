@@ -12,11 +12,27 @@
 $('.client-question-form').submit(function(event) {
   event.preventDefault();
   // code when the submit occurs goes here..
+  
+  window.location.href='admin.html';
 
 });
 
-$('#previewBtn').click(function() {
-  alert("Preview was clicked!");
-  // code when the preview is clicked goes here..
 
+//////////////////////////
+/*** Admin.js Section ***/
+//////////////////////////
+
+$("#accountNav").click(function() {
+  $(".content").hide();
+  $(".account").show();
+});
+
+$("#previewNav").click(function() {
+  $(".content").show();
+  $(".account").hide();
+});
+
+$("#site2").click(function() {
+  $("#site2")
+  $("#menu1").html()
 });
