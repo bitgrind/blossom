@@ -1,0 +1,40 @@
+
+.container{
+  width: 95%;
+  height: 100vh;
+}
+
+.jumbotron{
+  height: 60vh;
+}
+.container#info{
+  text-align: center;
+}
+
+.jumbotron #buttons{
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+#buttons button{
+  font-size: 3em;
+  margin-left: 5%;
+}
+#info h2{
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+#info li{
+  list-style: none;
+  font-size: 20px;
+}
+
+#domainName{
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+#learnButton{
+  text-align: center;
+  margin-top: 2%;
+}
