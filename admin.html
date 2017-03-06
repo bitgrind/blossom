@@ -33,16 +33,19 @@
       </div>
       <div class="row">
         <div class="col-md-2 side-nav1">
-          <h2>Side Nav</h2>
-          <ul class="sideNav">
-            <li>Edit</li>
-            <li>Preview</li>
-            <li>Password</li>
-            <li>Email</li>
-            <li>Addons</li>
-            <li>Cart</li>
-            <li>Image Upload</li>
-          </ul>
+          <div class="side-nav0">
+            <h2>Side Nav</h2>
+            <ul class="sideNav">
+              <li><a href="build.html">Edit</a></li>
+              <li><a href="#">Preview</a></li>
+              <li><a href="#">Account</a></li>
+              <!-- <li><a href="#">Password</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Addons</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Image Upload</a></li> -->
+            </ul>
+          </div>
         </div>
         <div class="col-md-10">
           <div class="container">
@@ -59,6 +62,53 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
                 <h3>Blank text</h3>
                 <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite.</footer>
+              </div>
+            </div>
+            <div class="account">
+              <div class="account-header">
+              </div>
+              <div class="account-body">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h2>Customer Information</h2>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th><a href="#">Username</a></th>
+                          <th><a href="#">Email</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="user-info" id="accountUsername">Znergy</th>
+                          <th class="user-info" id="accountEmail">example@gmail.com</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <form class="changePassword">
+                      <div class="input-group">
+                        <span class="input-group-addon">Current Password</span>
+                        <input class="form-control" type="password" id="accountPassword" />
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon">New Password</span>
+                        <input class="form-control" type="password" id="newAccountPassword" />
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-addon">Confirm Password</span>
+                        <input class="form-control" type="password" id="changePasswordConfirmation" />
+                      </div>
+                      <div class="buttonStyles change-pass-btn">
+                        <a href="https://google.com" target="_blank">
+                          <button class="btn btn-primary" type="submit" id="changePasswordBtn">
+                            <span class="glyphicon glyphicon-transfer iconStyle"></span>Change Password
+                          </button></a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
