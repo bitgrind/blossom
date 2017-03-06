@@ -6,17 +6,17 @@
 */
 
 //////////////////////////
-/*** Build.js Section ***/
+/*** Build.js Section Stuff***/
 //////////////////////////
 
 $('.client-question-form').submit(function(event) {
   event.preventDefault();
   // code when the submit occurs goes here..
-  
+
 });
 
 $('#previewBtn').click(function() {
   alert("Preview was clicked!");
   // code when the preview is clicked goes here..
-  
+
 });
