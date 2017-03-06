@@ -35,9 +35,9 @@ h2{
   position:absolute;
 }
 #info img{
-  margin-bottom: 3%;
   width: 17%;
   float: right;
+  margin-bottom: 2%;
 }
 #info button{
   font-size: 2em;
