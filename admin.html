@@ -33,19 +33,25 @@
       </div>
       <div class="row">
         <div class="col-md-2 side-nav1">
-          <div class="side-nav0">
-            <h2>Side Nav</h2>
-            <ul class="sideNav">
-              <li><a href="build.html">Edit</a></li>
-              <li><a href="#">Preview</a></li>
-              <li><a href="#">Account</a></li>
-              <!-- <li><a href="#">Password</a></li>
-              <li><a href="#">Email</a></li>
-              <li><a href="#">Addons</a></li>
-              <li><a href="#">Cart</a></li>
-              <li><a href="#">Image Upload</a></li> -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Site1
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1">Site1</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2">Site2</a></li>
             </ul>
           </div>
+          <hr />
+          <h2>Dashboard</h2>
+          <ul class="sideNav">
+            <li><a href="build.html">Edit</a></li>
+            <li><a href="#" id="previewNav">Preview</a></li>
+            <li><a href="#" id="accountNav">Account</a></li>
+            <li><a href="#">Addons</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Image Upload</a></li>
+            <li><a href="#">Publish</a></li>
+          </ul>
         </div>
         <div class="col-md-10">
           <div class="container">
@@ -78,12 +84,14 @@
                         <tr>
                           <th><a href="#">Username</a></th>
                           <th><a href="#">Email</a></th>
+                          <th><a href="#">Websites</a></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th class="user-info" id="accountUsername">Znergy</th>
                           <th class="user-info" id="accountEmail">example@gmail.com</th>
+                          <th class="user-info" id="accountWebsite">https://blossom.com</th>
                         </tr>
                       </tbody>
                     </table>
@@ -115,12 +123,14 @@
         </div>
       </div>
     </div>
-    <!-- JQuery CDN -->
+    <!-- JQuery JS -->
     <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
     <script type="text/javascript" src="js/default.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rasa', sans-serif;
 }
 h1{
   font-size: 3em;
@@ -17,10 +17,28 @@ h2{
   font-size: 2em;
 }
 
+#logo{
+  font-size: 4em;
+  font-weight: bolder;
+}
+#navbar li{
+  font-size: 2em;
+}
+/* PAGE1 CSS */
+
+#page1 h1{
+  font-size: 6em;
+}
+
+#page1 h2{
+  font-size: 2em;
+
+}
 #buttons button{
   margin-top: 30%;
   font-size: 2em;
   margin-left: 2%;
+
 }
 #landingContent{
   text-align: center;
@@ -32,6 +50,10 @@ h2{
 
 /* PAGE2 CSS */
 
+#page2 h1{
+  font-size: 5em;
+  margin-top: 3%;
+}
 #page2 p{
   font-size: 1.8em;
   margin-bottom: 10%;
@@ -58,42 +80,11 @@ h2{
 }
 #page3 h1{
   margin-top:2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
-
-/* TYPED JS */
-/* code for animated blinking cursor */
-        .typed-cursor{
-            opacity: 1;
-            font-weight: 100;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            -ms-animation: blink 0.7s infinite;
-            -o-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-        }
-        @-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-ms-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-o-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
+#page3 h3{
+  font-size: 2.5em;
+}
+#page3 p{
+  font-size: 1.5em;
+}
