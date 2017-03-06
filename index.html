@@ -1,60 +1,78 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Blossom Build</title>
-  </head>
-  <body>
-    <header>
-      <h1>This is the Head Change</h1>
-      <h2>420 header change</h2>
-    </header>
-    <main>
-      <div>
-        <h1>Intro</h1>
-        <p>Site Title</p>
-        <p>Site Title - Short Discription</p>
-      </div>
-      <div>
-        <h1>About</h1>
-        <div>
-          <h2>Who We Are:</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/form.js"></script>
+  <title>Blossom CMS</title>
+</head>
+
+
+<body>
+  <section class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+          <a class="navbar-brand" href="#">Blossom</a>
         </div>
-        <div>
-          <h2>What We Do:</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html">Login</a></li>
+          </ul>
         </div>
+        <!--/.nav-collapse -->
       </div>
-      <div>
-        <h1>Contact</h1>
-        <div>
-          <h2>Contact - Name</h2>
-          <h2>Contact - Number</h2>
-          <h2>Contact - Email</h2>
-          <h2>Contact - Location</h2>
-        </div>
-        <div>
-          <h1>Social Media</h1>
-          <h2>Facebook</h2>
-          <h2>Instagram</h2>
-          <h2>Linkedin</h2>
-          <h2>twiiter</h2>
-        </div>
+      <!--/.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+      <!--User bootstrap modeal for sign UP-->
+      <!--Add feature for signing up with google or facebook-->
+      <div id="heading">
+        <h1>Blossom makes website for you</h1>
+        <p>We make it easy for anyone to create and publish websites within minutes.</p>
       </div>
-      <div>
-        <h1>End of Template</h1>
+      <form id="goDaddy">
+        <label for=" ">Website name: </label>
+        <input type="text" name=" " id="domainName">
+        <a href="register.html"><button type="button" class="btn btn-primary">Get Started</button></a>
+      </form>
+      <div id="learnButton">
+        <a href="#2"><button type="button" id="learn" class="btn btn-primary">Learn more</button></a>
       </div>
-      <div>
-        <h1>Team Blossom</h1>
-        <h2>Welcome:</h2>
-        <h2>Keith</h2>
-        <h2>Alex</h2>
-        <h2>Ryan</h2>
-        <h2>Kaya</h2>
+      <!--input-->
+    </div>
+    <!--Jumbotron-->
+  </section>
+  <section class="container" id="info">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Here's how it works</h2>
+        <ol>
+          <li>1. Write contents for your website in input fields</li>
+          <li>2. Choose a website template</li>
+          <li>3. Preview and publish!</li>
+        </ol>
       </div>
-    </main>
-  </body>
+      <div class="col-md-6">
+        <h2>Who should use Blossom?</h2>
+        <ul>
+          <li>Personal</li>
+          <li>Artists/Bands</li>
+          <li>Restaurants/Food Carts</li>
+          <li>Small Businesses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
