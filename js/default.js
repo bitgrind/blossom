@@ -23,7 +23,7 @@ $('.client-question-form').submit(function(event) {
 //////////////////////////
 
 $("#accountNav").click(function() {
-  $(".content").hide();
+  $(".site1").hide();
   $(".account").show();
 });
 
@@ -33,6 +33,23 @@ $("#previewNav").click(function() {
 });
 
 $("#site2").click(function() {
-  $("#site2")
-  $("#menu1").html()
+  $("#active-dropdown-text").text("Site 2");
 });
+
+$("#site1").click(function() {
+  $("#active-dropdown-text").text("Site 1");
+  $(".content").show();
+});
+
+function hideAll() {
+  var arrayOfIds = ["site1", "site2", "account"];
+  
+  arrayOfIds.forEach(function() {
+    
+  });
+}
+
+
+
+
+
