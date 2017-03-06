@@ -1,89 +1,30 @@
-<<<<<<< HEAD
 
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Blossom Build</title>
-  </head>
-  <body>
-    <header>
-      <h1>This is the Head Change</h1>
-      <h2>420 header change</h2>
-    </header>
-    <main>
-      <div>
-        <h1>Intro</h1>
-        <p>Site Title</p>
-        <p>Site Title - Short Discription</p>
-      </div>
-      <div>
-        <h1>About</h1>
-        <div>
-          <h2>Who We Are:</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div>
-          <h2>What We Do:</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div>
-        <h1>Contact</h1>
-        <div>
-          <h2>Contact - Name</h2>
-          <h2>Contact - Number</h2>
-          <h2>Contact - Email</h2>
-          <h2>Contact - Location</h2>
-        </div>
-        <div>
-          <h1>Social Media</h1>
-          <h2>Facebook</h2>
-          <h2>Instagram</h2>
-          <h2>Linkedin</h2>
-          <h2>twiiter</h2>
-        </div>
-      </div>
-      <div>
-        <h1>End of Template</h1>
-      </div>
-      <div>
-        <h1>Team Blossom</h1>
-        <h2>Welcome:</h2>
-        <h2>Keith</h2>
-        <h2>Alex</h2>
-        <h2>Ryan</h2>
-        <h2>Kaya</h2>
-      </div>
-    </main>
-  </body>
-=======
 <!DOCTYPE html>
 <html>
 
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!--TYPED JS SHIT-->
+  <script src="js/dist/typed.min.js">
+
+  </script>
+  <!--BOOTSTRAP SCROLLING NAV-->
+  <link href="css/dist/scrolling-nav.css" rel="stylesheet" type="text/css" />
+  <script src="js/dist/scrolling-nav.js"></script>
+  <script src="js/dist/jquery.easing.min.js"></script>
+  <!-- BLOSSOM SHIT-->
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <script src="js/form.js"></script>
+  <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
-
-
 <body>
   <section class="container">
     <!-- Static navbar -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-          <a class="navbar-brand" href="#">Blossom</a>
+          <a class="navbar-brand" href="index.html">Blossom</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -94,47 +35,97 @@
       </div>
       <!--/.container-fluid -->
     </nav>
-    <div class="jumbotron">
-      <!--User bootstrap modeal for sign UP-->
-      <!--Add feature for signing up with google or facebook-->
+    <div id="landingContent">
       <div id="heading">
         <h1>Blossom makes website for you</h1>
         <p>We make it easy for anyone to create and publish websites within minutes.</p>
       </div>
-      <form id="goDaddy">
-        <label for=" ">Website name: </label>
-        <input type="text" name=" " id="domainName">
-        <a href="register.html"><button type="button" class="btn btn-primary">Get Started</button></a>
-      </form>
-      <div id="learnButton">
-        <a href="#2"><button type="button" id="learn" class="btn btn-primary">Learn more</button></a>
+      <div id="buttons">
+        <a href="register.html"><button type="button" class="btn btn-primary">Start Demo</button></a>
+        <a href="#info" class="page-scroll"><button type="button" id="learn" class="btn btn-primary">Learn more</button></a>
       </div>
-      <!--input-->
     </div>
-    <!--Jumbotron-->
   </section>
   <section class="container" id="info">
     <div class="row">
-      <div class="col-md-6">
-        <h2>Here's how it works</h2>
-        <ol>
-          <li>1. Write contents for your website in input fields</li>
-          <li>2. Choose a website template</li>
-          <li>3. Preview and publish!</li>
-        </ol>
+      <h1>Here's how it works</h1>
+      <div class="row">
+        <h2>1. Choose a website template. </h2>
+        <img src="img/placeholder.png" alt="" />
       </div>
-      <div class="col-md-6">
-        <h2>Who should use Blossom?</h2>
-        <ul>
-          <li>Personal</li>
-          <li>Artists/Bands</li>
-          <li>Restaurants/Food Carts</li>
-          <li>Small Businesses</li>
-        </ul>
+      <div class="row">
+        <h2>2. Fill out content for your website.</h2>
+        <img src="img/placeholder.png" alt="" />
       </div>
+      <div class="row">
+        <h2>3. Preview and publish!</h2>
+        <img src="img/placeholder.png" alt="" />
+      </div>
+      <a href="#whoUse" class="page-scroll"><button type="button" class="btn btn-primary">Down</button></a>
     </div>
+  </section>
+    <section class="container" id="whoUse">
+      <div class="row">
+        <h1>Who should use Blossom?</h1>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Personal users</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Artists</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Restaurants</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Bands</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Small Businesses</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+          </a>
+          <h3>
+            <a href="#">Food Carts</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </section>
   </section>
 </body>
 
->>>>>>> e04cd60bd239b96932850194d10c9204a88698e4
 </html>
