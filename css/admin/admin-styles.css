@@ -27,8 +27,5 @@ body {
 
 .side-nav1 {
   background-color: coral;
-}
-
-.side-nav1 h2 {
-  background-color: aqua;
+  padding-bottom: 300px;
 }
