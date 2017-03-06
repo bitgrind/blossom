@@ -1,9 +1,13 @@
-
+body{
+  font-family: 'Roboto', sans-serif;
+}
 h1{
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 3%;
   margin-top: 5%;
+
 }
+
 .container{
   width: 95%;
   height: 100vh;
@@ -28,36 +32,25 @@ h2{
 
 /* PAGE2 CSS */
 
-#info{
+#page2 p{
+  font-size: 1.8em;
+  margin-bottom: 10%;
+  text-align: center;
+}
+#page2 img{
+  border-radius: 100%;
+  width: 55%;
+  margin-bottom: 10%;
+}
+
+#page2 button{
   margin-top: 5%;
   font-size: 2em;
 }
 
-#steps{
-  padding-top: 3%;
+#page2{
+  text-align: center;
 }
-#page2 h1{
-  margin-top: 2%;
-}
-#page2 p{
-  margin-top: 3%;
-}
-
-#page2 h2{
-  font-size: 3em;
-  margin-left: 30%;
-
-}
-#page2 img{
-  width: 25%;
-  float: left;
-  margin-bottom: 2%;
-}
-#page2 button{
-  font-size: 2em;
-  margin-left: 48%;
-}
-
 
 /* PAGE 3 CSS*/
 #page3 img{
@@ -67,3 +60,40 @@ h2{
   margin-top:2%;
   margin-bottom: 5%;
 }
+
+/* TYPED JS */
+/* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }

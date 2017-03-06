@@ -1,14 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <!--TYPED JS SHIT-->
-  <script src="js/dist/typed.min.js">
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  </script>
   <!--BOOTSTRAP SCROLLING NAV-->
   <link href="css/dist/scrolling-nav.css" rel="stylesheet" type="text/css" />
   <script src="js/dist/scrolling-nav.js"></script>
@@ -18,6 +16,7 @@
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
+
 <body>
   <section class="container" id="page1">
     <!-- Static navbar -->
@@ -28,6 +27,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
         </div>
@@ -41,99 +41,95 @@
         <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
       </div>
       <div id="buttons">
-        <a href="register.html"><button type="button" class="btn btn-primary">Register now!</button></a>
-        <a href="#page2" class="page-scroll"><button type="button" id="learn" class="btn btn-primary">How it works</button></a>
+        <a href="register.html"><button type="button" class="btn btn-default">Register now!</button></a>
+        <a href="#page2" class="page-scroll"><button type="button" id="learn" class="btn btn-default">How it works</button></a>
       </div>
     </div>
   </section>
   <section class="container" id="page2">
     <div class="row">
       <h1>Here's how it works</h1>
-        <div class="col-md-8" id="steps">
-          <div class="row">
-            <img src="img/placeholder.png" alt="" />
-            <h2>1. Choose a website template. </h2>
-          </div>
-          <div class="row">
-            <img src="img/placeholder.png" alt="" />
-            <h2>2. Fill out content for your website.</h2>
-          </div>
-          <div class="row">
-            <img src="img/placeholder.png" alt="" />
-            <h2>3. Preview and publish!</h2>
-          </div>
-        </div>
-        <div class="col-md-4" id="info">
-          <p>
-            After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations.</p>
-            <p> Uploads are permitted but limited to specific image file types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
-
-
-        </div>
-        <a href="#page3" class="page-scroll"><button type="button" class="btn btn-primary">Who is it for?</button></a>
+      <p>
+        After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
+        types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
+    </div>
+    <div class="row" id="steps">
+      <div class="col-md-4">
+        <img src="img/placeholder.png" alt="" />
+        <h2 id="caption">1. Choose a website template. </h2>
       </div>
-    </section>
-    <section class="container" id="page3">
-      <div class="row">
-        <h1>Who should use Blossom?</h1>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+      <div class="col-md-4">
+        <img src="img/placeholder.png" alt="" />
+        <h2 id="caption">2. Fill out content for your website.</h2>
+      </div>
+      <div class="col-md-4">
+        <img src="img/placeholder.png" alt="" />
+        <h2 id="caption">3. Preview and publish!</h2>
+      </div>
+    </div>
+    <a href="#page3" class="page-scroll"><button type="button" class="btn btn-default">Who is it for?</button></a>
+  </section>
+  <section class="container" id="page3">
+    <div class="row">
+      <h1>Who should use Blossom?</h1>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Personal users</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Artists</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Restaurants</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
-      <div class="row">
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+    </div>
+    <div class="row">
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Bands</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Small Businesses</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-          </a>
-          <h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
             <a href="#">Food Carts</a>
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
-    </section>
+    </div>
+  </section>
   </section>
 </body>
 
