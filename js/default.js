@@ -6,7 +6,7 @@
 */
 
 //////////////////////////
-/*** Build.js Section Stuff***/
+/*** Build.js Section ***/
 //////////////////////////
 
 $('.client-question-form').submit(function(event) {
