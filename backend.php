@@ -58,18 +58,16 @@
   //INSERTING new Content into Table
   $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('.$contentUserId.', '.$contentDifferentStatement.', '.$contentShortDesc.', '.$contentUniqueDesc.', '.$contentShortPitch.', '.$contentServices.', '.$contentFb.', '.$contentIg.', '.$contentLk.', '.$contentTw.')';
 
-  echo $sql;
+  echo "<br><br>".$sql;
 
   /* Prepare statement */
-  $stmt = $conn->prepare($sql);
-  if($stmt === false) {
-    trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
+  if($conn->query($sql)) {
+    echo "query successful!";
+  } else {
+    echo "query Failure" .$conn->error;
   }
 
-  echo $stmt->insert_id;
-  echo $stmt->affected_rows;
-
-  $stmt->close();
+  $conn->close();
 
  ?>
 
