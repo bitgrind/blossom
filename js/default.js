@@ -24,7 +24,7 @@ $('.client-question-form').submit(function(event) {
 
 $("#accountNav").click(function() {
   hideAll();
-  $(".account").show();
+  showAccountPanels();
 });
 
 $("#previewNav").click(function() {
@@ -50,15 +50,6 @@ $("#site1").click(function() {
   hideAll();
   $(".site1").show();
 });
-
-function hideAll() {
-  var arrayOfIds = ["site1", "site2", "account"];
-  
-  arrayOfIds.forEach(function(name) {
-    var className = ("." + name);
-    $(className).hide();
-  });
-}
 
 
 
