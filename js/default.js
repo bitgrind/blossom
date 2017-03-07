@@ -23,29 +23,40 @@ $('.client-question-form').submit(function(event) {
 //////////////////////////
 
 $("#accountNav").click(function() {
-  $(".site1").hide();
+  hideAll();
   $(".account").show();
 });
 
 $("#previewNav").click(function() {
-  $(".content").show();
-  $(".account").hide();
+  hideAll();
+  var value = $("#active-dropdown-text").text();
+  value = value.toLowerCase();
+  console.log(value);
+  if (value === "site 1") {
+    $(".site1").show();
+  } else if (value === "site 2") {
+    $(".site2").show();
+  }
 });
 
 $("#site2").click(function() {
   $("#active-dropdown-text").text("Site 2");
+  hideAll();
+  $(".site2").show();
 });
 
 $("#site1").click(function() {
   $("#active-dropdown-text").text("Site 1");
-  $(".content").show();
+  hideAll();
+  $(".site1").show();
 });
 
 function hideAll() {
   var arrayOfIds = ["site1", "site2", "account"];
   
-  arrayOfIds.forEach(function() {
-    
+  arrayOfIds.forEach(function(name) {
+    var className = ("." + name);
+    $(className).hide();
   });
 }
 
