@@ -1,11 +1,16 @@
 body {
- color: #333;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.style-row {
+  background-color: aqua;
 }
 
 .header {
   background-color: #333;
   color: #fff;
-  width: 100%;
 }
 
 .logo h2 {
@@ -26,13 +31,19 @@ body {
 
 .side-nav1 {
   background-color: coral;
-  padding-bottom: 300px;
+  height: auto;
+}
+
+.side-nav1 h2 {
+  text-align: center;
 }
 
 ul.sideNav {
   font-size: 30px;
+  padding-left: 20px;
   list-style-type: none;
 }
+
 
 .sideNav a {
   color: #333;
