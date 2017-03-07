@@ -40,6 +40,13 @@
 
   $connection = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
+  if ($connection->connect_error) {
+    trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+  } else {
+    echo "connected!";
+  }
+
+
  ?>
 
 <!DOCTYPE html>
