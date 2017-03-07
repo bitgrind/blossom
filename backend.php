@@ -46,6 +46,7 @@
     echo "connected!";
   }
 
+  print_r("connection: " .$connection);
 
  ?>
 
