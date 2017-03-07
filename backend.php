@@ -32,7 +32,7 @@
   $contactZip                 = $_POST['contact-zip'];
 
 //USER VARIBLES
-  $userName
+  $userName ="";
 
 
 
