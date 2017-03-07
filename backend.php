@@ -3,13 +3,13 @@
   include_once  "php/db-config.php";
 
   //print_r("<br>Globals: ".$GLOBALS);
-//  echo '<br><br>post those globs '.phpinfo();
+  echo '<br><br>post those globs '.phpinfo();
 //  print_r("<br><br><br>Post: ".$_POST['business-name']);
 
 
   //CONTENT VARIBLES
-//  var $contentBusinessName        = $_POST['business-name'];
-//  var $contentDifferentStatement  = $_POST['different-statement'];
+  var $contentBusinessName        = $_POST['business-name'];
+  var $contentDifferentStatement  = $_POST['different-statement'];
 
 
 
