@@ -6,6 +6,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- typed.js-->
+  <script src="js/dist/typed.min.js">
+
+  </script>
   <!--GOOGLE FONTS-->
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rasa" rel="stylesheet">
 
@@ -41,9 +45,26 @@
 
     <div id="landingContent">
       <div id="heading">
-        <h1>Blossom makes website for you</h1>
+        <h1>Blossom makes website for <span id="js-typed"></span></h1>
         <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
       </div>
+
+      <div class="type-wrap">
+        <div id="typed-strings">
+          <p>personal users.</p>
+          <p>small businesses</p>
+          <p>food carts</p>
+          <p>bands</p>
+          <p>artists</p>
+          <p>restaurants</p>
+          <p>blah</p>
+        </div>
+        <span id="typed" style="white-space:pre;"></span>
+      </div>
+
+
+
+
       <div id="buttons">
         <button data-toggle="modal" data-target="#signUp" type="button" class="btn btn-default">Register now!</button>
         <button type="button" class="btn btn-default"><a href="#page2" class="page-scroll"> How it works</a></button>

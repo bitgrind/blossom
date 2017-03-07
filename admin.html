@@ -1,135 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Web Application">
-    <meta name="keywords" content="HTML,CSS,JQuery,JavaScript, php, sql">
-    <meta name="author" content="Ryan Jones">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blossom Dashboard</title>
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="header">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="logo">
-              <h2>Blossom</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <ul class="mainNav">
-              <li>nav1</li>
-              <li>nav2</li>
-              <li>nav3</li>
-            </ul>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Application">
+  <meta name="keywords" content="HTML,CSS,JQuery,JavaScript, php, sql">
+  <meta name="author" content="Ryan Jones">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Dashboard</title>
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo">
+            <h2><a href="index.html">Blossom</a></h2>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 side-nav1">
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span> <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1">Site1</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2">Site2</a></li>
-            </ul>
-          </div>
-          <hr />
-          <h2>Dashboard</h2>
-          <ul class="sideNav">
-            <li><a href="build.html">Edit</a></li>
-            <li><a href="#" id="previewNav">Preview</a></li>
-            <li><a href="#" id="accountNav">Account</a></li>
-            <li><a href="#">Addons</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Image Upload</a></li>
-            <li><a href="#">Publish</a></li>
+        <div class="col-md-6">
+          <ul class="mainNav">
+            <li>nav1</li>
+            <li>nav2</li>
+            <li>nav3</li>
           </ul>
         </div>
-        <div class="col-md-10">
-          <div class="container">
-            <div class="site1">
-              <div class="site1-header">
-                <h2>ZnergyTheAndroid.com</h2>
-              </div>
-              <div class="site1-body">
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite.</footer>
-              </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 side-nav1">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span> <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1">Site1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2">Site2</a></li>
+          </ul>
+        </div>
+        <hr />
+        <h2>Dashboard</h2>
+        <ul class="sideNav">
+          <li><a href="build.html">Edit</a></li>
+          <li><a href="#" id="previewNav">Preview</a></li>
+          <li><a href="#" id="accountNav">Account</a></li>
+          <li><a href="#">Addons</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Image Upload</a></li>
+          <li><a href="#">Publish</a></li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <div class="container">
+          <div class="site1">
+            <div class="site1-header">
+              <h2>ZnergyTheAndroid.com</h2>
             </div>
-            <div class="site2">
-              <div class="site2-header">
-                <h2>Site2</h2>
-              </div>
-              <div class="site2-body">
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Blank text</h3>
-                <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite.</footer>
-              </div>
+            <div class="site1-body">
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite.</footer>
             </div>
-            <div class="account">
-              <div class="account-header">
-              </div>
-              <div class="account-body">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h2>Customer Information</h2>
-                  </div>
-                  <div class="panel-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th><a href="#">Username</a></th>
-                          <th><a href="#">Email</a></th>
-                          <th><a href="#">Websites</a></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th class="user-info" id="accountUsername">Znergy</th>
-                          <th class="user-info" id="accountEmail">example@gmail.com</th>
-                          <th class="user-info" id="accountWebsite">https://blossom.com</th>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <form class="changePassword">
-                      <div class="input-group">
-                        <span class="input-group-addon">Current Password</span>
-                        <input class="form-control" type="password" id="accountPassword" />
-                      </div>
-                      <div class="input-group">
-                        <span class="input-group-addon">New Password</span>
-                        <input class="form-control" type="password" id="newAccountPassword" />
-                      </div>
-                      <div class="input-group">
-                        <span class="input-group-addon">Confirm Password</span>
-                        <input class="form-control" type="password" id="changePasswordConfirmation" />
-                      </div>
-                      <div class="buttonStyles change-pass-btn">
-                        <a href="https://google.com" target="_blank">
-                          <button class="btn btn-primary" type="submit" id="changePasswordBtn">
+          </div>
+          <div class="site2">
+            <div class="site2-header">
+              <h2>Site2</h2>
+            </div>
+            <div class="site2-body">
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
+              <h3>Blank text</h3>
+              <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite.</footer>
+            </div>
+          </div>
+          <div class="account">
+            <div class="account-header">
+            </div>
+            <div class="account-body">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h2>Customer Information</h2>
+                </div>
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><a href="#">Username</a></th>
+                        <th><a href="#">Email</a></th>
+                        <th><a href="#">Websites</a></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="user-info" id="accountUsername">Znergy</th>
+                        <th class="user-info" id="accountEmail">example@gmail.com</th>
+                        <th class="user-info" id="accountWebsite">https://blossom.com</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form class="changePassword">
+                    <div class="input-group">
+                      <span class="input-group-addon">Current Password</span>
+                      <input class="form-control" type="password" id="accountPassword" />
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">New Password</span>
+                      <input class="form-control" type="password" id="newAccountPassword" />
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">Confirm Password</span>
+                      <input class="form-control" type="password" id="changePasswordConfirmation" />
+                    </div>
+                    <div class="buttonStyles change-pass-btn">
+                      <a href="https://google.com" target="_blank">
+                        <button class="btn btn-primary" type="submit" id="changePasswordBtn">
                             <span class="glyphicon glyphicon-transfer iconStyle"></span>Change Password
                           </button></a>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -137,14 +138,13 @@
         </div>
       </div>
     </div>
-    <!-- JQuery JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script type="text/javascript" src="js/default.js"></script>
-  </body>
+  </div>
+  <!-- JQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script type="text/javascript" src="js/default.js"></script>
+</body>
+
 </html>
