@@ -3,7 +3,15 @@
   include_once  "php/db-config.php";
 
   print_r("<br>Globals: ".$GLOBALS);
-  print_r("<br><br><br>Post: ".$_POST);
+  echo '<br><br>post those globs '.phpinfo();
+  print_r("<br><br><br>Post: ".$_POST['business-name']);
+
+
+  //CONTENT VARIBLES
+  var $contentBusinessName = $_POST['business-name'];
+
+
+
 
   print_r("<br><br><br>dbHost: " . $dbHost . ", dbName: " . $dbName . ", dbUser: " .$dbUser . ", dbPW: " . $dbPw);
  ?>
