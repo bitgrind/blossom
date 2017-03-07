@@ -2,8 +2,8 @@
 
   include_once  "php/db-config.php";
 
-  print_r($globals);
-  print_r("<br><br>".$_POST);
+  print_r("<br>Globals: ".$GLOBALS);
+  print_r("<br><br><br>Post: ".$_POST);
 
   print_r("<br><br><br>dbHost: " . $dbHost . ", dbName: " . $dbName . ", dbUser: " .$dbUser . ", dbPW: " . $dbPw);
  ?>
