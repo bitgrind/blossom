@@ -1,7 +1,7 @@
 
 <?php
 
-include_once  "php/connect.php";
+  include_once  "php/connect.php";
 
  $userEmail = $_POST['emailSignUp'];
  $userPw1 = $_POST['passwordSignUp'];
@@ -13,7 +13,7 @@ include_once  "php/connect.php";
 
  $sql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
 
- if($conn->query($sql){
+ if($conn->query($sql)){
    echo "seccuess user added!";
  }
 
