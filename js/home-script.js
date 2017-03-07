@@ -1,7 +1,6 @@
 $(function(){
 
   $("#js-typed").typed({
-      // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
       stringsElement: $('#typed-strings'),
       typeSpeed: 200,
       backDelay: 500,
@@ -13,6 +12,11 @@ $(function(){
 
   //REGISTRATION FORM
   $("#register").submit(function(){
+    // var name =
+    // var email =
+    // var username =
+    // var password =
+    // var passwordRepeat =
     event.preventDefault();
     location.href= "build.html";
   });

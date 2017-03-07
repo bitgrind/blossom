@@ -1,12 +1,7 @@
 body{
   font-family: 'Rasa', sans-serif;
 }
-h1{
-  font-size: 3em;
-  margin-bottom: 3%;
-  margin-top: 5%;
 
-}
 
 .container{
   width: 95%;
@@ -26,8 +21,9 @@ h2{
 }
 /* PAGE1 CSS */
 
-#page1 h1{
+h1#heading{
   font-size: 6em;
+  margin-top: 5%;
 }
 
 #page1 h2{
@@ -105,6 +101,7 @@ h2{
 
 /* code for animated blinking cursor */
 .typed-cursor{
+  font-size: 2.5em;
     opacity: 1;
     font-weight: 100;
     -webkit-animation: blink 0.7s infinite;
@@ -138,3 +135,7 @@ h2{
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+span#js-typed{
+  font-size: 2.5em;
+  }
