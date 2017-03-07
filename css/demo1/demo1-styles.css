@@ -1,11 +1,42 @@
 #mind{
-  max-height: 50%;
+  max-width: 500px;
+  /*max-width: fill-available;*/
+  float:right;
 }
 
 h1 {
   color: black;
 }
 
-body{
-  background-color: beige;
+#learn{
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+.carousel-control.right{ opacity:.1 !important;color:grey;
+margin-right: 0px;}
+
+.carousel-control.left{ opacity:.1 !important;color:grey;}
+
+a:hover{
+ border:1px solid red;
+}
+
+a {
+  border: 1px solid black;
+  padding: 12px;
+  margin-right: 100px;
+  font-family: fantasy;
+  margin-top: 10px;
+}
+
+body {
+  background-image: url(img/cloud-circuit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat
 }
