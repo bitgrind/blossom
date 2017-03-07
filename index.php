@@ -11,10 +11,12 @@
  $userSaltPW = "";
 
 
- $sql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
+ $insUserSql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
 
- if($conn->query($sql)){
-   echo "seccuess user added!";
+ if($_POST['register'] == "userSignUp"){
+   if($conn->query($insUserSql)){
+     echo "seccuess user added!";
+   }
  }
 
  $conn->close();
@@ -239,7 +241,7 @@
               <input id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-default">Sign me up!</button>
+              <button name="userSignUp" type="submit" class="btn btn-default">Sign me up!</button>
             </div>
           </form>
         </div>
