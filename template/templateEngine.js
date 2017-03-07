@@ -1,10 +1,13 @@
-var file = location.pathname.split( "/" ).pop();
-console.log(file);
+$(function(){
 
-var link = document.createElement( "link" );
-link.href = file.substr( 0, file.lastIndexOf( "." ) ) + ".css";
-link.type = "text/css";
-link.rel = "stylesheet";
-link.media = "screen,print";
+  $("#template1").click(function(){
+    $('head').append('<link rel="stylesheet" type="text/css" href="css/template1/template1.css">');
+  });
+  $("#template2").click(function(){
+    $('head').append('<link rel="stylesheet" type="text/css" href="css/template2/template2.css">');
+  });
+  $("#template3").click(function(){
+    $('head').append('<link rel="stylesheet" type="text/css" href="css/template3/template3.css">');
+  });
 
-document.getElementsByTagName( "head" )[0].appendChild( link );
+});//jQuery
