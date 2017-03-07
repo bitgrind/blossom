@@ -8,7 +8,8 @@
 
 
   //CONTENT VARIBLES
-  var $contentBusinessName = $_POST['business-name'];
+  var $contentBusinessName        = $_POST['business-name'];
+  var $contentDifferentStatement  = $_POST['different-statement'];
 
 
 
