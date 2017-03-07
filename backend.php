@@ -34,6 +34,7 @@
 //USER VARIBLES
   //$userName ="";
 
+  $contentUserId = "1";
 
 
 //MySQLi
@@ -42,19 +43,31 @@
 
   $conn = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
-  if ($conn->connect_error) {
-    trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+  // if ($conn->connect_error) {
+  //   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+  // } else {
+  //   echo "connected!";
+  // }
+
+  // $sql = "SELECT * FROM users";
+  //
+  // $rs = $conn->query($sql);
+  //
+  // print_r($rs);
+
+  //INSERTING new Content into Table
+  $sql="INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES (".$contentUserId.", ".$contentDifferentStatement.", ".$contentShortDesc.", ".$contentUniqueDesc.", ".$contentShortPitch.", ".$contentServices.", ".$contentFb.", ".$contentIg.", ".$contentLk.", ".$contentTw.")";
+
+  echo "<br><br>".$sql;
+
+  /* Prepare statement */
+  if($conn->query($sql)) {
+    echo "query successful!";
   } else {
-    echo "connected!";
+    echo "query Failure" .$conn->error;
   }
 
-  $sql = "SELECT * FROM users";
-
-  $rs = $conn->query($sql);
-
-  print_r($rs);
-
-  //print_r("connection: " . $connection);
+  $conn->close();
 
  ?>
 
