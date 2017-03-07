@@ -56,19 +56,13 @@
   print_r($rs);
 
   //INSERTING new Content into Table
-  $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
+  $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ($contentUserId, $contentDifferentStatement, $contentShortDesc, $contentUniqueDesc, $contentShortPitch, $contentServices, $contentFb, $contentIg, $contentLk, $contentTw)';
 
   /* Prepare statement */
   $stmt = $conn->prepare($sql);
   if($stmt === false) {
     trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
   }
-
-  /* Bind parameters. TYpes: s = string, i = integer, d = double,  b = blob */
-  $stmt->bind_param('isssssssss', $contentUserId, $contentDifferentStatement, $contentShortDesc, $contentUniqueDesc, $contentShortPitch, $contentServices, $contentFb, $contentIg, $contentLk, $contentTw);
-
-  /* Execute statement */
-  $stmt->execute();
 
   echo $stmt->insert_id;
   echo $stmt->affected_rows;
