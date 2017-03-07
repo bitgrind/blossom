@@ -40,15 +40,47 @@
 
   echo "Host: " . $dbHost. ", User: " . $dbUser. ", Pw: " . $dbPw. ", Table: " . $dbName;
 
-  $connection = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
+  $conn = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
-  if ($connection->connect_error) {
+  if ($conn->connect_error) {
     trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
   } else {
     echo "connected!";
   }
 
-  print_r("connection: " .$connection);
+  $sql = 'SELECT * FROM users';
+
+  $rs = $conn->query($sql);
+
+  if($rs === false) {
+    trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
+  } else {
+    $rows_returned = $rs->num_rows;
+  }
+
+  $rs->data_seek(0);
+  while($row = $rs->fetch_assoc()){
+      echo $row['col1'] . '<br>';
+  }
+
+
+  $rs->data_seek(0);
+  while($row = $rs->fetch_row()){
+      echo $row[0] . '<br>';
+  }
+
+  $rs=$conn->query($sql);
+
+  if($rs === false) {
+    trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
+  } else {
+    $arr = $rs->fetch_all(MYSQLI_ASSOC);
+  }
+  foreach($arr as $row) {
+    echo $row['co1'];
+  }
+
+  //print_r("connection: " . $connection);
 
  ?>
 
