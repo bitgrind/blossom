@@ -34,6 +34,7 @@
 //USER VARIBLES
   //$userName ="";
 
+  $contentUserId = "1";
 
 
 //MySQLi
@@ -42,11 +43,11 @@
 
   $conn = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
-  if ($conn->connect_error) {
-    trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
-  } else {
-    echo "connected!";
-  }
+  // if ($conn->connect_error) {
+  //   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+  // } else {
+  //   echo "connected!";
+  // }
 
   $sql = "SELECT * FROM users";
 
@@ -54,7 +55,25 @@
 
   print_r($rs);
 
-  //print_r("connection: " . $connection);
+  //INSERTING new Content into Table
+  $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
+
+  /* Prepare statement */
+  $stmt = $conn->prepare($sql);
+  if($stmt === false) {
+    trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
+  }
+
+  /* Bind parameters. TYpes: s = string, i = integer, d = double,  b = blob */
+  $stmt->bind_param('isssssssss', $contentUserId, $contentDifferentStatement, $contentShortDesc, $contentUniqueDesc, $contentShortPitch, $contentServices, $contentFb, $contentIg, $contentLk, $contentTw);
+
+  /* Execute statement */
+  $stmt->execute();
+
+  echo $stmt->insert_id;
+  echo $stmt->affected_rows;
+
+  $stmt->close();
 
  ?>
 
