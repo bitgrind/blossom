@@ -1,9 +1,6 @@
 #!/bin/bash
-echo "SSH password"; read password;
 echo "Commit message"; read message;
-
 ssh rosecityvinyl@107.180.41.158;
-password;
 git add .;
 git commit -m $message;
 git pull origin master;
