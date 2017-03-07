@@ -56,7 +56,7 @@
   // print_r($rs);
 
   //INSERTING new Content into Table
-  $sql="INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES (".$contentUserId.", ".$contentDifferentStatement.", ".$contentShortDesc.", ".$contentUniqueDesc.", ".$contentShortPitch.", ".$contentServices.", ".$contentFb.", ".$contentIg.", ".$contentLk.", ".$contentTw.")";
+  $sql="INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES (".$contentUserId.", ".$contentDifferentStatement.", ".$contentSmallDesc.", ".$contentUniqueStatement.", ".$contentBusinessPitch.", ".$contentService1.", ".$contentFb.", ".$contentIg.", ".$contentLk.", ".$contentTw.")";
 
   echo "<br><br>".$sql;
 
