@@ -14,11 +14,15 @@ $(function(){
   //REGISTRATION FORM
   $("#register").submit(function(){
     event.preventDefault();
-    var email = $("#email").val();
-    var password = $("#password").val();
-    var passwordRepeat = $("#password2").val();
-    if((email && password && passwordRepeat) !== ""){
+    var email = $("#emailSignUp").val();
+    var password = $("#passwordSignUp").val();
+    var passwordRepeat = $("input#password2").val();
+
+    //FORM VALIDATION
+    if( ((email && password && passwordRepeat) !== "") && (password === passwordRepeat)){
       location.href= "build.html";
+    }else if ((password !== passwordRepeat)){
+      alert("Password does not match!");
     }else{
       alert("Please fill in all the inputs");
     }
@@ -29,6 +33,8 @@ $(function(){
     event.preventDefault();
     var email = $("#email").val();
     var password = $("#password").val();
+
+    //FORM VALIDATION
     if((email && password) !== ""){
       location.href= "admin.html";
     }else{
