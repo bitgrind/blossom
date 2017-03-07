@@ -13,7 +13,7 @@
 
  $insUserSql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
 
- if($_POST['userSignUp']){
+ if($_POST['userSignUp'] == "newUserSignUp"){
    print_r($_POST);
    echo "we have a user signup";
    if($conn->query($insUserSql)){
@@ -232,15 +232,15 @@
           <form id="register" role="form" action="?" method="POST" class="registration-form">
             <div class="form-group">
               <label class="sr-only" for="form-email">Email</label>
-              <input id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
+              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password">Password </label>
-              <input id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" >
+              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" >
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password2">Confrim password</label>
-              <input id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
+              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
             </div>
             <div class="modal-footer">
               <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>
