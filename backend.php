@@ -38,6 +38,8 @@
 
 //MySQLi
 
+  echo "Host: " . $dbHost. ", User: " . $dbUser. ", Pw: " . $dbPw. ", Table: " . $dbName;
+
   $connection = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
   if ($connection->connect_error) {
