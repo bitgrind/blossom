@@ -12,8 +12,7 @@ $(function(){
   });
 
   //REGISTRATION FORM
-  $("#register").submit(function(){
-    event.preventDefault();
+  $("#register").on("keypress",function(){
     var email = $("#emailSignUp").val();
     var password = $("#passwordSignUp").val();
     var passwordRepeat = $("input#password2").val();

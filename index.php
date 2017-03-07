@@ -1,3 +1,26 @@
+
+<?php
+
+  include_once  "php/connect.php";
+
+ $userEmail = $_POST['emailSignUp'];
+ $userPw1 = $_POST['passwordSignUp'];
+ $userPw2 = $_POST['password2'];
+
+
+ $userSaltPW = "";
+
+
+ $sql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
+
+ if($conn->query($sql){
+   echo "seccuess user added!";
+ }
+
+ $conn->close();
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -202,7 +225,7 @@
           <h4 class="modal-title">Sign up for free!</h4>
         </div>
         <div class="modal-body">
-          <form id="register" role="form" action="" method="post" class="registration-form">
+          <form id="register" role="form" action="?" method="POST" class="registration-form">
             <div class="form-group">
               <label class="sr-only" for="form-email">Email</label>
               <input id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
