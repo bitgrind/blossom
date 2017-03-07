@@ -13,7 +13,8 @@
 
  $insUserSql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
 
- if($_POST['register'] == "userSignUp"){
+ if($_POST['userSignUp']){
+   echo "we have a user signup";
    if($conn->query($insUserSql)){
      echo "seccuess user added!";
    }
@@ -241,7 +242,7 @@
               <input id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
             </div>
             <div class="modal-footer">
-              <button name="userSignUp" type="submit" class="btn btn-default">Sign me up!</button>
+              <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>
             </div>
           </form>
         </div>
