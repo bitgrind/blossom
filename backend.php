@@ -1,6 +1,6 @@
 <?php
 
-  //include_once  "php/db-config.php";
+  include_once  "php/db-config.php";
 
   //print_r("<br>Globals: ".$GLOBALS);
   echo '<br><br>post those globs '.phpinfo();
