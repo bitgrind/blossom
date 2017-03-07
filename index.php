@@ -1,7 +1,7 @@
 
 <?php
 
-  include_once  "php/connect.php";
+include_once  "php/connect.php";
 
  $userEmail = $_POST['emailSignUp'];
  $userPw1 = $_POST['passwordSignUp'];
