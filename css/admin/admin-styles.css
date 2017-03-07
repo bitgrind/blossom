@@ -52,11 +52,27 @@ ul.sideNav {
   list-style-type: none;
 }
 
+/*** Dropdown ***/
+
 .dropdown {
   width: 100%;
 }
 
-.btn {
+.dropdown-btn {
+  width: 100%;
+}
+
+#active-dropdown-text {
+  font-size: 20px;
+}
+
+.caret {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #333;
+}
+
+ul.dropdown-menu {
   width: 100%;
 }
 
@@ -69,6 +85,52 @@ ul.sideNav {
   
 }
 
-.account, .site2 {
+.account, .site2, .domains {
   display: none;
 }
+
+
+/*** Panel Styles ***/
+
+.change-pass-btn {
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.change-email-btn {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.iconStyle {
+  padding-right: 5px;
+}
+.panels-style {
+  margin-top: 40px;
+}
+
+.panelH3 {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+
+.account {
+  margin-top: 25px;
+}
+
+.account h2 {
+  text-align: center;
+}
+
+.domains h2 {
+  text-align: center;
+}
+
+
+
+
+
+
+

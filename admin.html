@@ -36,7 +36,7 @@
         <div class="col-md-2 side-nav1 full-height container">
           <h2>Dashboard</h2>
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span> <span class="caret"></span></button>
+            <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
@@ -92,25 +92,26 @@
             <div class="account-body">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h2>Customer Information</h2>
+                  <h2>Account Information</h2>
                 </div>
                 <div class="panel-body">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th><a href="#">Username</a></th>
                         <th><a href="#">Email</a></th>
                         <th><a href="#">Websites</a></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th class="user-info" id="accountUsername">Znergy</th>
                         <th class="user-info" id="accountEmail">example@gmail.com</th>
                         <th class="user-info" id="accountWebsite">https://blossom.com</th>
                       </tr>
                     </tbody>
                   </table>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="panelH3">Change Password</h3>
                   <form class="changePassword">
                     <div class="input-group">
                       <span class="input-group-addon">Current Password</span>
@@ -132,18 +133,73 @@
                       </a>
                     </div>
                   </form>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="panelH3">Change Email</h3>
+                  <form class="changeEmail">
+                    <div class="input-group">
+                      <span class="input-group-addon">Current Email</span>
+                      <input class="form-control" type="text" value="example@gmail.com" readonly>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">Change Email</span>
+                      <input class="form-control" type="email">
+                    </div>
+                    <div class="buttonStyles change-email-btn">
+                      <a href="https://google.com" target="_blank">
+                        <button class="btn btn-primary" type="submit" id="changeEmailBtn">
+                          <span class="glyphicon glyphicon-transfer iconStyle"></span>Change Email
+                        </button>
+                      </a>
+                    </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="domains">
+            <div class="domains-header">
+            </div>
+            <div class="domains-body">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h2>Registered Domains</h2>
+                </div>
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><a href="#">ID</a></th>
+                        <th><a href="#">Domain URL</a></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="user-info" id="domainsID1">1</th>
+                        <th class="user-info" id="domainsURL1">https://www.blossom.com</th>
+                      </tr>
+                      <tr>
+                        <th class="user-info" id="domainsID2">2</th>
+                        <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   <!-- JQuery JS -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Custom JS -->
+  <!-- Admin JS -->
+  <script type="text/javascript" src="js/admin/admin.js"></script>
+  <!-- Default JS -->
   <script type="text/javascript" src="js/default.js"></script>
 </body>
 
