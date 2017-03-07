@@ -14,6 +14,7 @@
  $insUserSql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
 
  if($_POST['userSignUp']){
+   print_r($_POST);
    echo "we have a user signup";
    if($conn->query($insUserSql)){
      echo "seccuess user added!";
