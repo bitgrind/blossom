@@ -139,3 +139,82 @@ h1#heading{
 span#js-typed{
   font-size: 2.5em;
   }
+
+
+  /* MEDIA QUERY SHIT */
+
+/* IPHONE 6 */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    /* PAGE 1 */
+
+    .navbar{
+      margin-top: 1%;
+    }
+    #buttons{
+      margin-top: 65%;
+    }
+    #page1 h2{
+      margin-top: 15%;
+      font-size: 3em;
+    }
+    h1#heading{
+      margin-top: 15%;
+    }
+    /* PAGE 2 */
+
+    #page2 p{
+      margin-bottom: 3%;
+    }
+    #page2 img{
+      margin-bottom: 0;
+    }
+
+    .form-control{
+      font-size: 30px;
+      height: 60px;
+    }
+    .modal-title{
+      font-size: 60px;
+    }
+    .modal-dialog{
+      margin-top: 40%;
+      margin-right: 32%;
+    }
+    .modal-content{
+      width: 140%;
+      height:430px;
+    }
+
+    .modal-footer{
+      text-align: center;
+    }
+
+    button.close{
+      font-size: 100px;
+    }
+    .modal-footer button{
+      margin-top: 15px;
+      font-size: 45px;
+
+    }
+  }
+
+    /* IPAD STUFF */
+
+    @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #heading {
+      width: 900px;
+      padding-left: 5%;
+    }
+    h1#heading{
+      font-size: 70px;
+    }
+}
