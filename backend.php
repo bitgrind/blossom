@@ -49,14 +49,16 @@
   //   echo "connected!";
   // }
 
-  $sql = "SELECT * FROM users";
-
-  $rs = $conn->query($sql);
-
-  print_r($rs);
+  // $sql = "SELECT * FROM users";
+  //
+  // $rs = $conn->query($sql);
+  //
+  // print_r($rs);
 
   //INSERTING new Content into Table
-  $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ($contentUserId, $contentDifferentStatement, $contentShortDesc, $contentUniqueDesc, $contentShortPitch, $contentServices, $contentFb, $contentIg, $contentLk, $contentTw)';
+  $sql='INSERT INTO content (contentUserId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('.$contentUserId.', '.$contentDifferentStatement'., '.$contentShortDesc'., '.$contentUniqueDesc'., '.$contentShortPitch'., '.$contentServices'., '.$contentFb'., '.$contentIg'., '.$contentLk'., '.$contentTw.')';
+
+  echo $sql;
 
   /* Prepare statement */
   $stmt = $conn->prepare($sql);
