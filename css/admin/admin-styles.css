@@ -42,6 +42,6 @@ ul.sideNav {
   
 }
 
-.account {
+.account, .site2 {
   display: none;
 }
