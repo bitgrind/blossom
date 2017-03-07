@@ -7,9 +7,10 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- typed.js-->
-  <script src="js/dist/typed.min.js">
+  <script src="js/dist/typed.min.js"></script>
+  <link href="dist/css/flat-ui.min.css" rel="stylesheet">
 
-  </script>
+
   <!--GOOGLE FONTS-->
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rasa" rel="stylesheet">
 
@@ -173,12 +174,12 @@
         <div class="modal-body">
           <form id="formLogIn" role="form" action="" method="post" class="registration-form">
             <div class="form-group">
-              <label class="sr-only" for="form-username">Username</label>
-              <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+              <label class="sr-only" for="form-email">Email</label>
+              <input type="text" name="form-email" placeholder="Username..." class="form-email form-control" id="email">
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password">Password</label>
-              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password">
             </div>
 
             <div class="modal-footer">
@@ -203,24 +204,16 @@
         <div class="modal-body">
           <form id="register" role="form" action="" method="post" class="registration-form">
             <div class="form-group">
-              <label class="sr-only" for="form-name">Name</label>
-              <input type="text" name="form-name" placeholder="Name..." class="form-name form-control" id="form-name">
-            </div>
-            <div class="form-group">
               <label class="sr-only" for="form-email">Email</label>
-              <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="form-username">Username</label>
-              <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+              <input id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password">Password </label>
-              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+              <input id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" >
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password2">Confrim password</label>
-              <input type="password" placeholder="Confirm password..." class="form-password2 form-control" id="form-password2"></textarea>
+              <input id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
             </div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-default">Sign me up!</button>

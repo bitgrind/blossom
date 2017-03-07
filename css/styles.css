@@ -17,8 +17,9 @@ h2{
   font-size: 2em;
 }
 
-#logo{
-  font-size: 4em;
+a#logo{
+  padding-top: 0;
+  font-size: 55px;
   font-weight: bolder;
 }
 #navbar li{
@@ -26,9 +27,14 @@ h2{
 }
 /* PAGE1 CSS */
 
+h1{
+  margin-top: 0;
+  font-size:2.5em;
+  }
 h1#heading{
   font-size: 6em;
   margin-top: 5%;
+  margin-bottom: 0;
 }
 
 #page1 h2{
@@ -36,7 +42,7 @@ h1#heading{
 
 }
 #buttons button{
-  margin-top: 30%;
+  margin-top: 22%;
   font-size: 2em;
   margin-left: 2%;
 
@@ -52,6 +58,10 @@ h1#heading{
 
 #landingContent p{
   font-size: 2em;
+}
+
+#navbar a{
+  font-size: 30px;
 }
 
 /* PAGE2 CSS */
@@ -222,4 +232,6 @@ span#js-typed{
     h1#heading{
       font-size: 70px;
     }
+
+
 }

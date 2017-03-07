@@ -1,5 +1,6 @@
 $(function(){
 
+  //TYPED JS
   $("#js-typed").typed({
       stringsElement: $('#typed-strings'),
       typeSpeed: 200,
@@ -12,17 +13,32 @@ $(function(){
 
   //REGISTRATION FORM
   $("#register").submit(function(){
-    // var name =
-    // var email =
-    // var username =
-    // var password =
-    // var passwordRepeat =
     event.preventDefault();
-    location.href= "build.html";
-  });
+    var email = $("#emailSignUp").val();
+    var password = $("#passwordSignUp").val();
+    var passwordRepeat = $("input#password2").val();
+
+    //FORM VALIDATION
+    if( ((email && password && passwordRepeat) !== "") && (password === passwordRepeat)){
+      location.href= "build.html";
+    }else if ((password !== passwordRepeat)){
+      alert("Password does not match!");
+    }else{
+      alert("Please fill in all the inputs");
+    }
+  });//REGISTER
+
   //LOGIN FORM
   $("#formLogIn").submit(function(){
     event.preventDefault();
-    location.href= "admin.html";
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    //FORM VALIDATION
+    if((email && password) !== ""){
+      location.href= "admin.html";
+    }else{
+      alert("Please fill in all the inputs");
+    }
   });
 });
