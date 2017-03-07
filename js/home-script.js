@@ -1,5 +1,4 @@
 $(function(){
-
   //TYPED JS
   $("#js-typed").typed({
       stringsElement: $('#typed-strings'),

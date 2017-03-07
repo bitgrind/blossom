@@ -59,6 +59,10 @@ h1#heading{
   font-size: 30px;
 }
 
+#myCarousel img{
+  margin-left: 20%;
+}
+
 /* PAGE2 CSS */
 
 #page2 h1{
