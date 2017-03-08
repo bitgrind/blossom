@@ -5,7 +5,7 @@ include_once  "php/connect.php";
  $userPw1 = $_POST['passwordSignUp'];
  $userPw2 = $_POST['password2'];
 
- $insUserSql="INSERT INTO users (userId, userEmail, userPassword, userContentId, userContactId) VALUES ('','".$userPw1."', '".$userEmail."', '','')";
+ $insUserSql="INSERT INTO users (userId, userEmail, userPassword, userContentId, userContactId) VALUES ('','".$userEmail."', '".$userPw1."', '','')";
 
  if($_POST['userSignUp'] == "newUserSignUp"){
    if($conn->query($insUserSql)){
