@@ -45,8 +45,6 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
  <script type="text/javascript">
  //php vars
  var test ="testString";
- var previewId =  <?php echo $previewId;?>;
-
 
  </script>
 
@@ -102,7 +100,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1>asd</h1>
+                         <h1><?php echo $businessName ?></h1>
                          <h3>A Template by Blossom</h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
