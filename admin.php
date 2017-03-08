@@ -65,12 +65,9 @@
 
               </div>
         </div>
-<<<<<<< HEAD
         <div>
           <h2><?php echo $adminBusinessName;?></h2>
         </div>
-=======
->>>>>>> ecd51d9b1f3242901b1c802beee89e74f267c9a3
         <div class="col-md-6">
           <ul class="mainNav">
             <li>nav1</li>
