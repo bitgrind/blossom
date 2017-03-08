@@ -51,6 +51,21 @@ $("#site1").click(function() {
   $(".site1").show();
 });
 
+$("#changePasswordBtn").click(function() {
+  alert("Password has been changed");
+  alert("Or has it?");
+});
+
+$("#changeEmailBtn").click(function() {
+  alert("Email has been changed");
+  alert("For real though..");
+});
+
+$("#editNav").click(function() {
+  hideAll();
+  $(".edit").show();
+})
+
 
 
 

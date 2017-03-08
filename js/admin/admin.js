@@ -1,7 +1,7 @@
 //** Admin JS Functions **//
 
 function hideAll() {
-  var arrayOfIds = ["site1", "site2", "account", "domains"];
+  var arrayOfIds = ["site1", "site2", "account", "domains", "edit"];
   
   arrayOfIds.forEach(function(name) {
     var className = ("." + name);
