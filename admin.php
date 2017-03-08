@@ -62,20 +62,18 @@
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
-            <h2><a href="index.html">Blossom</a></h2>
-            <!-- <h2><a href="index.html"><?php echo $adminBusinessName;?></a></h2> -->
-              </div>
-        </div>
-        <!-- <div>
-          <h2><?php echo $adminBusinessName;?></h2>
-        </div> --?
+            <h2><a href="index.html"><?php echo $adminBusinessName;?></a></h2>
+          </div><!-- logo -->
+        </div> <!-- col-md-6 -->
+      <div> <!--row header -->
+
         <div class="col-md-6">
           <ul class="mainNav">
             <li>nav1</li>
             <li>nav2</li>
             <li>nav3</li>
           </ul>
-        </div>
+        </div> <!--mainNav -->
     </div>
       <div class="row full-height">
         <div class="col-md-2 side-nav1 full-height container">
