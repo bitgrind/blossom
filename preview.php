@@ -1,14 +1,14 @@
 <?php
-  include_once  "php/connect.php";
+include_once  "php/connect.php";
+$adminUserId = $_GET["userId"];
+$adminContentId = $_GET["contentId"];
 
-
-$previewContentId = $_GET["contentId"];
 $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
 
 
   /* Prepare statement */
   if($_GET["contentId"]) {
-    if($res = $conn->query($adminSql)){
+    if($res = $conn->query($previewSql)){
 		while($row = $res->fetch_assoc()) {
 		print_r($row);//full array
 		print_r($row['contentId']);//specific value
