@@ -10,7 +10,10 @@ body {
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
   }
+.mainNav > li{
+  padding-right: 15px;
 
+}
 .dashboard-h2-style {
   font-size: 40px;
   padding-bottom: 10px;
