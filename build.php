@@ -2,11 +2,6 @@
 
   include_once  "php/connect.php";
 
-  //print_r("<br>Globals: ".$GLOBALS);
-  //echo '<br><br>post those globs '.phpinfo();
-//  print_r("<br><br><br>Post: ".$_POST['business-name']);
-
-
 //CONTENT VARIBLES
   $contentBusinessName        = $_POST['business-name'];
   $contentDifferentStatement  = $_POST['different-statement'];
@@ -41,12 +36,14 @@
   $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
   /* Prepare statement */
-  if($conn->query($contentSql)) {
+  if($_POST['userSignUp'] == "newUserSignUp") {
     $contentId = mysqli_insert_id($conn);
     header('Location: admin.php?userId='.$contentUserId.'&contentId='.$contentId);
   } else {
     echo "query Failure" .$conn->error;
   }
+
+  print_r(phpinfo());
 
   $conn->close();
  ?>
@@ -74,7 +71,7 @@
                 <h2>Questionnaire</h2>
             </div>
             <div class="panel-body">
-                <form class="client-question-form" action="?" method="POST">
+                <form name="buildForm" class="client-question-form" action="?" method="POST">
                     <div class="col-md-12">
                         <div class="input-group">
                             <label for="business-name">What is your business name?</label>
@@ -178,11 +175,11 @@
                     </div>
                     <!--closes col-md-6 -->
                     <div class="buttonStyles">
-                        <button class="btn btn-primary" type="submit" id="submitBtn">
-                 <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
-              </button>
+                        <button name="buildForm" class="btn btn-primary" type="submit" id="submitBtn">
+                        <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
+                      </button>
                     </div>
-            </div>
+              </div>
             </form>
         </div>
     </div>
