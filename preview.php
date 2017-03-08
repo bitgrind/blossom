@@ -42,11 +42,6 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
   echo "ecco";
  ?>
 
- <script type="text/javascript">
- //php vars
- var test ="testString";
-
- </script>
 
 
  <!DOCTYPE html>
@@ -100,8 +95,8 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1>hey <?php echo $previewId;?></h1>
-                         <h3>A Template by Blossom</h3>
+                         <h1>hey <?php echo $businessName; ?></h1>
+                         <h3><?php echo $diffStatenent; ?></h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
                              <li><a href="http://blossom.rosecityvinyl.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
