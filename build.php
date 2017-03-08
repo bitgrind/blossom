@@ -1,18 +1,75 @@
-<!-- <?php
-  print_r($GLOBALS);
+<?php
 
-  echo "<br><br><br>";
+  include_once  "php/connect.php";
 
-  print_r($_POST);
+  //print_r("<br>Globals: ".$GLOBALS);
+  //echo '<br><br>post those globs '.phpinfo();
+//  print_r("<br><br><br>Post: ".$_POST['business-name']);
 
-  //make DB connection
 
-  //set var from $_POST ArrayAccess
+//CONTENT VARIBLES
+  $contentBusinessName        = $_POST['business-name'];
+  $contentDifferentStatement  = $_POST['different-statement'];
+  $contentSmallDesc           = $_POST['small-description'];
+  $contentUniqueStatement     = $_POST['unique-statement'];
+  $contentBusinessPitch       = $_POST['business-pitch'];
+  $contentService1            = $_POST['service-item-1'];
+  $contentService2            = $_POST['service-item-2'];
+  $contentService3            = $_POST['service-item-3'];
+  $contentService4            = $_POST['service-item-4'];
+  $contentFb                  = $_POST['social-link-facebook'];
+  $contentIg                  = $_POST['social-link-instagram'];
+  $contentLk                  = $_POST['social-link-linkedin'];
+  $contentTw                  = $_POST['social-link-twitter'];
 
-  //Santize var
+//CONTACT VARIBLES
+  $contactFullName            = $_POST['contact-full-name'];
+  $contactPhone               = $_POST['contact-phone'];
+  $contactEmail               = $_POST['contact-email'];
+  $contactAddress             = $_POST['contact-address'];
+  $contactCity                = $_POST['contact-city'];
+  $contactState               = $_POST['contact-state'];
+  $contactZip                 = $_POST['contact-zip'];
+
+//USER VARIBLES
+  //$userName ="";
+
+  $contentUserId = $_GET["id"];
+  $contentContactId = "1";
+
+
+//MySQLi
+
+  echo "Host: " . $dbHost. ", User: " . $dbUser. ", Pw: " . $dbPw. ", Table: " . $dbName;
+
+
+  // if ($conn->connect_error) {
+  //   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
+  // } else {
+  //   echo "connected!";
+  // }
+
+  // $sql = "SELECT * FROM users";
+  //
+  // $rs = $conn->query($sql);
+  //
+  // print_r($rs);
+
+  //INSERTING new Content into Table
+  $sql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+
+  echo "<br><br>".$sql;
+
+  /* Prepare statement */
+  if($conn->query($sql)) {
+    echo "query successful!";
+  } else {
+    echo "query Failure" .$conn->error;
+  }
+
+  $conn->close();
 
  ?>
--->
 <!DOCTYPE html>
 <html>
 
