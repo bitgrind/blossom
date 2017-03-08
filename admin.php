@@ -1,3 +1,5 @@
+<!-- v.001 -->
+
 <?php
   include_once  "php/connect.php";
   $adminUserId = $_GET["userId"];
@@ -66,7 +68,7 @@
         </div>
         <!-- <div>
           <h2><?php echo $adminBusinessName;?></h2>
-        </div> -->
+        </div> --?
         <div class="col-md-6">
           <ul class="mainNav">
             <li>nav1</li>
