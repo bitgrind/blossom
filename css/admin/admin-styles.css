@@ -102,6 +102,10 @@ ul.dropdown-menu {
 
 /*** Edit Font options ***/
 
+.edit-button {
+  text-align: center;
+}
+
 .serif-font {
   font-family: serif;
   font-size: 20px;

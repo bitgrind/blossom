@@ -5,8 +5,8 @@
 //CONTENT VARIBLES
   $contentBusinessName        = $_POST['business-name'];
   $contentDifferentStatement  = $_POST['different-statement'];
-  $contentSmallDesc           = $_POST['small-description'];
-  $contentUniqueStatement     = $_POST['unique-statement'];
+  $contentShortDesc           = $_POST['small-description'];
+  $contentUniqueDesc     = $_POST['unique-statement'];
   $contentBusinessPitch       = $_POST['business-pitch'];
   $contentService1            = $_POST['service-item-1'];
   $contentService2            = $_POST['service-item-2'];
@@ -33,20 +33,19 @@
   $contentContactId = "1";
 
   //INSERTING new Content into Table
-  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+
+  print_r($POST);
 
   /* Prepare statement */
-  if($_POST['buildForm'] == "newBuildForm") {
+  if($_POST['buildForm'] === "newBuildForm") {
     if($conn->query($contentSql)){
-      $contentId = mysqli_insert_id($conn)
+      $contentId = mysqli_insert_id($conn);
       header('Location: admin.php?contentId='.$contentId);
     }
   } else {
     echo "query Failure" .$conn->error;
   }
-
-  print_r(phpinfo());
-
   $conn->close();
  ?>
 <!DOCTYPE html>
@@ -188,8 +187,6 @@
     </div>
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script type="text/javascript" src="js/default.js"></script>
 </body>
 
 </html>

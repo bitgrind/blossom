@@ -1,3 +1,29 @@
+<?php
+  include_once  "php/connect.php";
+  $adminUserId = $_GET["userId"];
+  $adminContentId = $_GET["contentId"];
+  print_r($GLOBALS);
+  
+  $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
+	print_r($adminSql);
+
+  /* Prepare statement */
+  if($_GET["contentId"]) {
+    if($res = $conn->query($adminSql)){
+		while($row = $res->fetch_assoc()) {
+		print_r($row);//full array
+		print_r($row['contentId']);//specific value
+		$previewId = $row['contentId']; 
+		
+		//[contentId] => 15 [contentUserId] => 0 [contentContactId] => 1 [contentStyle] => [contentBusinessName] => [contentDifferentStatement] => [contentShortDesc] => [contentUniqueDesc] => [contentBusinessPitch] => [contentServices] => [contentFb] => [contentIg] => [contentLk] => [contentTw] => 
+    	}
+    }
+  } else {
+    echo "query Failure" .$conn->error;
+  }
+  $conn->close();
+ ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +35,7 @@
   <meta name="author" content="Ryan Jones">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blossom Dashboard</title>
-  
+
   <!-- Color Wheel Plug in -->
   <link type="text/css" rel="stylesheet" href="css/admin/wheelcolorpicker.css" />
   <!-- Bootstrap -->
@@ -17,6 +43,7 @@
   <!-- Custom CSS -->
   <!-- <link href="dist/css/flat-ui.min.css" rel="stylesheet"> -->
   <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
+  <script>var jscontentId = <?php echo $previewId; ?>;console.log(jscontentId);</script>
 </head>
 
 <body class="bg-silver">
@@ -67,37 +94,32 @@
                   <div class="col-md-6">
                     <div class="panel panel-primary">
                       <div class="panel-heading">
-                        <h2>Header</h2>
+                        <h2>Header <?php echo $previewId;?></h2>
                       </div>
                       <div class="panel-body">
-                        <form id="headerEditForm" action="?" method="post">
 <!--
-                          <div class="input-group">
-                            <label for="header-text">Header Text</label>
-                            <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                          </div>
+                        <div class="input-group">
+                          <label for="header-text">Header Text</label>
+                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
+                        </div>
 -->
-                          <!-- Need to do work here, see trello comment -->
-                          <div class="input-group">
-                            <label for="header-font-family">Font Family</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                              <li><a href="#" id="serif-font" class="serif-font">Serif</a></li>
-                              <li><a href="#" id="sans-serif-font" class="sans-serif-font">Sans-Serif</a></li>
-                              <li><a href="#" id="cursive-font" class="cursive-font">Cursive</a></li>
-                              </ul>
-                            </div>
+                        <!-- Need to do work here, see trello comment -->
+                        <div class="input-group">
+                          <label for="header-font-family">Font Family</label>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#" class="serif-font">Serif</a></li>
+                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
+                            <li><a href="#" class="cursive-font">Cursive</a></li>
+                            </ul>
                           </div>
-                          <div class="input-group">
-                            <label for="header-color">Header Color</label>
-                            <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                          </div>
-                          <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" for="paragraphEditForm">Save</button>
-                          </div>
-                        </form>
+                        </div>
+                        <div class="input-group">
+                          <label for="header-color">Header Color</label>
+                          <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -107,27 +129,28 @@
                         <h2>Paragraph</h2>
                       </div>
                       <div class="panel-body">
-                        <form id="paragraphEditForm" action="?" method="post">
-                          <div class="input-group">
-                            <label for="paragraph-font-family">Font Family</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                              <li><a href="#" class="serif-font">Serif</a></li>
-                              <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                              <li><a href="#" class="cursive-font">Cursive</a></li>
-                              </ul>
-                            </div>
+<!--
+                        <div class="input-group">
+                          <label for="header-text">Header Text</label>
+                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
+                        </div>
+-->
+                        <div class="input-group">
+                          <label for="paragraph-font-family">Font Family</label>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#" class="serif-font">Serif</a></li>
+                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
+                            <li><a href="#" class="cursive-font">Cursive</a></li>
+                            </ul>
                           </div>
-                          <div class="input-group">
-                            <label for="paragraph-color">Paragraph Color</label>
-                            <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                          </div>
-                          <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" for="paragraphEditForm">Save</button>
-                          </div>
-                        </form>
+                        </div>
+                        <div class="input-group">
+                          <label for="paragraph-color">Paragraph Color</label>
+                          <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -139,58 +162,59 @@
                         <h2>Background Color</h2>
                       </div>
                       <div class="panel-body">
-                        <form id="backgroundEditForm" action="?" method="post">
-                          <div class="input-group">
-                            <label for="header-font-family">Select a preselected color</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Color Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#" id="firebrick-red"><span class="firebrick-red">Firebrick Red</span></a></li>
-                                <li><a href="#" id="collosal-blue" class="collosal-blue"><span class="collosal-blue">Collosal Blue</span></a></li>
-                                <li><a href="#" id="tango-orange" class="tango-orange"><span class="tango-orange">Tango Orange</span></a></li>
-                              </ul>
-                            </div>
+<!--
+                        <div class="input-group">
+                          <label for="header-text">Header Text</label>
+                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
+                        </div>
+-->
+                        <div class="input-group">
+                          <label for="header-font-family">Select a preselected color</label>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Color Choices
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#"><span class="firebrick-red">Firebrick Red</span></a></li>
+                              <li><a href="#" class="collosal-blue"><span class="collosal-blue">Collosal Blue</span></a></li>
+                              <li><a href="#" class="tango-orange"><span class="tango-orange">Tango Orange</span></a></li>
+                            </ul>
                           </div>
-                          <div class="input-group">
-                            <label for="background-color">Background Color</label>
-                            <input type="text" id="background-color" name="background-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                          </div>
-                          <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" for="backgroundEditForm">Save</button>
-                          </div>
-                        </form>
+                        </div>
+                        <div class="input-group">
+                          <label for="background-color">Background Color</label>
+                          <input type="text" id="background-color" name="background-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- GOLD PLATING -->
                   <div class="col-md-6">
                     <div class="panel panel-primary">
                       <div class="panel-heading">
                         <h2>Unknown</h2>
                       </div>
                       <div class="panel-body">
-                        <form id="unknownEditForm" action="?" method="post">
-                          <div class="input-group">
-                            <label for="header-font-family">Font Family</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                              <li><a href="#" class="serif-font">Serif</a></li>
-                              <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                              <li><a href="#" class="cursive-font">Cursive</a></li>
-                              </ul>
-                            </div>
+<!--
+                        <div class="input-group">
+                          <label for="header-text">Header Text</label>
+                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
+                        </div>
+-->
+                        <div class="input-group">
+                          <label for="header-font-family">Font Family</label>
+                          <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#" class="serif-font">Serif</a></li>
+                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
+                            <li><a href="#" class="cursive-font">Cursive</a></li>
+                            </ul>
                           </div>
-                          <div class="input-group">
-                            <label for="header-color">Paragraph Color</label>
-                            <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                          </div>
-                          <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" for="unknownEditForm">Save</button>
-                          </div>
-                        </form>
+                        </div>
+                        <div class="input-group">
+                          <label for="header-color">Paragraph Color</label>
+                          <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                        </div>
                       </div>
                     </div>
                   </div>
