@@ -73,10 +73,11 @@
             <li>nav2</li>
             <li>nav3</li>
           </ul>
+        </div>
           <div class="col-md-1" id="siteName">
             <h3><?php echo $adminBusinessName;?></h3>
           </div> <!-- col-md-1 -->
-        </div> <!--mainNav -->
+
     </div>
       <div class="row full-height">
         <div class="col-md-2 side-nav1 full-height container">
