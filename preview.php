@@ -128,7 +128,7 @@
                  <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                      <hr class="section-heading-spacer">
                      <div class="clearfix"></div>
-                     <h2 class="section-heading"><?php echo $previewUniqueDesc></h2>
+                     <h2 class="section-heading"></h2>
                      <p class="lead"><?php echo $previewBusinessPitch; ?></p>
                  </div>
              </div>
