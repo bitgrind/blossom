@@ -62,7 +62,7 @@
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
-            <h2><a href="index.html"><?php echo $adminBusinessName;?></a></h2>
+            <h2><a href="index.html">Blossom</a></h2>
           </div><!-- logo -->
         </div> <!-- col-md-6 -->
       <div> <!--row header -->
@@ -73,6 +73,9 @@
             <li>nav2</li>
             <li>nav3</li>
           </ul>
+          <div class="siteName">
+            <h3><?php echo $adminBusinessName;?></h3>
+          </div>
         </div> <!--mainNav -->
     </div>
       <div class="row full-height">
