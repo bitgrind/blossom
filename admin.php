@@ -22,7 +22,7 @@
   		$previewContentIg         = $row['contentIg'];
   		$previewContentLk         = $row['contentLk'];
   		$previewContentTw         = $row['contentTw'];
-      echo "while loop";
+      echo "while loop3";
 		  }
     }
   } else {
