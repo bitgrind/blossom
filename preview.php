@@ -3,7 +3,7 @@ include_once  "php/connect.php";
 $adminUserId = $_GET["userId"];
 $adminContentId = $_GET["contentId"];
 
-$previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
+$previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
 
 
   /* Prepare statement */
