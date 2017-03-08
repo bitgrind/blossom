@@ -3,12 +3,12 @@ include_once  "php/connect.php";
 $adminUserId = $_GET["userId"];
 $adminContentId = $_GET["contentId"];
 
-$previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
+$adminSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
 
 
   /* Prepare statement */
   if($_GET["contentId"]) {
-    if($res = $conn->query($previewSql)){
+    if($res = $conn->query($adminSql)){
 		while($row = $res->fetch_assoc()) {
 		print_r($row);//full array
 		print_r($row['contentId']);//specific value
@@ -33,13 +33,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
     echo "query Failure" .$conn->error;
   }
   $conn->close();
-  echo "ecco";
-  echo "ecco";
-  echo "ecco";
-  echo "ecco";
-  echo "ecco";
-  echo "ecco";
-  echo "ecco";
+
  ?>
 
 
