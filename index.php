@@ -19,7 +19,7 @@
 
    if($conn->query($insUserSql)){
      $newId = mysqli_insert_id($conn);
-     header('Location:http://blossom.rosecityvinyl.com/build.php?id='.$newId);
+     header('Location: build.php?id='.$newId);
    }
  }
 
