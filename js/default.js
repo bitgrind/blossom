@@ -5,18 +5,6 @@
 * You will then link default.js and example.js into your html
 */
 
-//////////////////////////
-/*** Build.js Section ***/
-//////////////////////////
-
-$('.client-question-form').submit(function(event) {
-  event.preventDefault();
-  // code when the submit occurs goes here..
-  
-  window.location.href='admin.html';
-
-});
-
 
 //////////////////////////
 /*** Admin.js Section ***/

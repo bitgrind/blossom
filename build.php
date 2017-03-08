@@ -2,16 +2,11 @@
 
   include_once  "php/connect.php";
 
-  //print_r("<br>Globals: ".$GLOBALS);
-  //echo '<br><br>post those globs '.phpinfo();
-//  print_r("<br><br><br>Post: ".$_POST['business-name']);
-
-
 //CONTENT VARIBLES
   $contentBusinessName        = $_POST['business-name'];
   $contentDifferentStatement  = $_POST['different-statement'];
-  $contentSmallDesc           = $_POST['small-description'];
-  $contentUniqueStatement     = $_POST['unique-statement'];
+  $contentShortDesc           = $_POST['small-description'];
+  $contentUniqueDesc     = $_POST['unique-statement'];
   $contentBusinessPitch       = $_POST['business-pitch'];
   $contentService1            = $_POST['service-item-1'];
   $contentService2            = $_POST['service-item-2'];
@@ -38,16 +33,19 @@
   $contentContactId = "1";
 
   //INSERTING new Content into Table
-  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+
+  print_r($POST);
 
   /* Prepare statement */
-  if($conn->query($contentSql)) {
-    $contentId = mysqli_insert_id($conn);
-    header('Location: admin.php?userId='.$contentUserId.'&contentId='.$contentId);
+  if($_POST['buildForm'] === "newBuildForm") {
+    if($conn->query($contentSql)){
+      $contentId = mysqli_insert_id($conn);
+      header('Location: admin.php?contentId='.$contentId);
+    }
   } else {
     echo "query Failure" .$conn->error;
   }
-
   $conn->close();
  ?>
 <!DOCTYPE html>
@@ -74,7 +72,7 @@
                 <h2>Questionnaire</h2>
             </div>
             <div class="panel-body">
-                <form class="client-question-form" action="?" method="POST">
+                <form name="buildForm" class="client-question-form" action="?" method="POST">
                     <div class="col-md-12">
                         <div class="input-group">
                             <label for="business-name">What is your business name?</label>
@@ -178,19 +176,17 @@
                     </div>
                     <!--closes col-md-6 -->
                     <div class="buttonStyles">
-                        <button class="btn btn-primary" type="submit" id="submitBtn">
-                 <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
-              </button>
+                        <button name="buildForm" value="newBuildForm" class="btn btn-primary" type="submit" id="submitBtn">
+                        <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
+                      </button>
                     </div>
-            </div>
+              </div>
             </form>
         </div>
     </div>
     </div>
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script type="text/javascript" src="js/default.js"></script>
 </body>
 
 </html>
