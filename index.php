@@ -39,7 +39,6 @@ include_once  "php/connect.php";
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
-
 <body>
   <section class="container" id="page1">
     <!-- Static navbar -->
