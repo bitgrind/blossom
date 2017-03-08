@@ -13,7 +13,7 @@ include_once  "php/connect.php";
      header('Location: build.php?userId='.$newId);
    }
  }
- echo"new page input on index changeINDEX2";
+ echo"new page input on index changeINDEX333333";
 ?>
 <!DOCTYPE html>
 <html>
