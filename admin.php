@@ -22,7 +22,7 @@
   		$previewContentIg         = $row['contentIg'];
   		$previewContentLk         = $row['contentLk'];
   		$previewContentTw         = $row['contentTw'];
-      echo "while loop this is new loop";
+      echo "while loop this is new loop22";
       print_r($globals);
 		  }
     }
@@ -32,7 +32,7 @@
   $conn->close();
  ?>
 
- 
+
 <!DOCTYPE html>
 <html>
 
