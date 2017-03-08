@@ -34,7 +34,7 @@
 //USER VARIBLES
   //$userName ="";
 
-  $contentUserId = "1";
+  $contentUserId = $_GET["id"];
   $contentContactId = "1";
 
 
