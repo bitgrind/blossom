@@ -16,27 +16,26 @@ $("#accountNav").click(function() {
 });
 
 $("#previewNav").click(function() {
-  hideAll();
   var value = $("#active-dropdown-text").text();
   value = value.toLowerCase();
   console.log(value);
   if (value === "site 1") {
-    $(".site1").show();
+    // $(".site1").show();
+    window.open("demo1.html", "_blank");
   } else if (value === "site 2") {
-    $(".site2").show();
+    // $(".site2").show();
+    window.open("demo2.html", "_blank");
   }
 });
 
 $("#site2").click(function() {
   $("#active-dropdown-text").text("Site 2");
-  hideAll();
-  $(".site2").show();
+
 });
 
 $("#site1").click(function() {
   $("#active-dropdown-text").text("Site 1");
-  hideAll();
-  $(".site1").show();
+
 });
 
 $("#changePasswordBtn").click(function() {
@@ -53,9 +52,3 @@ $("#editNav").click(function() {
   hideAll();
   $(".edit").show();
 });
-
-
-
-
-
-

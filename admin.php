@@ -2,10 +2,37 @@
   include_once  "php/connect.php";
   $adminUserId = $_GET["userId"];
   $adminContentId = $_GET["contentId"];
-  print_r($_POST);
 
+  $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
+
+  /* Prepare statement */
+  if($_GET["contentId"]) {
+    if($res = $conn->query($adminSql)){
+		while($row = $res->fetch_assoc()) {
+  		$previewContentId         = $row['contentId'];
+  		$previewUserId            = $row['contentUserId'];
+  		$previewStyle             = $row['contentStyle'];
+  		$previewBusinessName      = $row['contentBusinessName'];
+  		$previewDiffDesc          = $row['contentDifferentStatement'];
+  		$previewShortDesc         = $row['contentShortDesc'];
+  		$previewUniqueDesc        = $row['contentUniqueDesc'];
+  		$previewBusinessPitch     = $row['contentBusinessPitch'];
+  		$previewServcies          = $row['contentServices'];
+  		$previewContentFb         = $row['contentFb'];
+  		$previewContentIg         = $row['contentIg'];
+  		$previewContentLk         = $row['contentLk'];
+  		$previewContentTw         = $row['contentTw'];
+      echo "while loop this is new loop";
+      print_r($globals);
+		  }
+    }
+  } else {
+    echo "query Failure" .$conn->error;
+  }
+  $conn->close();
  ?>
 
+ 
 <!DOCTYPE html>
 <html>
 
@@ -25,6 +52,7 @@
   <!-- Custom CSS -->
   <!-- <link href="dist/css/flat-ui.min.css" rel="stylesheet"> -->
   <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
+    <script>var jscontentId = <?php echo $previewId; ?>;console.log(jscontentId);</script>
 </head>
 
 <body class="bg-silver">
@@ -75,7 +103,7 @@
                   <div class="col-md-6">
                     <div class="panel panel-primary">
                       <div class="panel-heading">
-                        <h2>Header</h2>
+                        <h2>Header <?php echo $previewId;?></h2>
                       </div>
                       <div class="panel-body">
 <!--
