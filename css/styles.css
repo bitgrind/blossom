@@ -2,6 +2,9 @@ body{
   font-family: 'Rasa', sans-serif;
 }
 
+a:hover{
+  cursor: pointer;
+}
 
 .container{
   width: 95%;
