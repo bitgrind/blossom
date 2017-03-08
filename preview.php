@@ -1,40 +1,37 @@
 <?php
-include_once  "php/connect.php";
-$adminUserId = $_GET["userId"];
-$adminContentId = $_GET["contentId"];
+  include_once  "php/connect.php";
+  $adminUserId = $_GET["userId"];
+  $adminContentId = $_GET["contentId"];
 
-$adminSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
-
+  $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
 		while($row = $res->fetch_assoc()) {
-		print_r($row);//full array
-		print_r($row['contentId']);//specific value
-		$previewId = $row['contentId'];
-		$userId = $row['userId'];
-		$contactId = $row['contactId'];
-		$cssLink = $row['contentStyle'];
-		$businessName = $row['contentBusinessName'];
-		$diffStatement = $row['contentDifferentStatement'];
-		$description= $row['contentShortDesc'];
-		$description2= $row['contentUniqueDesc'];
-		$businessPitch= $row['contentBusinessPitch'];
-		$service1= $row['contentServices'];
-		$facebook= $row['contentFb'];
-		$instagram= $row['contentIg'];
-		$linkedin= $row['contentLk'];
-		$twitter= $row['contentTw'];
-		//[contentId] => 15 [contentUserId] => 0 [contentContactId] => 1 [contentStyle] => [contentBusinessName] => [contentDifferentStatement] => [contentShortDesc] => [contentUniqueDesc] => [contentBusinessPitch] => [contentServices] => [contentFb] => [contentIg] => [contentLk] => [contentTw] =>
-    	}
+  		$adminContentId         = $row['contentId'];
+  		$adminUserId            = $row['contentUserId'];
+  		$adminStyle             = $row['contentStyle'];
+  		$adminBusinessName      = $row['contentBusinessName'];
+  		$adminDiffDesc          = $row['contentDifferentStatement'];
+  		$adminShortDesc         = $row['contentShortDesc'];
+  		$adminUniqueDesc        = $row['contentUniqueDesc'];
+  		$adminBusinessPitch     = $row['contentBusinessPitch'];
+  		$adminServcies          = $row['contentServices'];
+  		$adminContentFb         = $row['contentFb'];
+  		$adminContentIg         = $row['contentIg'];
+  		$adminContentLk         = $row['contentLk'];
+  		$adminContentTw         = $row['contentTw'];
+      echo "while loop this is new loop22";
+      print_r($GLOBALS);
+		  }
     }
   } else {
     echo "query Failure" .$conn->error;
   }
   $conn->close();
-
  ?>
+
 
 
 
@@ -88,8 +85,8 @@ $adminSql="SELECT * FROM 'content' WHERE 'contentId'=".$adminContentId;
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1>hey <?php echo $previewId; ?></h1>
-                         <h3><?php echo $diffStatenent; ?></h3>
+                         <h1>hey <?php echo $adminContentId; ?></h1>
+                         <h3><?php echo $adminDiffDesc; ?></h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
                              <li><a href="http://blossom.rosecityvinyl.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
