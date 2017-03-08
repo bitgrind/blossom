@@ -61,11 +61,16 @@
         <div class="col-md-6">
           <div class="logo">
             <h2><a href="index.html">Blossom</a></h2>
+            <h2><a href="index.html"><?php echo $businessName;?></a></h2>
+
               </div>
         </div>
+<<<<<<< HEAD
         <div>
           <h2><?php echo $adminBusinessName;?></h2>
         </div>
+=======
+>>>>>>> ecd51d9b1f3242901b1c802beee89e74f267c9a3
         <div class="col-md-6">
           <ul class="mainNav">
             <li>nav1</li>

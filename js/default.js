@@ -52,3 +52,24 @@ $("#editNav").click(function() {
   hideAll();
   $(".edit").show();
 });
+
+/*** dashboard panels ***/
+$("#headerSave").click(function(e) {
+  e.preventDefault();
+  $(".header-alert").show();
+});
+
+$("#paragraphSave").click(function(e) {
+  e.preventDefault();
+  $(".paragraph-alert").show();
+});
+
+$("#backgroundSave").click(function(e) {
+  e.preventDefault();
+  $(".background-alert").show();
+});
+
+$("#themeSave").click(function(e) {
+  e.preventDefault();
+  $(".theme-alert").show();
+});
