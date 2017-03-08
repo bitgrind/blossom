@@ -23,7 +23,6 @@
   		$adminContentLk         = $row['contentLk'];
   		$adminContentTw         = $row['contentTw'];
       echo "while loop this is new loop22";
-      print_r($GLOBALS);
 		  }
     }
   } else {
@@ -31,8 +30,6 @@
   }
   $conn->close();
  ?>
-
-
 
 
  <!DOCTYPE html>
@@ -85,7 +82,7 @@
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1>hey <?php echo $adminContentId; ?></h1>
+                         <h1><?php echo $adminContentId; ?></h1>
                          <h3><?php echo $adminDiffDesc; ?></h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
@@ -111,9 +108,8 @@
                  <div class="col-lg-5 col-sm-6">
                      <hr class="section-heading-spacer">
                      <div class="clearfix"></div>
-                     <h2 class="section-heading">Death to the Stock Photo:
-                         <br>Special Thanks</h2>
-                     <p class="lead">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. <a target="_blank" href="http://join.deathtothestockphoto.com/">Visit their website</a> to become a member.</p>
+                     <h2 class="section-heading"><?php echo $adminDiffDesc; ?></h2>
+                     <p class="lead"><?php echo $adminShortDesc; ?></p>
                  </div>
                  <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                      <img class="img-responsive" src="img/demo2/ipad.png" alt="">
@@ -132,9 +128,8 @@
                  <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                      <hr class="section-heading-spacer">
                      <div class="clearfix"></div>
-                     <h2 class="section-heading">3D Device Mockups
-                         <br>by Coolpeeps</h2>
-                     <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! <a target="_blank" href="http://www.psdcovers.com/">Visit their website</a> to download some of their awesome, free photoshop actions!</p>
+                     <h2 class="section-heading"><?php echo $adminUniqueDesc></h2>
+                     <p class="lead"><?php echo $adminBusinessPitch; ?></p>
                  </div>
              </div>
 
