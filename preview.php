@@ -33,7 +33,13 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
     echo "query Failure" .$conn->error;
   }
   $conn->close();
-  echo "fuck";
+  echo "ecco";
+  echo "ecco";
+  echo "ecco";
+  echo "ecco";
+  echo "ecco";
+  echo "ecco";
+  echo "ecco";
  ?>
 
 
@@ -48,6 +54,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
      <!-- Add custom CSS here -->
      <link rel="stylesheet" href="">
+     <script src="js/preview.js"></script>
      <title>Preview your page</title>
    </head>
    <body>
@@ -86,7 +93,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1>asd</h1>
+                         <h1>a</h1>
                          <h3>A Template by Blossom</h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">

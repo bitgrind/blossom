@@ -1,7 +1,7 @@
 
 //php vars
 var test ="testString";
-var previewId = <?php echo $previewId; ?>;
+var previewId = <?php echo $previewId;?>;
 var userId = <?php echo $userId; ?>;
 var contactId = <?php echo $contactId; ?>;
 var cssLink = <?php echo $cssLink; ?>;
@@ -18,5 +18,5 @@ var twitter = <?php echo $twitter; ?>;
 
 
 $(function(){
-  $(".intro-message h1").append(test);
+  $(".intro-message h1").text("test");
 });//jQuery
