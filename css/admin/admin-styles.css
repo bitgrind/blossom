@@ -5,10 +5,18 @@ body {
   padding: 0;
 }
 
+
 #siteAdmin{
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
   }
+
+.dashboard-h2-style {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+
 /*** divs to hide ***/
 .account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
   display: none;
@@ -24,6 +32,7 @@ body {
 
 .header {
   background-color: #333;
+  border-bottom: #ccc;
   color: #fff;
 }
 
@@ -54,20 +63,51 @@ body {
   font-family: cursive;
 }
 
+/*** Main Nav ***/
+
 .mainNav {
   list-style-type: none;
   text-align: center;
   padding-top: 55px;
 }
 
+.mainNav a {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.mainNav a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+a:visited {
+  color: #ccc;
+  text-decoration: none;
+}
+
 .mainNav li {
   display: inline;
 }
 
+/*** Side Nav ***/
+
 .side-nav1 {
-  background-color: coral;
+  background-color: #333;
+  color: #ccc;
+  border-top: 1px solid #ccc;
   margin-bottom: 0;
 }
+
+.logo a {
+  color: #ccc;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px #ccc;
+}
+
 
 .side-nav1 h2 {
   text-align: center;
@@ -77,6 +117,10 @@ ul.sideNav {
   font-size: 30px;
   padding-left: 20px;
   list-style-type: none;
+}
+
+ul.sideNav a {
+  color: #ccc;
 }
 
 /*** Dropdown ***/
@@ -163,6 +207,15 @@ span.tango-orange {
 
 
 /*** Panel Styles ***/
+
+.panel-default > .panel-heading {
+  background-color: #333;
+  color: #ccc;
+}
+
+.btn-default {
+  color: #333;
+}
 
 .change-pass-btn {
   padding-top: 15px;
