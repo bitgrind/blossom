@@ -1,5 +1,4 @@
 $(function(){
-
   //TYPED JS
   $("#js-typed").typed({
       stringsElement: $('#typed-strings'),
@@ -12,8 +11,7 @@ $(function(){
   });
 
   //REGISTRATION FORM
-  $("#register").submit(function(){
-    event.preventDefault();
+  $("#register").on("keypress",function(){
     var email = $("#emailSignUp").val();
     var password = $("#passwordSignUp").val();
     var passwordRepeat = $("input#password2").val();
@@ -22,9 +20,9 @@ $(function(){
     if( ((email && password && passwordRepeat) !== "") && (password === passwordRepeat)){
       location.href= "build.html";
     }else if ((password !== passwordRepeat)){
-      alert("Password does not match!");
+      //alert("Password does not match!");
     }else{
-      alert("Please fill in all the inputs");
+      //alert("Please fill in all the inputs");
     }
   });//REGISTER
 

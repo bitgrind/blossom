@@ -1,9 +1,9 @@
 <?php
 
-  include_once  "php/db-config.php";
+  include_once  "php/connect.php";
 
   //print_r("<br>Globals: ".$GLOBALS);
-  echo '<br><br>post those globs '.phpinfo();
+  //echo '<br><br>post those globs '.phpinfo();
 //  print_r("<br><br><br>Post: ".$_POST['business-name']);
 
 
@@ -34,7 +34,7 @@
 //USER VARIBLES
   //$userName ="";
 
-  $contentUserId = "1";
+  $contentUserId = $_GET["id"];
   $contentContactId = "1";
 
 
@@ -42,7 +42,6 @@
 
   echo "Host: " . $dbHost. ", User: " . $dbUser. ", Pw: " . $dbPw. ", Table: " . $dbName;
 
-  $conn = new mysqli($dbHost, $dbUser, $dbPw, $dbName);
 
   // if ($conn->connect_error) {
   //   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
