@@ -24,7 +24,7 @@
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
-            <h2><a href="index.html">Blossom</a></h2>
+            <h2><a href="index.php">Blossom</a></h2>
           </div>
         </div>
         <div class="col-md-6">
@@ -91,7 +91,11 @@
                             <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                           </div>
                           <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" name="headerEditForm">Save</button>
+                            <button class="btn btn-primary" type="submit" id="headerSave" name="headerEditForm">Save</button>
+                          </div>
+                          <div class="alert header-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
                           </div>
                         </form>
                       </div>
@@ -117,7 +121,11 @@
                             <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                           </div>
                           <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" name="paragraphEditForm">Save</button>
+                            <button class="btn btn-primary" type="submit" id="paragraphSave" name="paragraphEditForm">Save</button>
+                          </div>
+                          <div class="alert paragraph-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
                           </div>
                         </form>
                       </div>
@@ -134,19 +142,10 @@
                         <form id="backgroundEditForm" action="?" method="post">
                           <div class="input-group">
                             <label for="header-font-family">Select a preselected color</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Color Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#" id="firebrick-red"><span class="firebrick-red">Firebrick Red</span></a></li>
-                                <li><a href="#" id="collosal-blue" class="collosal-blue"><span class="collosal-blue">Collosal Blue</span></a></li>
-                                <li><a href="#" id="tango-orange" class="tango-orange"><span class="tango-orange">Tango Orange</span></a></li>
-                              </ul>
-                            </div>
                             <select id="backgroundColorSelect">
-                              <option value="serif"><span class="serif-font">Serif</span></option>
-                              <option value="sans-serif"><span class="sans-serif-font">Sans-Serif</span></option>
-                              <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
+                              <option value="red"><span class="firebrick-red">Firebrick Red</span></option>
+                              <option value="blue"><span class="collosal-blue">Collosal Blue</span></option>
+                              <option value="orange"><span class="tango-orange">Tango Orange</span></option>
                             </select>
                           </div>
                           <div class="input-group">
@@ -154,7 +153,11 @@
                             <input type="text" id="background-color" name="background-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                           </div>
                           <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" name="backgroundEditForm">Save</button>
+                            <button class="btn btn-primary" type="submit" id="backgroundSave" name="backgroundEditForm">Save</button>
+                          </div>
+                          <div class="alert background-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
                           </div>
                         </form>
                       </div>
@@ -164,28 +167,23 @@
                   <div class="col-md-6">
                     <div class="panel panel-primary">
                       <div class="panel-heading">
-                        <h2>Unknown</h2>
+                        <h2>Theme Selection</h2>
                       </div>
                       <div class="panel-body">
-                        <form id="unknownEditForm" action="?" method="post">
+                        <form id="themeEditForm" action="?" method="post">
                           <div class="input-group">
-                            <label for="header-font-family">Font Family</label>
-                            <div class="dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                              <li><a href="#" class="serif-font">Serif</a></li>
-                              <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                              <li><a href="#" class="cursive-font">Cursive</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="input-group">
-                            <label for="header-color">Paragraph Color</label>
-                            <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                            <label for="themeSelect">Select a theme</label>
+                            <select id="themeSelect">
+                              <option value="template1">Theme 1</option>
+                              <option value="template2">Theme 2</option>
+                            </select>
                           </div>
                           <div class="edit-button">
-                            <button class="btn btn-primary" type="submit" name="unknownEditForm">Save</button>
+                            <button class="btn btn-primary" type="submit" id="themeSave" name="themeEditForm">Save</button>
+                          </div>
+                          <div class="alert theme-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
                           </div>
                         </form>
                       </div>

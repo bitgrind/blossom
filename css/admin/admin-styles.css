@@ -6,7 +6,7 @@ body {
 }
 
 /*** divs to hide ***/
-.account, .site1, .site2, .domains {
+.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
   display: none;
 }
 
@@ -106,30 +106,30 @@ ul.dropdown-menu {
   text-align: center;
 }
 
-.serif-font {
+span.serif-font {
   font-family: serif;
   font-size: 20px;
 }
 
-.sans-serif-font {
+span.sans-serif-font {
   font-family: sans-serif;
   font-size: 18px;
 }
 
-.cursive-font {
+span.cursive-font {
   font-family: cursive;
   font-size: 20px;
 }
 
-.firebrick-red {
+span.firebrick-red {
   color: firebrick;
 }
 
-.collosal-blue {
+span.collosal-blue {
   color: cornflowerblue;
 }
 
-.tango-orange {
+span.tango-orange {
   color: darkorange;
 }
 
