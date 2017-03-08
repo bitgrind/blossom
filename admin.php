@@ -61,11 +61,10 @@
         <div class="col-md-6">
           <div class="logo">
             <h2><a href="index.html">Blossom</a></h2>
-              <h2>contentBusinessName</h2>
-          </div>
+              </div>
         </div>
         <div>
-          <h2>contentBusinessName</h2>
+          <h2><?php echo $businessName;?></h2>
         </div>
         <div class="col-md-6">
           <ul class="mainNav">
