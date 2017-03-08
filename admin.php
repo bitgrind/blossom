@@ -64,7 +64,7 @@
               </div>
         </div>
         <div>
-          <h2><?php echo $businessName;?></h2>
+          <h2><?php echo $adminBusinessName;?></h2>
         </div>
         <div class="col-md-6">
           <ul class="mainNav">
@@ -106,7 +106,7 @@
                   <div class="col-md-6">
                     <div class="panel panel-primary">
                       <div class="panel-heading">
-                        <h2>Header <?php echo $adminContentId;?></h2>
+                        <h2>Header <?php echo $adminContentId; ?></h2>
                       </div>
                       <div class="panel-body">
 <!--
