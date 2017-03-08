@@ -43,8 +43,6 @@
       $contentId = mysqli_insert_id($conn);
       header('Location: admin.php?contentId='.$contentId);
     }
-  } else {
-    echo "query Failure" .$conn->error;
   }
   $conn->close();
  ?>

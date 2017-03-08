@@ -22,8 +22,8 @@
   		$previewContentIg         = $row['contentIg'];
   		$previewContentLk         = $row['contentLk'];
   		$previewContentTw         = $row['contentTw'];
-      echo "while loop this is new loop";
-      print_r($globals);
+      echo "while loop this is new loop22";
+      print_r($GLOBALS);
 		  }
     }
   } else {
