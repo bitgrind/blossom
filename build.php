@@ -35,12 +35,12 @@
   //INSERTING new Content into Table
   $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
-  print_r($globals);
+  print_r($POST);
 
   /* Prepare statement */
-  if($_POST['buildForm'] == "newBuildForm") {
+  if($_POST['buildForm'] === "newBuildForm") {
     if($conn->query($contentSql)){
-      $contentId = mysqli_insert_id($conn)
+      $contentId = mysqli_insert_id($conn);
       header('Location: admin.php?contentId='.$contentId);
     }
   } else {
