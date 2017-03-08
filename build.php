@@ -5,8 +5,8 @@
 //CONTENT VARIBLES
   $contentBusinessName        = $_POST['business-name'];
   $contentDifferentStatement  = $_POST['different-statement'];
-  $contentSmallDesc           = $_POST['small-description'];
-  $contentUniqueStatement     = $_POST['unique-statement'];
+  $contentShortDesc           = $_POST['small-description'];
+  $contentUniqueDesc     = $_POST['unique-statement'];
   $contentBusinessPitch       = $_POST['business-pitch'];
   $contentService1            = $_POST['service-item-1'];
   $contentService2            = $_POST['service-item-2'];
@@ -33,7 +33,7 @@
   $contentContactId = "1";
 
   //INSERTING new Content into Table
-  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
   print_r($POST);
 

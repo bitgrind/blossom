@@ -1,3 +1,11 @@
+<?php
+  include_once  "php/connect.php";
+  $adminUserId = $_GET["userId"];
+  $adminContentId = $_GET["contentId"];
+  print_r($_POST);
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 
