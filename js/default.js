@@ -54,28 +54,6 @@ $("#editNav").click(function() {
   $(".edit").show();
 });
 
-/*** Edit forms ***/
-$("#headerEditForm").submit(function(event) {
-  event.preventDefault();
-  alert("submit successful");
-  
-  
-});
-
-$("#paragraphEditForm").submit(function(event) {
-  event.preventDefault();
-  alert("submit successful");
-});
-
-$("#backgroundEditForm").submit(function(event) {
-  event.preventDefault();
-  alert("submit successful");
-});
-
-$("#unknownEditForm").submit(function(event) {
-  event.preventDefault();
-  alert("submit successful");
-});
 
 
 
