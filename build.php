@@ -36,7 +36,7 @@
   $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
   /* Prepare statement */
-  if($_POST['userSignUp'] == "newUserSignUp") {
+  if($_POST['buildForm'] == "newBuildForm") {
     $contentId = mysqli_insert_id($conn);
     header('Location: admin.php?userId='.$contentUserId.'&contentId='.$contentId);
   } else {
@@ -175,7 +175,7 @@
                     </div>
                     <!--closes col-md-6 -->
                     <div class="buttonStyles">
-                        <button name="buildForm" class="btn btn-primary" type="submit" id="submitBtn">
+                        <button name="buildForm" value="newBuildForm" class="btn btn-primary" type="submit" id="submitBtn">
                         <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
                       </button>
                     </div>
