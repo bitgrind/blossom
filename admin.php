@@ -53,7 +53,6 @@
   <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
     <script>var jscontentId = <?php echo $adminContentId; ?>;console.log(jscontentId);</script>
 </head>
-
 <body class="bg-silver">
   <div class="container-fluid main-container">
       <div class="row header">
@@ -66,8 +65,8 @@
 
         <div class="col-md-5">
           <ul class="mainNav">
-            <li>Admin</li>
-            <li>Domain</li>
+            <li>Admin <a href="admin.php"></a></li>
+            <li>Domain<a href="https://www.godaddy.com/domains/domain-name-search"></a></li>
             <li>Support</li>
           </ul>
         </div>

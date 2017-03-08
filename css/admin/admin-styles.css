@@ -9,6 +9,7 @@ body {
 #siteAdmin{
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
+  padding-top: 20px;
   }
 .mainNav > li{
   padding-right: 15px;
