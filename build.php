@@ -37,28 +37,8 @@
   $contentUserId = $_GET["id"];
   $contentContactId = "1";
 
-
-//MySQLi
-
-  echo "Host: " . $dbHost. ", User: " . $dbUser. ", Pw: " . $dbPw. ", Table: " . $dbName;
-
-
-  // if ($conn->connect_error) {
-  //   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
-  // } else {
-  //   echo "connected!";
-  // }
-
-  // $sql = "SELECT * FROM users";
-  //
-  // $rs = $conn->query($sql);
-  //
-  // print_r($rs);
-
   //INSERTING new Content into Table
   $sql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
-
-  echo "<br><br>".$sql;
 
   /* Prepare statement */
   if($conn->query($sql)) {
@@ -68,7 +48,6 @@
   }
 
   $conn->close();
-
  ?>
 <!DOCTYPE html>
 <html>
