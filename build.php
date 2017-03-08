@@ -38,12 +38,12 @@
   $contentContactId = "1";
 
   //INSERTING new Content into Table
-  $sql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
   /* Prepare statement */
-  if($conn->query($sql)) {
-    $newId = mysqli_insert_id($conn);
-    header('Location: admin.php?userId='.$contentUserId.'&amp;contentId='.$newId);
+  if($conn->query($contentSql)) {
+    $contentId = mysqli_insert_id($conn);
+    header('Location: admin.php?userId='.$contentUserId.'&contentId='.$contentId);
   } else {
     echo "query Failure" .$conn->error;
   }
