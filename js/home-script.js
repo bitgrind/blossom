@@ -20,9 +20,9 @@ $(function(){
     if( ((email && password && passwordRepeat) !== "") && (password === passwordRepeat)){
       location.href= "build.html";
     }else if ((password !== passwordRepeat)){
-      alert("Password does not match!");
+      //alert("Password does not match!");
     }else{
-      alert("Please fill in all the inputs");
+      //alert("Please fill in all the inputs");
     }
   });//REGISTER
 

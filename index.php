@@ -18,8 +18,8 @@
 
 
    if($conn->query($insUserSql)){
-     $newId = mysqli_insert_id();
-     echo $newId;
+     $newId = mysqli_insert_id($conn);
+     head("location:")
    }
  }
 
