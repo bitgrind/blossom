@@ -35,6 +35,8 @@
   //INSERTING new Content into Table
   $contentSql="INSERT INTO content (contentUserId, contentContactId, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentShortPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentDifferentStatement."', '".$contentSmallDesc."', '".$contentUniqueStatement."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
+  print_r($globals);
+
   /* Prepare statement */
   if($_POST['buildForm'] == "newBuildForm") {
     if($conn->query($contentSql)){
@@ -44,9 +46,6 @@
   } else {
     echo "query Failure" .$conn->error;
   }
-
-  print_r(phpinfo());
-
   $conn->close();
  ?>
 <!DOCTYPE html>
@@ -188,8 +187,6 @@
     </div>
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script type="text/javascript" src="js/default.js"></script>
 </body>
 
 </html>
