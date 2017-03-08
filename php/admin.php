@@ -2,8 +2,10 @@
   include_once  "php/connect.php";
   $adminUserId = $_GET["userId"];
   $adminContentId = $_GET["contentId"];
+  print_r($GLOBALS);
   
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
+	print_r($adminSql);
 
   /* Prepare statement */
   if($_GET["contentId"]) {
@@ -11,9 +13,9 @@
 		while($row = $res->fetch_assoc()) {
 		print_r($row);//full array
 		print_r($row['contentId']);//specific value
-		$previewId = $row['contentId'];
-
-		//[contentId] => 15 [contentUserId] => 0 [contentContactId] => 1 [contentStyle] => [contentBusinessName] => [contentDifferentStatement] => [contentShortDesc] => [contentUniqueDesc] => [contentBusinessPitch] => [contentServices] => [contentFb] => [contentIg] => [contentLk] => [contentTw] =>
+		$previewId = $row['contentId']; 
+		
+		//[contentId] => 15 [contentUserId] => 0 [contentContactId] => 1 [contentStyle] => [contentBusinessName] => [contentDifferentStatement] => [contentShortDesc] => [contentUniqueDesc] => [contentBusinessPitch] => [contentServices] => [contentFb] => [contentIg] => [contentLk] => [contentTw] => 
     	}
     }
   } else {
@@ -21,6 +23,7 @@
   }
   $conn->close();
  ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +43,7 @@
   <!-- Custom CSS -->
   <!-- <link href="dist/css/flat-ui.min.css" rel="stylesheet"> -->
   <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
-    <script>var jscontentId = <?php echo $previewId; ?>;console.log(jscontentId);</script>
+  <script>var jscontentId = <?php echo $previewId; ?>;console.log(jscontentId);</script>
 </head>
 
 <body class="bg-silver">
