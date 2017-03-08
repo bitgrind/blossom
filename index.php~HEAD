@@ -1,19 +1,32 @@
+
 <?php
-include_once  "php/connect.php";
+
+  include_once  "php/connect.php";
 
  $userEmail = $_POST['emailSignUp'];
  $userPw1 = $_POST['passwordSignUp'];
  $userPw2 = $_POST['password2'];
 
+
+ //MVP
+ //$userSaltPW = "";
+
+
  $insUserSql="INSERT INTO users (userId, userEmail, userPassword, userContentId, userContactId) VALUES ('','".$userPw1."', '".$userEmail."', '','')";
 
  if($_POST['userSignUp'] == "newUserSignUp"){
+
+
    if($conn->query($insUserSql)){
      $newId = mysqli_insert_id($conn);
-     header('Location: build.php?id='.$newId);
+     header('Location:build.php/?id='.$newId);
    }
  }
+
+ $conn->close();
+
 ?>
+
 <!DOCTYPE html>
 <html>
 
