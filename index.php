@@ -107,8 +107,11 @@ include_once  "php/connect.php";
     </div>
 
     <div class="item">
-      <img src="img/temp3.jpg" alt="Flower">
+      <a href="index.php" data-target="#signUP" data-toggle="modal" src="img/demo2-sample.jpg" alt="demo2 imamge"></a>
     </div>
+
+    <a href="https://www.w3schools.com">
+    <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
 
     <div class="item">
       <img src="img/temp4.jpg" alt="Flower">
