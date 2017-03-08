@@ -66,9 +66,7 @@
   } else {
     echo "query Failure" .$conn->error;
   }
-
   $conn->close();
-
  ?>
 
 <!DOCTYPE html>

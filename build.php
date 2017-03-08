@@ -42,7 +42,8 @@
 
   /* Prepare statement */
   if($conn->query($sql)) {
-    echo "query successful!";
+    $newId = mysqli_insert_id($conn);
+    header('Location: admin.php?userId='.$contentUserId.',contentId='.$newId);
   } else {
     echo "query Failure" .$conn->error;
   }
