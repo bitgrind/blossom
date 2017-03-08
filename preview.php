@@ -1,7 +1,7 @@
 <?php
 
 $previewContentId = $_GET["contentId"];
-$contentSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
+$previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
 
 
  ?>
