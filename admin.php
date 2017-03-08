@@ -9,19 +9,19 @@
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
 		while($row = $res->fetch_assoc()) {
-  		$previewContentId         = $row['contentId'];
-  		$previewUserId            = $row['contentUserId'];
-  		$previewStyle             = $row['contentStyle'];
-  		$previewBusinessName      = $row['contentBusinessName'];
-  		$previewDiffDesc          = $row['contentDifferentStatement'];
-  		$previewShortDesc         = $row['contentShortDesc'];
-  		$previewUniqueDesc        = $row['contentUniqueDesc'];
-  		$previewBusinessPitch     = $row['contentBusinessPitch'];
-  		$previewServcies          = $row['contentServices'];
-  		$previewContentFb         = $row['contentFb'];
-  		$previewContentIg         = $row['contentIg'];
-  		$previewContentLk         = $row['contentLk'];
-  		$previewContentTw         = $row['contentTw'];
+  		$adminContentId         = $row['contentId'];
+  		$adminUserId            = $row['contentUserId'];
+  		$adminStyle             = $row['contentStyle'];
+  		$adminBusinessName      = $row['contentBusinessName'];
+  		$adminDiffDesc          = $row['contentDifferentStatement'];
+  		$adminShortDesc         = $row['contentShortDesc'];
+  		$adminUniqueDesc        = $row['contentUniqueDesc'];
+  		$adminBusinessPitch     = $row['contentBusinessPitch'];
+  		$adminServcies          = $row['contentServices'];
+  		$adminContentFb         = $row['contentFb'];
+  		$adminContentIg         = $row['contentIg'];
+  		$adminContentLk         = $row['contentLk'];
+  		$adminContentTw         = $row['contentTw'];
       echo "while loop this is new loop22";
       print_r($GLOBALS);
 		  }
@@ -52,7 +52,7 @@
   <!-- Custom CSS -->
   <!-- <link href="dist/css/flat-ui.min.css" rel="stylesheet"> -->
   <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
-    <script>var jscontentId = <?php echo $previewId; ?>;console.log(jscontentId);</script>
+    <script>var jscontentId = <?php echo $adminContentId; ?>;console.log(jscontentId);</script>
 </head>
 
 <body class="bg-silver">
