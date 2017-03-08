@@ -1,27 +1,27 @@
 <?php
   include_once  "php/connect.php";
-  $adminUserId = $_GET["userId"];
-  $adminContentId = $_GET["contentId"];
+  $previewUserId = $_GET["userId"];
+  $previewContentId = $_GET["contentId"];
 
-  $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
+  $previewSql ="SELECT * FROM `content` WHERE `contentId`=".$previewContentId;
 
   /* Prepare statement */
   if($_GET["contentId"]) {
-    if($res = $conn->query($adminSql)){
+    if($res = $conn->query($previewSql)){
 		while($row = $res->fetch_assoc()) {
-  		$adminContentId         = $row['contentId'];
-  		$adminUserId            = $row['contentUserId'];
-  		$adminStyle             = $row['contentStyle'];
-  		$adminBusinessName      = $row['contentBusinessName'];
-  		$adminDiffDesc          = $row['contentDifferentStatement'];
-  		$adminShortDesc         = $row['contentShortDesc'];
-  		$adminUniqueDesc        = $row['contentUniqueDesc'];
-  		$adminBusinessPitch     = $row['contentBusinessPitch'];
-  		$adminServcies          = $row['contentServices'];
-  		$adminContentFb         = $row['contentFb'];
-  		$adminContentIg         = $row['contentIg'];
-  		$adminContentLk         = $row['contentLk'];
-  		$adminContentTw         = $row['contentTw'];
+  		$previewContentId         = $row['contentId'];
+  		$previewUserId            = $row['contentUserId'];
+  		$previewStyle             = $row['contentStyle'];
+  		$previewBusinessName      = $row['contentBusinessName'];
+  		$previewDiffDesc          = $row['contentDifferentStatement'];
+  		$previewShortDesc         = $row['contentShortDesc'];
+  		$previewUniqueDesc        = $row['contentUniqueDesc'];
+  		$previewBusinessPitch     = $row['contentBusinessPitch'];
+  		$previewServcies          = $row['contentServices'];
+  		$previewContentFb         = $row['contentFb'];
+  		$previewContentIg         = $row['contentIg'];
+  		$previewContentLk         = $row['contentLk'];
+  		$previewContentTw         = $row['contentTw'];
       echo "while loop this is new loop22";
 		  }
     }
@@ -82,8 +82,8 @@
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1><?php echo $adminContentId; ?></h1>
-                         <h3><?php echo $adminDiffDesc; ?></h3>
+                         <h1><?php echo $previewContentId; ?></h1>
+                         <h3><?php echo $previewDiffDesc; ?></h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
                              <li><a href="http://blossom.rosecityvinyl.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -108,8 +108,8 @@
                  <div class="col-lg-5 col-sm-6">
                      <hr class="section-heading-spacer">
                      <div class="clearfix"></div>
-                     <h2 class="section-heading"><?php echo $adminDiffDesc; ?></h2>
-                     <p class="lead"><?php echo $adminShortDesc; ?></p>
+                     <h2 class="section-heading"><?php echo $previewDiffDesc; ?></h2>
+                     <p class="lead"><?php echo $previewShortDesc; ?></p>
                  </div>
                  <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                      <img class="img-responsive" src="img/demo2/ipad.png" alt="">
@@ -128,8 +128,8 @@
                  <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                      <hr class="section-heading-spacer">
                      <div class="clearfix"></div>
-                     <h2 class="section-heading"><?php echo $adminUniqueDesc></h2>
-                     <p class="lead"><?php echo $adminBusinessPitch; ?></p>
+                     <h2 class="section-heading"><?php echo $previewUniqueDesc></h2>
+                     <p class="lead"><?php echo $previewBusinessPitch; ?></p>
                  </div>
              </div>
 
