@@ -123,6 +123,10 @@ h1#heading{
   width: 100%;
 }
 
+.img-responsive{
+  width:100%;
+  height: 400px;
+}
 
 
 /* code for animated blinking cursor */
