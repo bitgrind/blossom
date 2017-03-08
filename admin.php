@@ -33,11 +33,8 @@
   }
   $conn->close();
  ?>
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Meta Tags -->
   <meta charset="UTF-8">
@@ -69,15 +66,14 @@
 
         <div class="col-md-5">
           <ul class="mainNav">
-            <li>nav1</li>
-            <li>nav2</li>
-            <li>nav3</li>
+            <li>Admin</li>
+            <li>Domain</li>
+            <li>Support</li>
           </ul>
         </div>
           <div class="col-md-1" id="siteName">
-            <h3><?php echo $adminBusinessName;?></h3>
+            <h5><?php echo $adminBusinessName;?></h5>
           </div> <!-- col-md-1 -->
-
     </div>
       <div class="row full-height">
         <div class="col-md-2 side-nav1 full-height container">

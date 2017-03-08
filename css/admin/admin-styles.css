@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+#siteAdmin{
+  color: rgba(#1277c1, 0.72);
+  font-family: fantasy;
+  }
 /*** divs to hide ***/
 .account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
   display: none;
@@ -154,7 +158,7 @@ span.tango-orange {
 }
 
 .sideNav a:hover {
-  
+
 }
 
 
@@ -195,10 +199,3 @@ span.tango-orange {
 .domains h2 {
   text-align: center;
 }
-
-
-
-
-
-
-
