@@ -1,12 +1,4 @@
 <?php
-	/**
-	 * GIT DEPLOYMENT SCRIPT
-	 *
-	 * Used for automatically deploying websites via github or bitbucket, more deets here:
-	 *
-	 *		https://gist.github.com/1809044
-	 */
-	// The commands
 	$commands = array(
 		'echo $PWD',
 		'whoami',

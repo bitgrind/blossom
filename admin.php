@@ -2,19 +2,29 @@
   include_once  "php/connect.php";
   $adminUserId = $_GET["userId"];
   $adminContentId = $_GET["contentId"];
-  
+
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
 		while($row = $res->fetch_assoc()) {
-		print_r($row);//full array
-		print_r($row['contentId']);//specific value
-		$previewId = $row['contentId'];
-
-		//[contentId] => 15 [contentUserId] => 0 [contentContactId] => 1 [contentStyle] => [contentBusinessName] => [contentDifferentStatement] => [contentShortDesc] => [contentUniqueDesc] => [contentBusinessPitch] => [contentServices] => [contentFb] => [contentIg] => [contentLk] => [contentTw] =>
-    	}
+  		$previewContentId         = $row['contentId'];
+  		$previewUserId            = $row['contentUserId'];
+  		$previewStyle             = $row['contentStyle'];
+  		$previewBusinessName      = $row['contentBusinessName'];
+  		$previewDiffDesc          = $row['contentDifferentStatement'];
+  		$previewShortDesc         = $row['contentShortDesc'];
+  		$previewUniqueDesc        = $row['contentUniqueDesc'];
+  		$previewBusinessPitch     = $row['contentBusinessPitch'];
+  		$previewServcies          = $row['contentServices'];
+  		$previewContentFb         = $row['contentFb'];
+  		$previewContentIg         = $row['contentIg'];
+  		$previewContentLk         = $row['contentLk'];
+  		$previewContentTw         = $row['contentTw'];
+      echo "while loop this is new loop";
+      print_r($globals);
+		  }
     }
   } else {
     echo "query Failure" .$conn->error;

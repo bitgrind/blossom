@@ -1,9 +1,10 @@
 <?php
   include_once  "php/connect.php";
-  $adminUserId = $_GET["userId"];
-  $adminContentId = $_GET["contentId"];
 
-  $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
+
+$previewContentId = $_GET["contentId"];
+$previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
+
 
   /* Prepare statement */
   if($_GET["contentId"]) {

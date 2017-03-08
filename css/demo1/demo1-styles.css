@@ -12,7 +12,9 @@ h1 {
   padding-top: 15px;
   margin-right: 20px;
 }
-
+small{
+  color: black;
+}
 p {
   font-size: 18px;
 }
@@ -35,7 +37,7 @@ a {
 }
 
 body {
-  background-image: url(img/cloud-circuit.jpg);
+  background-image: url(../../img/cloud-circuit.jpg);
   background-size: cover;
   background-repeat: no-repeat
 }
