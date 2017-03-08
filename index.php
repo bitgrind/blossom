@@ -8,16 +8,18 @@
  $userPw2 = $_POST['password2'];
 
 
- $userSaltPW = "";
+ //MVP
+ //$userSaltPW = "";
 
 
- $insUserSql="INSERT INTO users (userId, userPassword, userContentId, userContactId, userEmail) VALUES ('','".$userSaltPW."', '','','".$userEmail."')";
+ $insUserSql="INSERT INTO users (userId, userEmail, userPassword, userContentId, userContactId) VALUES ('','".$userPw1."', '".$userEmail."', '','')";
 
  if($_POST['userSignUp'] == "newUserSignUp"){
-   print_r($_POST);
-   echo "we have a user signup";
+
+
    if($conn->query($insUserSql)){
-     echo "seccuess user added!";
+     $newId = mysqli_insert_id();
+     echo $newId;
    }
  }
 
