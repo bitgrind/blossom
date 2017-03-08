@@ -34,7 +34,7 @@
 //USER VARIBLES
   //$userName ="";
 
-  $contentUserId = $_GET["id"];
+  $contentUserId = $_GET["userId"];
   $contentContactId = "1";
 
   //INSERTING new Content into Table
@@ -43,7 +43,7 @@
   /* Prepare statement */
   if($conn->query($sql)) {
     $newId = mysqli_insert_id($conn);
-    header('Location: admin.php?userId='.$contentUserId.',contentId='.$newId);
+    header('Location: admin.php?userId='.$contentUserId.'&amp;contentId='.$newId);
   } else {
     echo "query Failure" .$conn->error;
   }
