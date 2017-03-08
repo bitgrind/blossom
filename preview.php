@@ -33,6 +33,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
     echo "query Failure" .$conn->error;
   }
   $conn->close();
+  echo "fuck";
  ?>
 
 
