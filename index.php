@@ -37,7 +37,7 @@ include_once  "php/connect.php";
   <!-- BLOSSOM SHIT-->
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
   <script src="js/home-script.js"></script>
-  <title>Blossom CMS - TEST</title>
+  <title>Blossom CMS</title>
 </head>
 
 <body>
