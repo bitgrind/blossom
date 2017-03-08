@@ -100,7 +100,7 @@ $previewSql="SELECT * FROM 'content' WHERE 'contentId'=".$previewContentId;
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
-                         <h1><?php echo $previewId;?></h1>
+                         <h1>hey <?php echo $previewId;?></h1>
                          <h3>A Template by Blossom</h3>
                          <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
