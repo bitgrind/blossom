@@ -38,7 +38,7 @@
   /* Prepare statement */
   if($_POST['buildForm'] == "newBuildForm") {
     $contentId = mysqli_insert_id($conn);
-    header('Location: admin.php?userId='.$contentUserId.'&contentId='.$contentId);
+    header('Location: admin.php?contentId='.$contentId);
   } else {
     echo "query Failure" .$conn->error;
   }
