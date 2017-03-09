@@ -1,0 +1,5 @@
+.navbar-inverse {background-color:none;}
+
+.navbar-inverse .navbar-brand {color:#333;}
+
+.navbar-inverse .navbar-nav > li > a {color:#333;}

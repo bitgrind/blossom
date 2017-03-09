@@ -37,7 +37,7 @@ include_once  "php/connect.php";
   <script src="js/dist/jquery.easing.min.js"></script>
   <!-- BLOSSOM SHIT-->
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <!--<link href="css/blossom-styles.css" rel="stylesheet" type="text/css" />-->
+  <link href="css/blossom-styles.css" rel="stylesheet" type="text/css" />
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
