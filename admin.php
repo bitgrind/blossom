@@ -76,7 +76,7 @@
       <div class="row">
           <div class="col-md-2 side-nav1">
             <div class="side-nav-container">
-            <h2 class="dashboard-h2-style">Dashboard</h2>
+            <h2>Dashboard</h2>
             <div class="dropdown">
               <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
