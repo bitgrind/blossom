@@ -5,6 +5,7 @@ body > div {height:100vh;}
 
 .intro-header {
   margin-top:40px;
+  text-align: center;
 }
 
 #footerStyle {
