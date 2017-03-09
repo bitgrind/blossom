@@ -276,13 +276,15 @@
                     <table class="table">
                       <thead>
                         <tr>
+                          <th>Name</th>
                           <th>Email</th>
                           <th>Websites</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="user-info" id="accountEmail">example@gmail.com</th>
+                          <th class="user-info"><?php echo $contactName; ?></th>
+                          <th class="user-info" id="accountEmail"><?php echo $contactEmail; ?></th>
                           <th class="user-info" id="accountWebsite">https://blossom.com</th>
                         </tr>
                       </tbody>
