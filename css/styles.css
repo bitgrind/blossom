@@ -22,11 +22,10 @@ a:hover{
   color: #ccc;
 }*/
 
-.panel > .panel-heading {
-  .panel-default > .panel-heading-custom {
-  background-color: #333;
-  color: #ccc; }
 
+.panel-default > .panel-heading {
+  background-color: #333;
+  color: #ccc;
 }
 
 h2{
