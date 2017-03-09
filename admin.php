@@ -90,8 +90,8 @@
             <div class="dropdown">
               <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="demo1" value="demo1">Demo 1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="demo2" value="demo2">Demo 2</a></li>
               </ul>
             </div>
             <hr />
