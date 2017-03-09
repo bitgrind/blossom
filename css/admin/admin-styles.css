@@ -2,6 +2,11 @@ body {
   color: #333;
 }
 
+/** Header **/
+.header {
+  background-color: #333;
+  border-bottom: #ccc;
+}
 
 #siteName {
   color: rgba(#1277c1, 0.72);
@@ -9,10 +14,17 @@ body {
   padding-top: 20px;
 }
 
+/** Logo **/
+.logo h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+
 .mainNav > li{
   padding-right: 15px;
-
 }
+
 .dashboard-h2-style {
   font-size: 3em;
   padding-bottom: 10px;
@@ -29,16 +41,6 @@ body {
   margin-top: 15px;
 }
 
-.header {
-  background-color: #333;
-  border-bottom: #ccc;
-}
-
-.logo h2 {
-  text-align: center;
-  font-size: 50px;
-  font-family: cursive;
-}
 
 /*** Main Nav ***/
 
