@@ -49,7 +49,20 @@ if($_GET["contentId"]) {
     <!-- Add custom CSS here -->
     <link href="css/demo2/demo2-B.css" rel="stylesheet">
     <link rel="stylesheet" href="css/preview.css">
-    <script src="js/preview.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $("#change").click(function(){
+        var val = $("#styles").val();
+        if (val === "st1"){
+          window.open("preview.php?contentId=" + <?php echo $previewContentId ?>, "_self")
+        }else if (val ==="st2"){
+          window.open("demo2b.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+        }else if(val ==="st3"){
+          window.open("demo2.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+        }
+      });
+    });//jQuery
+    </script>
 </head>
 
 <body>
