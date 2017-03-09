@@ -15,7 +15,7 @@
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
-    print_r($res);
+    //print_r($res);
     while($row = $res->fetch_assoc()) {
       $adminContentId         = $row['contentId'];
       $adminUserId            = $row['contentUserId'];
