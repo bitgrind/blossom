@@ -40,7 +40,20 @@ if($_GET["contentId"]) {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Add custom CSS here -->
   <link rel="stylesheet" href="css/preview.css">
-  <script src="js/preview.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("#change").click(function(){
+      var val = $("#styles").val();
+      if (val === "st1"){
+        window.open("preview.php?contentId=" + <?php echo $previewContentId ?>, "_self")
+      }else if (val ==="st2"){
+        window.open("demo2b.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+      }else if(val ==="st3"){
+        window.open("demo2.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+      }
+    });
+  });//jQuery
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Preview your page</title>
 </head>
