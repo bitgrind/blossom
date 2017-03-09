@@ -1,19 +1,19 @@
 <?php
-  include_once  "php/connect.php";
+  include  "php/connect.php";
   $adminUserId = $_GET["userId"];
   $adminContentId = $_GET["contentId"];
 
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
   //check for forms
-  print_r($GLOBALS);
   if($_POST['headerSave'] === 'newHeaderSave'){
-
+	echo "see ehader";
 
   }
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
+    print_r($res);
     while($row = $res->fetch_assoc()) {
       $adminContentId         = $row['contentId'];
       $adminUserId            = $row['contentUserId'];
@@ -60,7 +60,7 @@
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
-            <h2><a href="index.html">Blossom</a></h2>
+            <h2><a href="index.html">Blossom Build</a></h2>
           </div><!-- logo -->
         </div> <!-- col-md-6 -->
 
@@ -110,7 +110,7 @@
                           <h2>Header <?php echo $adminContentId; ?></h2>
                         </div>
                         <div class="panel-body">
-                          <form id="headerEditForm" action="?" method="post">
+                          <form id="headerEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
                               <label for="header-font-family">Font Family</label>
                               <select id="headerFontSelect">
@@ -140,7 +140,7 @@
                           <h2>Paragraph</h2>
                         </div>
                         <div class="panel-body">
-                          <form id="paragraphEditForm" action="?" method="post">
+                          <form id="paragraphEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
                               <label for="paragraph-font-family">Font Family</label>
                               <select id="paragraphFontSelect">
@@ -172,7 +172,7 @@
                           <h2>Background Color</h2>
                         </div>
                         <div class="panel-body">
-                          <form id="backgroundEditForm" action="?" method="post">
+                          <form id="backgroundEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
                               <label for="header-font-family">Select a preselected color</label>
                               <select id="backgroundColorSelect">
@@ -203,7 +203,7 @@
                           <h2>Theme Selection</h2>
                         </div>
                         <div class="panel-body">
-                          <form id="themeEditForm" action="?" method="post">
+                          <form id="themeEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
                               <label for="themeSelect">Select a theme</label>
                               <select id="themeSelect">
@@ -345,5 +345,4 @@
     <!-- Default JS -->
     <script type="text/javascript" src="js/default.js"></script>
   </body>
-
-  </html>
+</html>
