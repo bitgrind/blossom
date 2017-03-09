@@ -266,15 +266,15 @@ include_once  "php/connect.php";
           <form id="register" role="form" action="?" method="POST" class="registration-form">
             <div class="form-group">
               <label class="sr-only" for="form-email">Email</label>
-              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
+              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password">Password </label>
-              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" >
+              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password2">Confrim password</label>
-              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
+              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control" required>
             </div>
             <div class="modal-footer">
               <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>
