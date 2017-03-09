@@ -117,7 +117,7 @@ include_once  "php/connect.php";
               <img src="img/temp4.jpg" alt="image4">
             </a> -->
             <a href="#" data-target="#signUp" data-toggle="modal">
-              <img src="img/temp4" alt="demo2 image">
+              <img src="img/temp4.jpg" alt="demo2 image">
             </a>
           </div>
         </div><!-- carousel-inner -->
