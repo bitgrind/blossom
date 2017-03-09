@@ -127,13 +127,6 @@ h1#heading{
   width: 100%;
 }
 
-.container{
-  background-color: rgba (255,255,255,0.8)
-}
-.container img{
-  height: 40%;
-}
-
 .img-responsive{
   width: 100%;
 }
