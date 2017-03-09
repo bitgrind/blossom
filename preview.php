@@ -77,6 +77,7 @@ if($previewContactId){
   <title>Preview your page</title>
 </head>
 <body>
+  <span id="body-bg"></span>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">

@@ -364,6 +364,10 @@
                           <th class="user-info" id="domainsID2">2</th>
                           <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
                         </tr>
+                        <tr>
+                          <th class="user-info" id="domainsID3">3</th>
+                          <th class="user-info" id="domainsURL3">https://www.notforprofit.com</th>
+                        </tr>
                       </tbody>
                     </table>
                   </div>

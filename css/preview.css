@@ -27,6 +27,7 @@ body > div {height:100vh;}
 ul.contact-info {list-style-type: none;}
 ul.contact-info li {list-style: none;}
 
+#body-bg {z-index:-1;background-image:url('../img/blossom.jpg');background-size:cover;position:fixed;width:100%;height:100%;}
 
 #footerStyle h1 {margin:0;display:inline-block;}
 #footerStyle ul {display:inline-block;}
