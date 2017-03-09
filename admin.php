@@ -7,7 +7,9 @@
 
   //check for forms
   if($_POST['headerSave'] === 'newHeaderSave'){
-	echo "see ehader";
+	//echo "see newHeader<br><br>";
+	   $headerSql ="UPDATE content SET contentBusinessName='Blossom NameChange' WHERE contentId = 1".$adminContentId;
+	//print_r($headerSql);
 
   }
   /* Prepare statement */
@@ -112,19 +114,22 @@
                         <div class="panel-body">
                           <form id="headerEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
+                              <!--
                               <label for="header-font-family">Font Family</label>
-                              <select id="headerFontSelect">
+
+								<select id="headerFontSelect">
                                 <option value="serif"><span class="serif-font">Serif</span></option>
                                 <option value="sans-serif"><span class="sans-serif-font">Sans-Serif</span></option>
                                 <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
                               </select>
+							 -->
                             </div>
                             <div class="input-group">
-                              <label for="header-color">Header Color</label>
-                              <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                              <label for="header-color">Site Title</label>
+                              <input type="text" id="businessName" name="businessNameChange" class="form-control">
                             </div>
                             <div class="edit-button">
-                              <button id="headerSave" name="headerSave" value="newHeaderSave" class="btn btn-default save-buttons" type="submit">Save</button>
+                              <button id="headerSave" name="newBusinessName" value="NameChangeSubmit" class="btn btn-default save-buttons" type="submit">Save</button>
                             </div>
                             <div class="alert header-alert alert-success alert-dismissable">
                               <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
