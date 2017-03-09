@@ -5,33 +5,20 @@
 
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
-  //Header Form
+  //Business Name form
   if($_POST['headerSave'] === 'newHeaderSave'){
-	//echo "see newHeader<br><br>";
-	   $headerSql ="UPDATE content SET contentBusinessName='Blossom NameChange' WHERE contentId = ".$adminContentId;
-	//print_r($headerSql);
-
+    $newBusinessName = $_POST['newBusinessName']; //BTN.name prop
+    $headerSql ="UPDATE content SET contentBusinessName='" . $newBusinessName ."' WHERE contentId = ".$adminContentId;
+    $conn->query($headerSql);
   }
 
   //Short Description form
   if($_POST['shortDescSave'] === 'newShortDescSave'){
-	//echo "see newHeader<br><br>";
-    $newShortDesc = $_POST['newShortDesc'];
-	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
+    $newShortDesc = $_POST['newShortDesc']; // BTN.name prop
+    $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
     $conn->query($shortDescSql);
-	//print_r($headerSql);
-
   }
 
-  //check for forms
-  if($_POST['shortDescSave'] === 'php name'){
-	//echo "see newHeader<br><br>";
-    $newShortDesc = $_POST['name of button'];
-	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
-    $conn->query($shortDescSql);
-	//print_r($headerSql);
-
-  }
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
@@ -103,8 +90,8 @@
             <div class="dropdown">
               <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="demo1" value="demo1">Demo 1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="demo2" value="demo2">Demo 2</a></li>
               </ul>
             </div>
             <hr />
@@ -133,8 +120,8 @@
                         </div>
                         <div class="panel-body">
                           <form id="headerEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
+<!--
                             <div class="input-group">
-                              <!--
                               <label for="header-font-family">Font Family</label>
 
 								<select id="headerFontSelect">
@@ -142,8 +129,8 @@
                                 <option value="sans-serif"><span class="sans-serif-font">Sans-Serif</span></option>
                                 <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
                               </select>
-							 -->
                             </div>
+-->
                             <div class="input-group">
                               <label for="header-color">Site Title</label>
                               <input type="text" id="businessName" name="businessNameChange" class="form-control">
@@ -167,7 +154,7 @@
                         <div class="panel-body">
                           <form id="paragraphEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
-                              <label for="header-color">Site Title</label>
+                              <label for="header-color">Short Description</label>
                               <input type="text" id="businessName" name="businessNameChange" class="form-control">
                             </div>
 <!--

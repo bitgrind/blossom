@@ -28,14 +28,12 @@ $("#previewNav").click(function() {
   }
 });
 
-$("#site2").click(function() {
+$("#demo1").click(function() {
   $("#active-dropdown-text").text("Demo 1");
-
 });
 
-$("#site1").click(function() {
+$("#demo2").click(function() {
   $("#active-dropdown-text").text("Demo 2");
-
 });
 
 $("#changePasswordBtn").click(function() {
