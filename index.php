@@ -37,7 +37,6 @@ include_once  "php/connect.php";
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
-
 <body>
   <span id="body-bg"></span>
   <!-- Static navbar -->
@@ -58,39 +57,40 @@ include_once  "php/connect.php";
       <!--/.container-fluid -->
     </nav>
   </header>
-  <div class="content">
-    <section class="container" id="page1">
-      <div id="landingContent">
-        <div>
-          <h1 id="heading">Blossom makes website for</h1>
-          <h1><span id="js-typed"></span></h1>
-          <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
-        </div>
-
-        <div class="type-wrap">
-          <div id="typed-strings">
-            <p>personal users.</p>
-            <p>small businesses</p>
-            <p>food carts</p>
-            <p>bands</p>
-            <p>artists</p>
-            <p>restaurants</p>
-          </div>
-          <span id="typed" style="white-space:pre;"></span>
-        </div>
-
-
-
-        <div id="buttons">
-          <button data-toggle="modal" data-target="#signUp" type="button" class="btn btn-default">Register now!</button>
-          <button type="button" class="btn btn-default"><a href="#page2" class="page-scroll"> How it works</a></button>
-        </div>
+  <section class="container" id="page1">
+    <div id="landingContent">
+      <div>
+        <h1 id="heading">Blossom makes website for</h1>
+        <h1><span id="js-typed"></span></h1>
+        <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
       </div>
-    </section>
-    <!--page1-->
 
+      <div class="type-wrap">
+        <div id="typed-strings">
+          <p>personal users.</p>
+          <p>small businesses</p>
+          <p>food carts</p>
+          <p>bands</p>
+          <p>artists</p>
+          <p>restaurants</p>
+        </div>
+        <span id="typed" style="white-space:pre;"></span>
+      </div>
+
+
+
+      <div id="buttons">
+        <button data-toggle="modal" data-target="#signUp" type="button" class="btn btn-default">Register now!</button>
+        <button type="button" class="btn btn-default"><a href="#page2" class="page-scroll"> How it works</a></button>
+      </div>
+    </div>
+  </section>
+  <!--page1-->
+
+  <!--page2-->
+  <div class="box-shadow">
     <section class="container" id="page2">
-      <h1>Demo pages</h1>
+      <!-- <h1>Demo pages</h1> -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -103,17 +103,19 @@ include_once  "php/connect.php";
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox" id="caroImg">
           <div class="item active">
-            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp1.jpg" alt="image one"></a>
+            <img src="img/temp1.jpg" alt="Chania">
           </div>
 
           <div class="item">
-            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.JPG" alt="demo2 image"></a>
+            <a href="#" data-target="#signUp" data-toggle="modal">
+              <img src="img/demo2-sample.JPG" alt="demo2 image">
+            </a>
           </div>
 
           <div class="item">
-            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp4.jpg" alt="image three"></a>
+            <img src="img/temp4.jpg" alt="image four">
           </div>
-        </div>
+        </div><!-- carousel-inner -->
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -129,6 +131,7 @@ include_once  "php/connect.php";
 
     <section class="container" id="page3">
       <div class="row">
+        <br />
         <h1>Here's how it works</h1>
         <p>
           After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
@@ -136,7 +139,7 @@ include_once  "php/connect.php";
         </div>
         <div class="row" id="steps">
           <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
+            <img src="img/website_templates.png" alt="" />
             <h2 id="caption">1. Choose a website template. </h2>
           </div>
           <div class="col-md-4">
@@ -182,39 +185,39 @@ include_once  "php/connect.php";
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
         </div>
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="img/restuarant.jpg" alt="">
-          </a>
-          <h3>
-            <a href="#">Small Businesses</a>
-          </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div><div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="img/restuarant.jpg" alt="">
-          </a>
-          <h3>
-            <a href="#">Food Carts</a>
-          </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-
-        <div class="col-md-4 portfolio-item">
-          <a href="#">
-            <img class="img-responsive" src="img/restuarant.jpg" alt="">
-          </a>
-          <h3>
-            <a href="#">Bands</a>
-          </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <div class="row">
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/band.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Bands</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/smallBS.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Small Businesses</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/foodCart.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Food Carts</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
         </div>
       </section>
-
-        <footer>
-          <h1><a href="">Blossom</a></h1>
-        </footer>
-
+      <footer>
+        <h1><a href="">Blossom</a></h1>
+      </footer>
 
       <!---page3-->
 
