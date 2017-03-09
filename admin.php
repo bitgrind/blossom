@@ -382,46 +382,77 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th><a href="#">Input ID</a></th>
                             <th><a href="#">Your Input</a></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th class="user-info" id="domainsID1">1</th>
-                            <th class="user-info" id="domainsURL1">$adminContentId</th>
+                            <th class="user-info" id="domainsID1">Business Name</th>
+                            <th class="user-info" id="domainsURL1"><?php echo $adminBusinessName; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">2</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Desc</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $adminDiffDesc; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">3</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Short Desc</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $adminShortDesc; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">4</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Unique Desc</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $adminUniqueDesc; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">5</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Pitch</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $adminBusinessPitch; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">6</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Services</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $adminServcies; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">7</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Facebook</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $ContentFb; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">8</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">Instagram</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $ContentIg; ?></th>
                           </tr>
                           <tr>
-                            <th class="user-info" id="domainsID2">9</th>
-                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                            <th class="user-info" id="domainsID2">LinkedIn</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $ContentLk; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Twitter</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $ContentTw; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Name</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactName; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Number</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactNumber; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Email</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactEmail; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Street Address</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactAddress; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">City</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactCity; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">State</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactState; ?></th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">Zip Code</th>
+                            <th class="user-info" id="domainsURL2"><?php echo $contactZip; ?></th>
                           </tr>
                         </tbody>
                       </table>
