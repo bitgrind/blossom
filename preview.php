@@ -213,7 +213,8 @@ $conn->close();
         </div>
       </div>
       <!-- /.container -->
-      <footer> 
+      <footer>
+        <hr class="intro-divider">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">

@@ -39,3 +39,6 @@ ul.contact-info li {list-style: none;}
 #footerStyle li {width:30%;display:inline-block;}
 #footerStyle select.form-control {width: 30%; display:inline-block;}
 #footerStyle button{float:right;}
+
+footer {padding-top:100px;margin-top:100px;}
+footer .row {border-bottom:1px solid #ddd;border-top:1px solid #ddd;}
