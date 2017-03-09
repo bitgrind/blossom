@@ -21,24 +21,22 @@ $contactFullName            = $_POST['contact-full-name'];
 $contactContentId           = $contentUserId;
 $contactPhone               = $_POST['contact-phone'];
 $contactEmail               = $_POST['contact-email'];
-$contactAddress             = $_POST['contact-streeaddress'];
+$contactAddress             = $_POST['contact-address'];
 $contactCity                = $_POST['contact-city'];
 $contactState               = $_POST['contact-state'];
 $contactZip                 = $_POST['contact-zip'];
-print_r($GLOBALS);
-echo "<br><br>";
+
 if($_POST['buildForm']) {
   if($contactFullName) {
     $insertContact = "INSERT INTO `contact`(`contactContentId`, `contactName`, `contactNumber`, `contactEmail`, `contactAddress`, `contactCity`, `contactState`, `contactZip`) VALUES ('".$contactContentId."', '".$contactFullName."', '".$contactPhone."', '".$contactEmail."', '".$contactAddress."', '".$contactCity."', '".$contactState."', '".$contactZip."')";
-    $result = $conn->query($insertContent);
+    $result = $conn->query($insertContact);
     $newContactId = mysqli_insert_id($conn);
-    echo $insertContact;
   }
   if($contentBusinessName){
     $insertContent = "INSERT INTO `content`(`contentUserId`, `contentContactId`, `contentStyle`, `contentBusinessName`, `contentDifferentStatement`, `contentShortDesc`, `contentUniqueDesc`, `contentBusinessPitch`, `contentServices`, `contentFb`, `contentIg`, `contentLk`, `contentTw`) VALUES ('".$contentUserId."', '".$newContactId."', '".$contentStyleUrl."', '".$contentBusinessName."', '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
     $result2 = $conn->query($insertContent);
     $newContentId = mysqli_insert_id($conn);
-    //header('Location: admin.php?contentId='.$newContentId);
+    header('Location: admin.php?contentId='.$newContentId);
   }
 }
 $conn->close();
@@ -101,22 +99,22 @@ $conn->close();
                             <span class="input-group-addon">Email Address </span><input class="form-control" name="contact-email" id="contact-email" type="text" placeholder="example@mail.com" />
                         </div>
                         <div class="input-group">
-                            <span class="input-group-addon">Street Address</span><input class="form-control" name="contact-streeaddress" id="contact-address" type="text" placeholder="123 A Street" />
+                            <span class="input-group-addon">Street Address</span><input class="form-control" name="contact-address" id="contact-address" type="text" placeholder="123 A Street" />
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-sm-4">
                                 <div class="input-group">
-                                    <span class="input-group-addon">City</span><input class="form-control" name="contact-state" id="contact-address" type="text" placeholder="City" />
+                                    <span class="input-group-addon">City</span><input class="form-control" name="contact-state" id="contact-city" type="text" placeholder="City" />
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                                 <div class="input-group">
-                                    <span class="input-group-addon">State</span><input class="form-control" name="contact-state" id="contact-address" type="text" placeholder="State" />
+                                    <span class="input-group-addon">State</span><input class="form-control" name="contact-state" id="contact-state" type="text" placeholder="State" />
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                                 <div class="input-group">
-                                    <span class="input-group-addon">Zipcode</span><input class="form-control" name="contact-state" id="contact-address" type="text" placeholder="Zipcode" />
+                                    <span class="input-group-addon">Zipcode</span><input class="form-control" name="contact-zip" id="contact-zip" type="text" placeholder="Zipcode" />
                                 </div>
                             </div>
                         </div>
