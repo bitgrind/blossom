@@ -21,10 +21,10 @@ $("#previewNav").click(function() {
   console.log(value);
   if (value === "site 1") {
     // $(".site1").show();
-    window.open("demo1.html", "_blank");
+    window.open("demo2.html", "_blank");
   } else if (value === "site 2") {
     // $(".site2").show();
-    window.open("demo2.html", "_blank");
+    window.open("demo1.html", "_blank");
   }
 });
 
