@@ -61,10 +61,9 @@
             <h2><a href="index.html">Blossom</a></h2>
           </div><!-- logo -->
         </div> <!-- col-md-6 -->
-
+        
         <div class="col-md-5">
           <ul class="mainNav">
-<<<<<<< HEAD
             <li><a href="admin.php">Admin</a> </li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li>Support</li>
@@ -82,7 +81,6 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
-=======
             <li><a href="admin.php">Admin</a></li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li><a href="#">Support</a></li>
@@ -112,7 +110,6 @@
               <li><a href="#">Cart</a></li>
               <li><a href="#">Image Upload</a></li> -->
               <li><a href="#" id="publishNav">Publish</a></li>
->>>>>>> fb2b698c0992430bf055b216f51dbb1d11c77892
             </ul>
           </div>
           <div class="col-md-10">
@@ -130,13 +127,6 @@
                         </div>
                         <div class="panel-body">
                           <form id="headerEditForm" action="?" method="post">
-  <!--
-                            <div class="input-group">
-                              <label for="header-text">Header Text</label>
-                              <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                            </div>
-  -->
-                            <!-- Need to do work here, see trello comment -->
                             <div class="input-group">
                               <label for="header-font-family">Font Family</label>
                               <select id="headerFontSelect">
