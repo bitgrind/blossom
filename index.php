@@ -14,6 +14,7 @@ include_once  "php/connect.php";
      header('Location: build.php?userId='.$newId);
    }
  }
+ print_r($GLOBALS);
 ?>
 <!DOCTYPE html>
 <html>
