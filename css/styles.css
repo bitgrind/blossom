@@ -9,6 +9,7 @@ a:hover{
 .container{
   width: 95%;
   min-height: 100vh;
+
 }
 
 .panel-body{
@@ -91,7 +92,7 @@ h1#heading{
 }
 #page3 img{
 
-  width: 55%;
+  width: 75%;
   margin-bottom: 10%;
 }
 

@@ -1,50 +1,17 @@
 body {
   color: #333;
-  margin: 0;
-  height: 100%;
-  padding: 0;
 }
 
-
-#siteName {
-  color: rgba(#1277c1, 0.72);
-  font-family: fantasy;
-  padding-top: 20px;
-<<<<<<< HEAD
-  }
-=======
-}
->>>>>>> fb2b698c0992430bf055b216f51dbb1d11c77892
-
-.mainNav > li{
-  padding-right: 15px;
-
-}
-.dashboard-h2-style {
-  font-size: 3em;
-  padding-bottom: 10px;
-}
-
-
-/*** divs to hide ***/
-.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
-  display: none;
-}
-
-/*** Alert ***/
-.alert {
-  margin-top: 15px;
-}
-
+/** Header **/
 .header {
   background-color: #333;
   border-bottom: #ccc;
 }
 
-.logo h2 {
-  text-align: center;
-  font-size: 50px;
-  font-family: cursive;
+#siteName {
+  color: rgba(#1277c1, 0.72);
+  font-family: fantasy;
+  padding-top: 20px;
 }
 
 /*** Main Nav ***/
@@ -64,16 +31,8 @@ body {
   color: floralwhite;
 }
 
-/*** anchor ***/
-
-li a:hover {
-  text-decoration: none;
-  color: floralwhite;
-}
-
-a:visited {
-  color: #ccc;
-  text-decoration: none;
+.mainNav > li{
+  padding-right: 15px;
 }
 
 .mainNav li {
@@ -81,23 +40,12 @@ a:visited {
 }
 
 /*** Side Nav ***/
-
 .side-nav1 {
   background-color: #333;
   color: #ccc;
   border-top: 1px solid #ccc;
-  margin-bottom: 0;
+  height: 100vh;
 }
-
-.logo a {
-  color: #ccc;
-}
-
-.logo a:hover {
-  text-decoration: none;
-  color: floralwhite;
-}
-
 
 .side-nav1 h2 {
   text-align: center;
@@ -115,7 +63,53 @@ ul.sideNav a {
 
 ul.sideNav a:hover {
   color: floralwhite;
+  text-decoration: none;
 }
+
+ul.sideNav a:visited {
+  text-decoration: none;
+}
+
+/** Logo **/
+.logo h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+
+/*** divs to hide ***/
+.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
+  display: none;
+}
+
+/*** Alert ***/
+.alert {
+  margin-top: 15px;
+}
+
+/*** anchor ***/
+
+li a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+a:visited {
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+.logo a {
+  color: #ccc;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
 
 /*** Dropdown ***/
 
@@ -166,15 +160,6 @@ ul.dropdown-menu {
   font-size: 45px;
   padding-top: 15px;
   padding-bottom: 30px;
-}
-
-
-.sideNav a {
-  color: #333;
-}
-
-.sideNav a:hover {
-
 }
 
 
