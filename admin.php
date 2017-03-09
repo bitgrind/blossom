@@ -66,7 +66,7 @@
           <ul class="mainNav">
             <li><a href="admin.php">Admin</a></li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
-            <li>Support</li>
+            <li><a href="#">Support</a></li>
           </ul>
         </div>
         
