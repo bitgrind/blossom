@@ -1,3 +1,34 @@
+<?php
+include_once  "php/connect.php";
+$previewUserId = $_GET["userId"];
+$previewContentId = $_GET["contentId"];
+
+$previewSql ="SELECT * FROM `content` WHERE `contentId`=".$previewContentId;
+
+/* Prepare statement */
+if($_GET["contentId"]) {
+  if($res = $conn->query($previewSql)){
+    while($row = $res->fetch_assoc()) {
+      $previewContentId         = $row['contentId'];
+      $previewUserId            = $row['contentUserId'];
+      $previewStyle             = $row['contentStyle'];
+      $previewBusinessName      = $row['contentBusinessName'];
+      $previewDiffDesc          = $row['contentDifferentStatement'];
+      $previewShortDesc         = $row['contentShortDesc'];
+      $previewUniqueDesc        = $row['contentUniqueDesc'];
+      $previewBusinessPitch     = $row['contentBusinessPitch'];
+      $previewServcies          = $row['contentServices'];
+      $previewContentFb         = $row['contentFb'];
+      $previewContentIg         = $row['contentIg'];
+      $previewContentLk         = $row['contentLk'];
+      $previewContentTw         = $row['contentTw'];
+      echo "while loop this is new loop22";
+    }
+  }
+}
+  $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +45,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/demo2/demo2-A.css" rel="stylesheet">
+    <script src="js/preview.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -25,7 +57,7 @@
                     <span class="icon-bar">There</span>
                     <span class="icon-bar">Everywhere</span>
                 </button>
-                <a class="navbar-brand" href="">Awesome Co. Inc.</a>
+                <a class="navbar-brand" href=""><?php echo $previewBusinessName; ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,8 +81,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Innovation today!</h1>
-                        <h3>Connect with Awesome Co.</h3>
+                        <h1><?php echo $previewBusinessName; ?></h1>
+                        <h3><?php echo $previewDiffDesc; ?></h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li><a href="http://blossom.rosecityvinyl.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -75,9 +107,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Appliction Design
-                        <br>Strategic Planning</h2>
-                    <p class="lead">Our engineering team will turn your vision into valuable project though care requirement evaluation which delivers a cost effective imlementation. Your software is guaranteed to be delivered with spec and with the highest value possible. <a target="_blank" href="http://blossom.rosecityvinyl.com">Visito demo their solution</a></p>
+                    <h2 class="section-heading"><?php echo $previewDiffDesc; ?></h2>
+                    <p class="lead"><?php echo $previewShortDesc; ?></p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/demo2/ipad.png" alt="">
@@ -94,9 +125,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">App and Device Mockups
-                        <br>by Awesome developers</h2>
-                    <p class="lead">Turn your vision into fully functional designs which are high quality, product example in seconds using a CMS tool from Blossom! <a target="_blank" href="http://blossom.rosecityvinyl.com">Visit their website</a> to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading"><?php echo $previewUniqueDesc?></h2>
+                    <p class="lead"><?php echo $previewBusinessPitch; ?></p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/image2.png" alt="">
