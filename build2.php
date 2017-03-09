@@ -171,13 +171,14 @@ $conn->close();
                             />
                         </div>
                         <br />
+                        <div class="buttonStyles">
+                          <button name="buildForm" value="newBuildForm" class="btn btn-primary" type="submit" id="submitBtn">
+                          <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
+                        </button>
+                        </div> <!-- button styles -->
                     </div>
                     <!--closes col-md-6 -->
-                    <div class="buttonStyles">
-                        <button name="buildForm" value="newBuildForm" class="btn btn-primary" type="submit" id="submitBtn">
-                        <span class="glyphicon glyphicon-list-alt iconStyle"></span>Save
-                      </button>
-                    </div> <!-- button styles -->
+
                   </form> <!-- form builder -->
                 </div>
   </div> <!-- container fluid -->
