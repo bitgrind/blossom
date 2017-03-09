@@ -65,8 +65,6 @@ if($previewContactId){
       var val = $("#styles").val();
       if (val === "st1"){
         window.open("preview.php?contentId=" + <?php echo $previewContentId ?>, "_self")
-      }else if (val ==="st2"){
-        window.open("templates/template1/index.php?contentId=" + <?php echo $previewContentId ?>,"_self")
       }else if(val ==="st3"){
         window.open("demo2.php?contentId=" + <?php echo $previewContentId ?>,"_self")
       }else if(val ==="st4"){
@@ -233,6 +231,7 @@ if($previewContactId){
             <option value="st1" name="styleChange" selected="selected">Style 1</option>
             <option value="st2" name="styleChange">Style 2</option>
             <option value="st3" name="styleChange">Style 3</option>
+            <option value="st4" name="styleChange">Style 4</option>
           </select>
           <button type="button" name="button" class="btn btn-default" id="change">Change</button>
         </div>
