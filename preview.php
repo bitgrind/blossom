@@ -43,6 +43,9 @@ $conn->close();
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <!-- Add custom CSS here -->
   <link rel="stylesheet" href="css/preview.css">
+  <script src="js/preview.js">
+
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Preview your page</title>
 </head>
