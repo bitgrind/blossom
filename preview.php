@@ -201,6 +201,24 @@ if($previewContactId){
       <!-- /.container -->
     </div>
     <!-- /.banner -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <ul>
+          <li>Name: <?php echo $contactName; ?></li>
+          <li>Number: <?php echo $contactNumber; ?></li>
+          <li>Email: <?php echo $contactEmail; ?></li>
+          <li>Address: <?php echo $contactAddress; ?></li>
+          <ul>
+            <li>City: <?php echo $contactCity; ?></li>
+            <li>State: <?php echo $contactState; ?></li>
+            <li>Zipcode: <?php echo $contactZip; ?></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  
+  </div>
     <footer>
       <div class="container">
         <div class="row">
