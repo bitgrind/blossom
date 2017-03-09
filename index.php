@@ -224,6 +224,7 @@ include_once  "php/connect.php";
       <footer>
         <hr class="intro-divider">
         <div>
+          <h1><a href="?">Blossom</a></h1>
           <div class="row">
             <div class="col-lg-12">
               <ul class="list-inline">
