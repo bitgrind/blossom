@@ -12,6 +12,14 @@ body {color:#333;}
 
 .container {background-color:#fff;}
 
+.container .img-responsive {height:200px;}
+
+.portfolio-item {margin:40px 0;}
+
+.portfolio-item h3 {text-align: center;margin:0px;}
+
+.portfolio-item p {text-align: center;}
+
 body .container#page1 {background-color:rgba(255,255,255,0);}
 
 .container#page2 {padding-top:40px;}
