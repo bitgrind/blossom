@@ -10,11 +10,11 @@ body {color:#333;}
 
 .navbar-inverse .navbar-nav > li > a {color:#333;}
 
-.container {background-color:#fff;}
+.container {background-color:#fff;padding:50px;}
 
 .container .img-responsive {height:200px;}
 
-.portfolio-item {margin:40px 0;}
+.portfolio-item {margin:40px 0 20px;}
 
 .portfolio-item h3 {text-align: center;margin:0px;}
 

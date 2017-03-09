@@ -219,6 +219,10 @@ include_once  "php/connect.php";
     </div>
 
   </section>
+  <footer>
+    <h1><a href="">Blossom</a></h1>
+  </footer>
+
   <!---page3-->
 
 
