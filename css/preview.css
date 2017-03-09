@@ -1,12 +1,14 @@
 body > div {height:100vh;}
 
-.container {width:100%;}
-.intro-header .container {width:100%;height:400px;position: absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
+.container {}
+.intro-header .container {height:400px;position: absolute;left:0;right:0;top:0;bottom:0;margin:auto;}
 
 .intro-header {
   margin-top:40px;
   text-align: center;
 }
+
+.intro-message {text-align: center;}
 
 #footerStyle {
     position: fixed;
