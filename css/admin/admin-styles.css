@@ -69,8 +69,8 @@ ul.sideNav a:hover {
   color: #333;
 }
 
-.sideNav a:hover {
-
+.side-nav-container {
+  width: 200px;
 }
 
 /** Logo **/
