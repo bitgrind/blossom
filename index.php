@@ -140,7 +140,7 @@ include_once  "php/connect.php";
     </div>
     <div class="row" id="steps">
       <div class="col-md-4">
-        <img src="img/website-templates.png" alt="" />
+        <img src="img/website_templates.png" alt="" />
         <h2 id="caption">1. Choose a website template. </h2>
       </div>
       <div class="col-md-4">
