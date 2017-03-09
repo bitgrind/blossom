@@ -4,6 +4,7 @@
 
 $(function(){
   $("#change").submit(function(){
+    event.preventDefault();
     var e = document.getElementById("footerStyle");
     var val = e.options[e.selectedIndex].value;
     if (val === "st1"){
