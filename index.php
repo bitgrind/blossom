@@ -106,15 +106,15 @@ include_once  "php/connect.php";
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" id="caroImg">
     <div class="item active">
-      <img src="img/temp1.jpg" alt="Chania">
+      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp1.jpg" alt="image one"></a>
     </div>
 
     <div class="item">
-      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.jpg" alt="demo2 imamge"></a>
+      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.jpg" alt="demo2 image"></a>
     </div>
 
-      <div class="item">
-      <img src="img/temp4.jpg" alt="Flower">
+    <div class="item">
+      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp4.jpg" alt="image three"></a>
     </div>
   </div>
 
