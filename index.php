@@ -1,3 +1,4 @@
+<!-- v.001 --
 <?php
 include_once  "php/connect.php";
 
@@ -36,12 +37,14 @@ include_once  "php/connect.php";
   <script src="js/dist/jquery.easing.min.js"></script>
   <!-- BLOSSOM SHIT-->
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/blossom-styles.css" rel="stylesheet" type="text/css" />
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
 <body>
-  <section class="container" id="page1">
-    <!-- Static navbar -->
+  <span id="body-bg"></span>
+  <!-- Static navbar -->
+  <header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -57,8 +60,8 @@ include_once  "php/connect.php";
       </div>
       <!--/.container-fluid -->
     </nav>
-
-
+  </header>
+  <section class="container" id="page1">
     <div id="landingContent">
       <div>
         <h1 id="heading">Blossom makes website for</h1>
@@ -107,13 +110,10 @@ include_once  "php/connect.php";
     </div>
 
     <div class="item">
-      <a href="index.php" data-target="#signUP" data-toggle="modal" src="img/demo2-sample.jpg" alt="demo2 imamge"></a>
+      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.jpg" alt="demo2 imamge"></a>
     </div>
 
-    <a href="https://www.w3schools.com">
-    <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
-
-    <div class="item">
+      <div class="item">
       <img src="img/temp4.jpg" alt="Flower">
     </div>
   </div>
@@ -151,7 +151,6 @@ include_once  "php/connect.php";
         <h2 id="caption">3. Preview and publish!</h2>
       </div>
     </div>
-    <a href="#page4" class="page-scroll"><button type="button" class="btn btn-default">Who is it for?</button></a>
   </section>
   <!--page2-->
 
@@ -215,8 +214,11 @@ include_once  "php/connect.php";
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
     </div>
-
   </section>
+  <footer>
+    <h1><a href="">Blossom</a></h1>
+  </footer>
+
   <!---page3-->
 
 
@@ -264,15 +266,15 @@ include_once  "php/connect.php";
           <form id="register" role="form" action="?" method="POST" class="registration-form">
             <div class="form-group">
               <label class="sr-only" for="form-email">Email</label>
-              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control">
+              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password">Password </label>
-              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" >
+              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="form-password2">Confrim password</label>
-              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control"></textarea>
+              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control" required>
             </div>
             <div class="modal-footer">
               <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>

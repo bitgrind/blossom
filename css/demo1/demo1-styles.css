@@ -4,9 +4,6 @@
   float:right;
 }
 
-a {
-  color: white;
-}
 h1 {
   color: black;
 }
@@ -15,9 +12,8 @@ h1 {
   padding-top: 15px;
   margin-right: 20px;
 }
-small{
-  color: black;
-}
+
+
 p {
   font-size: 18px;
 }

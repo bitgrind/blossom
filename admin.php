@@ -64,6 +64,25 @@
 
         <div class="col-md-5">
           <ul class="mainNav">
+<<<<<<< HEAD
+            <li><a href="admin.php">Admin</a> </li>
+            <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
+            <li>Support</li>
+          </ul>
+        </div>
+          <div class="col-md-1">
+            <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
+          </div> <!-- col-md-1 -->
+    </div>
+      <div class="row full-height">
+        <div class="col-md-2 side-nav1 full-height container">
+          <h2>Dashboard</h2>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
+=======
             <li><a href="admin.php">Admin</a></li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li><a href="#">Support</a></li>
@@ -93,6 +112,7 @@
               <li><a href="#">Cart</a></li>
               <li><a href="#">Image Upload</a></li> -->
               <li><a href="#" id="publishNav">Publish</a></li>
+>>>>>>> fb2b698c0992430bf055b216f51dbb1d11c77892
             </ul>
           </div>
           <div class="col-md-10">

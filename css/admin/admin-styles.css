@@ -6,11 +6,15 @@ body {
 }
 
 
-#siteAdmin{
+#siteName {
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
   padding-top: 20px;
+<<<<<<< HEAD
+  }
+=======
 }
+>>>>>>> fb2b698c0992430bf055b216f51dbb1d11c77892
 
 .mainNav > li{
   padding-right: 15px;
