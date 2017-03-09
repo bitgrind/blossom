@@ -42,7 +42,7 @@
      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
      <!-- Add custom CSS here -->
-     <link rel="stylesheet" href="">
+     <link rel="stylesheet" href="css/preview.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
      <title>Preview your page</title>
    </head>
@@ -56,7 +56,7 @@
                      <span class="icon-bar">There</span>
                      <span class="icon-bar">Everywhere</span>
                  </button>
-                 <a class="navbar-brand" href="">Awesome Sauce</a>
+                 <a class="navbar-brand" href=""><?php echo $previewBusinessName; ?></a>
              </div>
 
              <!-- Collect the nav links, forms, and other content for toggling -->
@@ -207,7 +207,14 @@
              </div>
          </div>
      </footer>
-
+     <div id="footerStyle">
+       <h1>Style Change</h1>
+       <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    </body>
