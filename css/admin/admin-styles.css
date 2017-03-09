@@ -34,6 +34,10 @@ body {
   color: hsl(330, 23%, 68%);
 }
 
+.mainNav a:visited {
+  text-decoration: none;
+}
+
 .mainNav > li{
   padding-right: 15px;
 }
