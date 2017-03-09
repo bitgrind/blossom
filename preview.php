@@ -47,9 +47,11 @@ if($_GET["contentId"]) {
       if (val === "st1"){
         window.open("preview.php?contentId=" + <?php echo $previewContentId ?>, "_self")
       }else if (val ==="st2"){
-        window.open("demo2b.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+        window.open("templates/template1/index.php?contentId=" + <?php echo $previewContentId ?>,"_self")
       }else if(val ==="st3"){
         window.open("demo2.php?contentId=" + <?php echo $previewContentId ?>,"_self")
+      }else if(val ==="st4"){
+        window.open("demo2b.php?contentId=" + <?php echo $previewContentId ?>,"_self")
       }
     });
   });//jQuery
@@ -175,7 +177,7 @@ if($_GET["contentId"]) {
             </ul>
           </div>
           <div class="col-md-12">
-            
+
           </div>
         </div>
       </div>
