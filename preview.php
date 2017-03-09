@@ -44,8 +44,7 @@ if($previewContactId){
     }
   }
 }
-
-  $conn->close();
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html>
