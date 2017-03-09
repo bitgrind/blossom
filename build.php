@@ -1,6 +1,8 @@
 <?php
 include "php/connect.php";
 
+$contentUserId = $_GET["userId"];
+
 $contentBusinessName        = $_POST['business-name'];
 $contentDifferentStatement  = $_POST['different-statement'];
 $contentShortDesc           = $_POST['small-description'];
@@ -16,6 +18,7 @@ $contentLk                  = $_POST['social-link-linkedin'];
 $contentTw                  = $_POST['social-link-twitter'];
 
 $contactFullName            = $_POST['contact-full-name'];
+$contactContentId           = $contentUserId;
 $contactPhone               = $_POST['contact-phone'];
 $contactEmail               = $_POST['contact-email'];
 $contactAddress             = $_POST['contact-address'];
@@ -23,11 +26,13 @@ $contactCity                = $_POST['contact-city'];
 $contactState               = $_POST['contact-state'];
 $contactZip                 = $_POST['contact-zip'];
 
-$contentUserId = $_GET["userId"];
-$insertContent = "INSERT INTO `content`(`contentUserId`, `contentContactId`, `contentStyle`, `contentBusinessName`, `contentDifferentStatement`, `contentShortDesc`, `contentUniqueDesc`, `contentBusinessPitch`, `contentServices`, `contentFb`, `contentIg`, `contentLk`, `contentTw`) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."', '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
-
 if($_POST['buildForm']) {
+  if($contactFullName) {
+    $insertContact = "INSERT INTO `contact`(`contentId`, `contactName`, `contactNumber`, `contactEmail`, `contactAddress`, `contactCity`, `contactState`, `contactZip`) VALUES ('".$contactContentId."', '".$contactFullName."', '".$contactPhone."', '".$contactEmail."', '".$contactAddress."', '".$contactCity."', '".$contactState."', '".$contactZip."')";
+    $newContactId = mysqli_insert_id($conn);
+  }
   if($conn->query($insertContent)){
+    $insertContent = "INSERT INTO `content`(`contentUserId`, `contentContactId`, `contentStyle`, `contentBusinessName`, `contentDifferentStatement`, `contentShortDesc`, `contentUniqueDesc`, `contentBusinessPitch`, `contentServices`, `contentFb`, `contentIg`, `contentLk`, `contentTw`) VALUES ('".$contentUserId."', '".$newContactId."', '".$contentStyleUrl."', '".$contentBusinessName."', '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
     $newContentId = mysqli_insert_id($conn);
     header('Location: admin.php?contentId='.$newContentId);
   }
