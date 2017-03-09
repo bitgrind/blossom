@@ -14,6 +14,7 @@ include_once  "php/connect.php";
      header('Location: build.php?userId='.$newId);
    }
  }
+ echo "autodeploy";
 ?>
 <!DOCTYPE html>
 <html>
