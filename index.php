@@ -10,6 +10,7 @@ include_once  "php/connect.php";
 
  if($_POST['userSignUp'] == "newUserSignUp"){
    if($conn->query($insUserSql)){
+     echo "connection good";
      $newId = mysqli_insert_id($conn);
      header('Location: build.php?userId='.$newId);
    }
