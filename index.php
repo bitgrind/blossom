@@ -1,4 +1,4 @@
-<!-- v.001 --
+<!-- v.001 -->
 <?php
 include_once  "php/connect.php";
 
@@ -92,42 +92,6 @@ include_once  "php/connect.php";
   </section>
   <!--page1-->
 
-  <!--page2-->
-<<<<<<< HEAD
-  <div class="box-shadow">
-    <section class="container" id="page2">
-      <!-- <h1>Demo pages</h1> -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox" id="caroImg">
-          <div class="item active">
-            <img src="img/temp1.jpg" alt="Chania">
-          </div>
-
-          <div class="item">
-            <a href="#" data-target="#signUp" data-toggle="modal">
-              <img src="img/demo2-sample.JPG" alt="demo2 image">
-            </a>
-          </div>
-
-          <div class="item">
-            <img src="img/temp4.jpg" alt="image four">
-          </div>
-        </div><!-- carousel-inner -->
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-=======
   <section class="container" id="page2">
     <h1>Demo pages</h1>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
