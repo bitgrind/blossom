@@ -42,6 +42,7 @@ include_once  "php/connect.php";
   <title>Blossom CMS</title>
 </head>
 <body>
+  <span id="body-bg"></span>
   <section class="container" id="page1">
     <!-- Static navbar -->
     <nav class="navbar navbar-inverse">
