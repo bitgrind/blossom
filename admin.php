@@ -78,6 +78,7 @@
             <li><a href="admin.php">Admin</a></li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li><a href="#">Support</a></li>
+            <li><a href="index.php">Log Out</a></li>
           </ul>
         </div>
         <div class="col-md-1" >
