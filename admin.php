@@ -69,7 +69,7 @@
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
-            <h2><a href="index.html">Blossom Build</a></h2>
+            <h2><a href="index.php">Blossom Build</a></h2>
           </div><!-- logo -->
         </div> <!-- col-md-6 -->
 
