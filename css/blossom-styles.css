@@ -1,0 +1,29 @@
+body {color:#333;}
+
+#body-bg {z-index:-1;background-image:url('../img/blossom.jpg');background-size:cover;position:fixed;width:100%;height:100%;}
+
+.navbar {margin-bottom:0;}
+
+.navbar-inverse {background-color:rgba(255,255,255,.5);box-shadow: 0px 4px 25px 0px;}
+
+.navbar-inverse .navbar-brand {color:#333;}
+
+.navbar-inverse .navbar-nav > li > a {color:#333;}
+
+.container {background-color:#fff;padding:50px;}
+
+.container .img-responsive {height:200px;}
+
+.portfolio-item {margin:40px 0 20px;}
+
+.portfolio-item h3 {text-align: center;margin:0px;}
+
+.portfolio-item p {text-align: center;}
+
+body .container#page1 {background-color:rgba(255,255,255,0);border-top-left-radius:10px;border-top-right-radius:10px;}
+
+.container#page2 {padding-top:40px;}
+
+.carousel-inner {box-shadow:0px 12px 10px -10px #000;}
+
+footer {width: 95%;height: 400px;margin:0 auto 20%;padding: 40px;background: #fff;color: #333;border-bottom-left-radius:10px;border-bottom-right-radius:10px;}
