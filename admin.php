@@ -258,8 +258,8 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th><a href="#">Email</a></th>
-                          <th><a href="#">Websites</a></th>
+                          <th>Email</th>
+                          <th>Websites</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -331,8 +331,8 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th><a href="#">ID</a></th>
-                          <th><a href="#">Domain URL</a></th>
+                          <th>ID</th>
+                          <th>Domain URL</th>
                         </tr>
                       </thead>
                       <tbody>
