@@ -19,22 +19,22 @@ $("#previewNav").click(function() {
   var value = $("#active-dropdown-text").text();
   value = value.toLowerCase();
   console.log(value);
-  if (value === "site 1") {
+  if (value === "demo 1") {
     // $(".site1").show();
     window.open("demo1.html", "_blank");
-  } else if (value === "site 2") {
+  } else if (value === "demo 2") {
     // $(".site2").show();
     window.open("demo2.html", "_blank");
   }
 });
 
 $("#site2").click(function() {
-  $("#active-dropdown-text").text("Site 2");
+  $("#active-dropdown-text").text("Demo 1");
 
 });
 
 $("#site1").click(function() {
-  $("#active-dropdown-text").text("Site 1");
+  $("#active-dropdown-text").text("Demo 2");
 
 });
 

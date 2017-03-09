@@ -79,9 +79,9 @@
           <h5 id="sitName"><?php echo $adminBusinessName;?></h5>
         </div> <!-- col-md-1 -->
       </div>
-      <div class="row side-nav1">
-          <div class="col-md-2">
-            <h2 class="dashboard-h2-style">Dashboard</h2>
+      <div class="row">
+          <div class="col-md-2 side-nav1">
+            <h2>Dashboard</h2>
             <div class="dropdown">
               <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
@@ -99,12 +99,12 @@
               <li><a href="#">Image Upload</a></li> -->
               <li><a href="#" id="publishNav">Publish</a></li>
             </ul>
-          </div>
+        </div>
           <div class="col-md-10">
             <div class="container bg-image">
               <div class="edit">
                 <div class="edit-header">
-                  <h1 class="editor-title">Dashboard Editor</h1>
+                  <h1>Dashboard Editor</h1>
                 </div>
                 <div class="edit-body">
                   <div class="row">

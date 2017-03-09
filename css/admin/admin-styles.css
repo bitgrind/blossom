@@ -44,7 +44,7 @@ body {
   background-color: #333;
   color: #ccc;
   border-top: 1px solid #ccc;
-  margin-bottom: 0;
+  height: 100vh;
 }
 
 .side-nav1 h2 {
@@ -63,14 +63,12 @@ ul.sideNav a {
 
 ul.sideNav a:hover {
   color: floralwhite;
+  text-decoration: none;
 }
 
-.sideNav a {
-  color: #333;
-}
-
-.sideNav a:hover {
-
+/* Text that changes from site1 -> site2 (vice versa) */
+#active-dropdown-text {
+  font-size: 20px;
 }
 
 /** Logo **/
@@ -80,11 +78,14 @@ ul.sideNav a:hover {
   font-family: cursive;
 }
 
-.dashboard-h2-style {
-  font-size: 3em;
-  padding-bottom: 10px;
+.logo a {
+  color: #ccc;
 }
 
+.logo a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
 
 /*** divs to hide ***/
 .account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
@@ -96,31 +97,7 @@ ul.sideNav a:hover {
   margin-top: 15px;
 }
 
-/*** anchor ***/
-
-li a:hover {
-  text-decoration: none;
-  color: floralwhite;
-}
-
-a:visited {
-  color: #ccc;
-  text-decoration: none;
-}
-
-
-.logo a {
-  color: #ccc;
-}
-
-.logo a:hover {
-  text-decoration: none;
-  color: floralwhite;
-}
-
-
 /*** Dropdown ***/
-
 .dropdown {
   width: 100%;
 }
@@ -129,24 +106,19 @@ a:visited {
   width: 100%;
 }
 
-#active-dropdown-text {
-  font-size: 20px;
-}
-
 .caret {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #333;
-  color: #fff;
 }
 
 ul.dropdown-menu {
   width: 100%;
 }
 
-/*** Edit Font options ***/
+/*** Edit Div ***/
 
-.editor-title {
+.edit h1 {
   border: 1px solid #333;
   background-color: whitesmoke;
 }
