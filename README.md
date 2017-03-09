@@ -38,7 +38,7 @@ doomcat9167@gmail.com or keithstedman@gmail.com or ryanjonesirl@gmail.com or kwi
 * [Apache]
 * [jQuery]
 * [Bootstrap]
-* [JavaScript] 
+* [JavaScript]
 
 
 ## Contributing
@@ -62,8 +62,8 @@ Copyright (c) 2017 Blossom
 [issue]: https://github.com/bitgrind/blossom/issues
 [license]: https://opensource.org/licenses/MIT
 [Bootstrap]: http://getbootstrap.com/
-[jQuery] https://jquery.com/
-[PHP] https://secure.php.net/
-[MySQL] https://www.mysql.com/
-[Apache] https://httpd.apache.org/download.cgi
-[JavaScript] https://java.com/en/download/
+[jQuery]: https://jquery.com/
+[PHP]: https://secure.php.net/
+[MySQL]: https://www.mysql.com/
+[Apache]: https://httpd.apache.org/download.cgi
+[JavaScript]: https://java.com/en/download/
