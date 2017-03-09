@@ -17,7 +17,13 @@ a:hover{
   max-width: 100%;
 }
 
-.panel-primary{
+.panel-heading{
+  background-color: #333;
+  color: #ccc;
+}
+
+
+.panel-primary > .panel-heading {
   background-color: #333;
   color: #ccc;
 }
