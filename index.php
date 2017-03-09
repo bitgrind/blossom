@@ -186,7 +186,6 @@ include_once  "php/connect.php";
       <div class="col-md-4 portfolio-item">
         <a href="#">
           <img class="img-responsive" src="img/band.jpg" alt="">
->>>>>>> 94a0cc555d09726de2a9a1e2f741843d0252a1da
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -195,92 +194,6 @@ include_once  "php/connect.php";
       </div>
     </section>
 
-    <section class="container" id="page3">
-      <div class="row">
-        <br />
-        <h1>Here's how it works</h1>
-        <p>
-          After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
-          types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
-        </div>
-        <div class="row" id="steps">
-          <div class="col-md-4">
-            <img src="img/website_templates.png" alt="" />
-            <h2 id="caption">1. Choose a website template. </h2>
-          </div>
-          <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
-            <h2 id="caption">2. Fill out content for your website.</h2>
-          </div>
-          <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
-            <h2 id="caption">3. Preview and publish!</h2>
-          </div>
-        </div>
-      </section>
-      <!--page2-->
-
-      <section class="container" id="page4">
-        <div class="row">
-          <h1>Who should use Blossom?</h1>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/personal.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Personal users</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/artist.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Artists</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/restuarant.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Restaurants</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/band.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Bands</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/smallBS.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Small Businesses</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/foodCart.jpg" alt="">
-            </a>
-            <h3>
-              <a href="#">Food Carts</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-          </div>
-        </div>
-      </section>
       <footer>
         <h1><a href="">Blossom</a></h1>
       </footer>
