@@ -1,4 +1,4 @@
-<!-- v.001 --
+<!-- v.002 -->
 <?php
 include_once  "php/connect.php";
 
