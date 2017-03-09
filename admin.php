@@ -53,7 +53,7 @@
     <link href="css/admin/admin-styles.css" rel="stylesheet" type="text/css">
     <script>var jscontentId = <?php echo $adminContentId; ?>;console.log(jscontentId);</script>
   </head>
-  <body class="bg-silver">
+  <body>
     <div class="container-fluid">
       <div class="row header">
         <div class="col-md-6">
