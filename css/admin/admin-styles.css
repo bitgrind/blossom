@@ -10,13 +10,15 @@ body {
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
   padding-top: 20px;
-  }
+}
+
 .mainNav > li{
   padding-right: 15px;
 
 }
 .dashboard-h2-style {
-  font-size: 40px;
+  font-size: 3em;
+  
   padding-bottom: 10px;
 }
 
@@ -29,11 +31,6 @@ body {
 /*** Alert ***/
 .alert {
   margin-top: 15px;
-}
-
-
-.full-height {
-  height: 100%;
 }
 
 .header {
@@ -88,7 +85,6 @@ a:visited {
   color: #ccc;
   border-top: 1px solid #ccc;
   margin-bottom: 0;
-  height: 100%;
 }
 
 .logo a {
@@ -145,6 +141,11 @@ ul.dropdown-menu {
 }
 
 /*** Edit Font options ***/
+
+.editor-title {
+  border: 1px solid #333;
+  background-color: whitesmoke;
+}
 
 .edit-button {
   text-align: center;
