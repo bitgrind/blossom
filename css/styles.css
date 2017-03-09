@@ -14,10 +14,12 @@ a:hover{
 
 .panel-body{
   min-width: 100%;
-max-width: 100%;
+  max-width: 100%;
 }
-.panel-heading{
-    background-color: #333;
+
+.panel-primary{
+  background-color: #333;
+  color: #ccc;
 }
 
 h2{
