@@ -10,7 +10,7 @@ function hideAll() {
 }
 
 function showAccountPanels() {
-  $(".account, .domains").show();
+  $(".account, .domains, .userInputs").show();
 }
 
 
