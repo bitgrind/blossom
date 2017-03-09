@@ -47,7 +47,7 @@ $conn->close();
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/stylesbuild.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container-fluid">
@@ -68,7 +68,7 @@ $conn->close();
       <div class="col-md-1" >
         <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
       </div> <!-- col-md-1 -->
-    </div><!-- row close -->
+    </div><!-- row header close -->
 
     <form name="buildForm" class="client-question-form" action="?" method="POST">
     <div class="col-md-12">
@@ -179,7 +179,7 @@ $conn->close();
                       </button>
                     </div> <!-- button styles -->
                   </form> <!-- form builder -->
-        </div> <!-- container fluid -->
+  </div> <!-- container fluid -->
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

@@ -1,0 +1,338 @@
+body{
+  font-family: 'Rasa', sans-serif;
+}
+
+.mainNav a:active {
+  text-decoration: none;
+  color: hsl(330, 23%, 68%);
+}
+
+.mainNav > li{
+  padding-right: 15px;
+}
+
+.mainNav li {
+  display: inline;
+}
+
+/*** Side Nav ***/
+.side-nav1 {
+  background-color: #333;
+  color: #ccc;
+  border-top: 1px solid #ccc;
+  height: 100vh;
+}
+
+.side-nav1 h2 {
+  text-align: center;
+}
+
+ul.sideNav {
+  font-size: 30px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+ul.sideNav a {
+  color: #ccc;
+}
+
+ul.sideNav a:hover {
+  color: hsl(330, 23%, 68%);
+  text-decoration: none;
+}
+
+/* Text that changes from site1 -> site2 (vice versa) */
+#active-dropdown-text {
+  font-size: 20px;
+}
+
+/** Logo **/
+.logo h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.logo a {
+  color: #ccc;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+
+
+
+
+
+
+
+a:hover{
+  cursor: pointer;
+}
+
+.container{
+  width: 95%;
+  min-height: 100vh;
+
+}
+
+.panel-body{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.panel-heading{
+  background-color: #333;
+  color: #ccc;
+}
+
+
+.panel-primary > .panel-heading {
+  background-color: #333;
+  color: #ccc;
+}
+
+h2{
+  font-size: 2em;
+}
+
+#questionnaireH2{
+  color: #ccc;
+}
+
+a#logo{
+  padding-top: 0;
+  font-size: 55px;
+  font-weight: bolder;
+}
+#navbar li{
+  font-size: 2em;
+}
+/* PAGE1 CSS */
+
+h1{
+  margin-top: 0;
+  font-size:2.5em;
+  }
+h1#heading{
+  font-size: 6em;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#page1 h2{
+  font-size: 2em;
+
+}
+#buttons button{
+  margin-top: 22%;
+  font-size: 2em;
+  margin-left: 2%;
+
+}
+
+#buttons a{
+  text-decoration: none;
+  color: black;
+}
+#landingContent{
+  text-align: center;
+}
+
+#landingContent p{
+  font-size: 2em;
+}
+
+#navbar a{
+  font-size: 30px;
+}
+
+#myCarousel img{
+  width:100%;
+}
+
+#myCarousel{
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+}
+
+
+/* PAGE2 CSS */
+
+#page3 h1{
+  font-size: 5em;
+  margin-top: 3%;
+}
+#page3 p{
+  font-size: 1.8em;
+  margin-bottom: 10%;
+  text-align: center;
+}
+#page3 img{
+
+  width: 75%;
+  margin-bottom: 10%;
+}
+
+#page3 button{
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+#page3{
+  text-align: center;
+}
+
+/* PAGE 3 CSS*/
+#page3 img{
+  width: 100%;
+}
+#page3 h1{
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+#page3 h3{
+  font-size: 2.5em;
+}
+#page3 p{
+  font-size: 1.5em;
+}
+
+/* MODAL STUFF */
+
+#logIn, #signUp{
+  margin-top: 10%;
+  width: 100%;
+}
+
+.img-responsive{
+  width: 100%;
+}
+
+
+/* code for animated blinking cursor */
+.typed-cursor{
+  font-size: 2.5em;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+span#js-typed{
+  font-size: 2.5em;
+  }
+
+
+  /* MEDIA QUERY SHIT */
+
+/* IPHONE 6 */
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    /* PAGE 1 */
+
+    .navbar{
+      margin-top: 1%;
+    }
+    #buttons{
+      margin-top: 65%;
+    }
+    #page1 h2{
+      margin-top: 15%;
+      font-size: 3em;
+    }
+    h1#heading{
+      margin-top: 15%;
+    }
+    /* PAGE 2 */
+
+    #page3 p{
+      margin-bottom: 3%;
+    }
+    #page3 img{
+      margin-bottom: 0;
+    }
+
+    .form-control{
+      font-size: 30px;
+      height: 60px;
+    }
+    .modal-title{
+      font-size: 60px;
+    }
+    .modal-dialog{
+      margin-top: 40%;
+      margin-right: 32%;
+    }
+    .modal-content{
+      width: 140%;
+      height:430px;
+    }
+
+    .modal-footer{
+      text-align: center;
+    }
+
+    button.close{
+      font-size: 100px;
+    }
+    .modal-footer button{
+      margin-top: 15px;
+      font-size: 45px;
+
+    }
+  }
+
+    /* IPAD STUFF */
+
+    @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #heading {
+      width: 900px;
+      padding-left: 5%;
+    }
+    h1#heading{
+      font-size: 70px;
+    }
+
+
+}
