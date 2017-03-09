@@ -15,4 +15,4 @@
 #footerStyle h1 {margin:0;display:inline-block;}
 #footerStyle ul {display:inline-block;}
 #footerStyle li {width:30%;display:inline-block;}
-#footerStyle select {width: 30%;}
+#footerStyle select.form-control {width: 30%;}
