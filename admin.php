@@ -66,11 +66,11 @@
           <ul class="mainNav">
             <li><a href="admin.php">Admin</a> </li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
-            <li>Support</li>
+            <li><a href="#">Support</a></li>
           </ul>
         </div>
-        <div class="col-md-1" id="siteName">
-          <h5><?php echo $adminBusinessName;?></h5>
+        <div class="col-md-1">
+          <h5 id="sitName"><?php echo $adminBusinessName;?></h5>
         </div> <!-- col-md-1 -->
       </div>
       <div class="row">
