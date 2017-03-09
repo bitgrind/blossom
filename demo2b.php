@@ -194,8 +194,8 @@
         <div class="form-group">
           <label>Choose your style!</label>
           <select class="form-control" id="styles">
-            <option value="st1" name="styleChange" selected="selected">Style 1</option>
-            <option value="st2" name="styleChange">Style 2</option>
+            <option value="st1" name="styleChange">Style 1</option>
+            <option value="st2" name="styleChange" selected="selected">Style 2</option>
             <option value="st3" name="styleChange">Style 3</option>
           </select>
           <button type="button" name="button" class="btn btn-default" id="change">Change</button>
