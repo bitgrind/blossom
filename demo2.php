@@ -7,7 +7,7 @@
     <meta name="author" content="Blossom Demonstration Site">
     <title>Awesome Demo 2</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -171,8 +171,19 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <div id="footerStyle">
+      <form>
+        <div class="form-group">
+          <label>Choose your style!</label>
+          <select class="form-control" id="styles">
+            <option value="st1" name="styleChange">Style 1</option>
+            <option value="st2" name="styleChange">Style 2</option>
+            <option value="st3" name="styleChange" selected="selected">Style 3</option>
+          </select>
+          <button type="button" name="button" class="btn btn-default" id="change">Change</button>
+        </div>
+      </form>
+    </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
