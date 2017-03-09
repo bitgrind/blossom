@@ -154,7 +154,6 @@ include_once  "php/connect.php";
         <h2 id="caption">3. Preview and publish!</h2>
       </div>
     </div>
-    <a href="#page4" class="page-scroll"><button type="button" class="btn btn-default">Who is it for?</button></a>
   </section>
   <!--page2-->
 
