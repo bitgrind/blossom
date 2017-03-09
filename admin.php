@@ -351,8 +351,7 @@
               </div>
               </div>
             </div>
-          </div>
-          </div>
+        </div>
       </div>
     </div>
     <!-- JQuery JS -->

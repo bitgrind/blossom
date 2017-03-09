@@ -75,7 +75,7 @@ if($_GET["contentId"]) {
                     <span class="icon-bar">There</span>
                     <span class="icon-bar">Everywhere</span>
                 </button>
-                <a class="navbar-brand" href="">Awesome Co. Inc.</a>
+                <a class="navbar-brand" href=""><?php echo $previewBusinessName; ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
