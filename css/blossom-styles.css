@@ -12,4 +12,4 @@ body {}
 
 .container {background-color:#fff;}
 
-#page1 {background-color:none;}
+.container  #page1 {background-color:none;}
