@@ -26,7 +26,7 @@ doomcat9167@gmail.com or keithstedman@gmail.com or ryanjonesirl@gmail.com or kwi
 
 * Install Apache and PHP, and configure
 * Install MySQl and configure
-* Clone repository(https://github.com/bitgrind/blossom.git)
+* [Clone repository](https://github.com/bitgrind/blossom.git)
 * Copy setup files to Apache WWW
 * Initialize new database
 * Load index.php
@@ -58,5 +58,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Copyright (c) 2017 Blossom
 
 
+[Clone repository]: https://github.com/bitgrind/blossom.git
 [issue]: https://github.com/bitgrind/blossom/issues
 [license]: https://opensource.org/licenses/MIT
