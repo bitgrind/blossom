@@ -18,6 +18,7 @@
     <!-- Add custom CSS here -->
     <link href="css/demo2/demo2-B.css" rel="stylesheet">
     <link rel="stylesheet" href="css/preview.css">
+    <script src="js/preview.js"></script>
 </head>
 
 <body>
