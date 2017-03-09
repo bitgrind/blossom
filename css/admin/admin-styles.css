@@ -63,14 +63,11 @@ ul.sideNav a {
 
 ul.sideNav a:hover {
   color: floralwhite;
+  text-decoration: none;
 }
 
-.sideNav a {
-  color: #333;
-}
-
-.side-nav-container {
-  width: 200px;
+ul.sideNav a:visited {
+  text-decoration: none;
 }
 
 /** Logo **/
