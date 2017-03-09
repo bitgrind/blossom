@@ -10,9 +10,9 @@ body {color:#333;}
 
 .navbar-inverse .navbar-nav > li > a {color:#333;}
 
-.container {background-color:#fff;padding:50px; background-color: rgba(255,255,255,0.8);}
+.container {padding:50px; background-color: rgba(255,255,255,0.8);}
 
-.container .img-responsive {height:200px;}
+.container .img-responsive {height:40%;}
 
 .portfolio-item {margin:40px 0 20px;}
 
