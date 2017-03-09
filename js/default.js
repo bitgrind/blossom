@@ -53,7 +53,7 @@ $("#editNav").click(function() {
   $(".edit").show();
 });
 
-/*** dashboard panels ***/
+/*** dashboard panels **
 $("#headerSave").click(function(e) {
   e.preventDefault();
   $(".header-alert").show();
@@ -73,3 +73,5 @@ $("#themeSave").click(function(e) {
   e.preventDefault();
   $(".theme-alert").show();
 });
+
+*/
