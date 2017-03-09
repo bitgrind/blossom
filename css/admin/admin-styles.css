@@ -22,7 +22,6 @@ body {
 }
 .dashboard-h2-style {
   font-size: 3em;
-  
   padding-bottom: 10px;
 }
 
@@ -40,10 +39,6 @@ body {
 .header {
   background-color: #333;
   border-bottom: #ccc;
-}
-
-.bg-silver {
-  background-color: #ccc;
 }
 
 .logo h2 {
@@ -156,33 +151,6 @@ ul.dropdown-menu {
 
 .edit-button {
   text-align: center;
-}
-
-span.serif-font {
-  font-family: serif;
-  font-size: 20px;
-}
-
-span.sans-serif-font {
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
-span.cursive-font {
-  font-family: cursive;
-  font-size: 20px;
-}
-
-span.firebrick-red {
-  color: firebrick;
-}
-
-span.collosal-blue {
-  color: cornflowerblue;
-}
-
-span.tango-orange {
-  color: darkorange;
 }
 
 .edit .input-group {
