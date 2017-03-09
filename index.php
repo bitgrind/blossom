@@ -92,200 +92,202 @@ include_once  "php/connect.php";
   <!--page1-->
 
   <!--page2-->
-  <section class="container" id="page2">
-    <!-- <h1>Demo pages</h1> -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
+  <div class="box-shadow">
+    <section class="container" id="page2">
+      <!-- <h1>Demo pages</h1> -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" id="caroImg">
-    <div class="item active">
-      <img src="img/temp1.jpg" alt="Chania">
-    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" id="caroImg">
+          <div class="item active">
+            <img src="img/temp1.jpg" alt="Chania">
+          </div>
 
-    <div class="item">
-      <a href="#" data-target="#signUp" data-toggle="modal">
-        <img src="img/demo2-sample.JPG" alt="demo2 image">
-      </a>
-    </div>
+          <div class="item">
+            <a href="#" data-target="#signUp" data-toggle="modal">
+              <img src="img/demo2-sample.JPG" alt="demo2 image">
+            </a>
+          </div>
 
-      <div class="item">
-      <img src="img/temp4.jpg" alt="image four">
-    </div>
-  </div><!-- carousel-inner -->
+          <div class="item">
+            <img src="img/temp4.jpg" alt="image four">
+          </div>
+        </div><!-- carousel-inner -->
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section>
-
-<section class="container" id="page3">
-    <div class="row">
-      <br />
-      <h1>Here's how it works</h1>
-      <p>
-        After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
-        types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
-    </div>
-    <div class="row" id="steps">
-      <div class="col-md-4">
-        <img src="img/website_templates.png" alt="" />
-        <h2 id="caption">1. Choose a website template. </h2>
-      </div>
-      <div class="col-md-4">
-        <img src="img/placeholder.png" alt="" />
-        <h2 id="caption">2. Fill out content for your website.</h2>
-      </div>
-      <div class="col-md-4">
-        <img src="img/placeholder.png" alt="" />
-        <h2 id="caption">3. Preview and publish!</h2>
-      </div>
-    </div>
-  </section>
-  <!--page2-->
-
-  <section class="container" id="page4">
-    <div class="row">
-      <h1>Who should use Blossom?</h1>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/personal.jpg" alt="">
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-        <h3>
-            <a href="#">Personal users</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/artist.jpg" alt="">
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
         </a>
-        <h3>
-            <a href="#">Artists</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/restuarant.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Restaurants</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/band.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Bands</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/smallBS.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Small Businesses</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/foodCart.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Food Carts</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <h1><a href="">Blossom</a></h1>
-  </footer>
+    </section>
 
-  <!---page3-->
-
-
-
-  <!-- MODAL HERE -->
-  <div id="logIn" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sign in to Blossom</h4>
+    <section class="container" id="page3">
+      <div class="row">
+        <br />
+        <h1>Here's how it works</h1>
+        <p>
+          After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
+          types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
         </div>
-        <div class="modal-body">
-          <form id="formLogIn" role="form" action="" method="post" class="registration-form">
-            <div class="form-group">
-              <label class="sr-only" for="form-email">Email</label>
-              <input type="text" name="form-email" placeholder="Username..." class="form-email form-control" id="email">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="form-password">Password</label>
-              <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password">
-            </div>
-
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-default">Log In</button>
-            </div>
-          </form>
+        <div class="row" id="steps">
+          <div class="col-md-4">
+            <img src="img/website_templates.png" alt="" />
+            <h2 id="caption">1. Choose a website template. </h2>
+          </div>
+          <div class="col-md-4">
+            <img src="img/placeholder.png" alt="" />
+            <h2 id="caption">2. Fill out content for your website.</h2>
+          </div>
+          <div class="col-md-4">
+            <img src="img/placeholder.png" alt="" />
+            <h2 id="caption">3. Preview and publish!</h2>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- END OF LOG IN MODAL-->
+      </section>
+      <!--page2-->
 
-  <!-- MODAL HERE -->
-  <div id="signUp" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sign up for free!</h4>
+      <section class="container" id="page4">
+        <div class="row">
+          <h1>Who should use Blossom?</h1>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/personal.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Personal users</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/artist.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Artists</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/restuarant.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Restaurants</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
         </div>
-        <div class="modal-body">
-          <form id="register" role="form" action="?" method="POST" class="registration-form">
-            <div class="form-group">
-              <label class="sr-only" for="form-email">Email</label>
-              <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control" required>
+        <div class="row">
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/band.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Bands</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/smallBS.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Small Businesses</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/foodCart.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Food Carts</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h1><a href="">Blossom</a></h1>
+      </footer>
+
+      <!---page3-->
+
+
+
+      <!-- MODAL HERE -->
+      <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Sign in to Blossom</h4>
             </div>
-            <div class="form-group">
-              <label class="sr-only" for="form-password">Password </label>
-              <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" required>
+            <div class="modal-body">
+              <form id="formLogIn" role="form" action="" method="post" class="registration-form">
+                <div class="form-group">
+                  <label class="sr-only" for="form-email">Email</label>
+                  <input type="text" name="form-email" placeholder="Username..." class="form-email form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-password">Password</label>
+                  <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password">
+                </div>
+
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default">Log In</button>
+                </div>
+              </form>
             </div>
-            <div class="form-group">
-              <label class="sr-only" for="form-password2">Confrim password</label>
-              <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control" required>
-            </div>
-            <div class="modal-footer">
-              <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+      <!-- END OF LOG IN MODAL-->
+
+      <!-- MODAL HERE -->
+      <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Sign up for free!</h4>
+            </div>
+            <div class="modal-body">
+              <form id="register" role="form" action="?" method="POST" class="registration-form">
+                <div class="form-group">
+                  <label class="sr-only" for="form-email">Email</label>
+                  <input name="emailSignUp" id="emailSignUp" type="text" placeholder="Email..." class="form-email form-control" required>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-password">Password </label>
+                  <input name="passwordSignUp" id="passwordSignUp" type="password" placeholder="Password..." class="form-password form-control" required>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="form-password2">Confrim password</label>
+                  <input name="password2" id="password2" type="password" placeholder="Confirm password..." class="form-password2 form-control" required>
+                </div>
+                <div class="modal-footer">
+                  <button name="userSignUp" value="newUserSignUp" type="submit" class="btn btn-default">Sign me up!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
   <!-- END OF SING UP MODAL-->
 
