@@ -7,6 +7,12 @@
 
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
+  //check for forms
+  print_r($GLOBALS);
+  if($_POST['headerSave'] === 'newHeaderSave'){
+
+
+  }
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
@@ -61,7 +67,7 @@
             <h2><a href="index.html">Blossom</a></h2>
           </div><!-- logo -->
         </div> <!-- col-md-6 -->
-        
+
         <div class="col-md-5">
           <ul class="mainNav">
             <li><a href="admin.php">Admin</a></li>
@@ -122,7 +128,7 @@
                               <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                             </div>
                             <div class="edit-button">
-                              <button class="btn btn-default save-buttons" type="submit" id="headerSave" name="headerEditForm">Save</button>
+                              <button id="headerSave" name="headerSave" value="newHeaderSave" class="btn btn-default save-buttons" type="submit">Save</button>
                             </div>
                             <div class="alert header-alert alert-success alert-dismissable">
                               <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>

@@ -1,6 +1,6 @@
 <?php
-include_once  "php/connect.php";
-//CONTENT VARIBLES
+include "php/connect.php";
+
 $contentBusinessName        = $_POST['business-name'];
 $contentDifferentStatement  = $_POST['different-statement'];
 $contentShortDesc           = $_POST['small-description'];
@@ -15,7 +15,6 @@ $contentIg                  = $_POST['social-link-instagram'];
 $contentLk                  = $_POST['social-link-linkedin'];
 $contentTw                  = $_POST['social-link-twitter'];
 
-//CONTACT VARIBLES
 $contactFullName            = $_POST['contact-full-name'];
 $contactPhone               = $_POST['contact-phone'];
 $contactEmail               = $_POST['contact-email'];
@@ -25,15 +24,12 @@ $contactState               = $_POST['contact-state'];
 $contactZip                 = $_POST['contact-zip'];
 
 $contentUserId = $_GET["userId"];
-$contentContactId = "1";
-
-//INSERTING new Content into Table
-$contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+$insertContent = "INSERT INTO `content`(`contentUserId`, `contentContactId`, `contentStyle`, `contentBusinessName`, `contentDifferentStatement`, `contentShortDesc`, `contentUniqueDesc`, `contentBusinessPitch`, `contentServices`, `contentFb`, `contentIg`, `contentLk`, `contentTw`) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."', '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
 if($_POST['buildForm'] === "newBuildForm") {
-  if($conn->query($contentSql)){
-    $contentId = mysqli_insert_id($conn);
-    header('Location: admin.php?contentId='.$contentId);
+  if($conn->query($insertContent)){
+    $newContentId = mysqli_insert_id($conn);
+    header('Location: admin.php?contentId='.$newContentId);
   }
 }
 $conn->close();
