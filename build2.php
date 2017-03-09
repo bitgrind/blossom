@@ -66,7 +66,7 @@ $conn->close();
         </ul>
       </div><!-- close col-md-5 -->
       <div class="col-md-1" >
-        <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
+        <h5 id="siteName"><?php echo $buildBusinessName;?></h5>
       </div> <!-- col-md-1 -->
     </div><!-- row header close -->
 <div class="col-md-10">
