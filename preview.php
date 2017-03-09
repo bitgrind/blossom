@@ -197,29 +197,24 @@ if($previewContactId){
 
           </div>
         </div>
+        <div class="col-md-12 contact">
+          <h1>Contact</h1>
+          <ul class="contact-info">
+            <li><h2>Name: <?php echo $contactName; ?></h2></li>
+            <li><h2>Number: <?php echo $contactNumber; ?></h2></li>
+            <li><h2>Email: <?php echo $contactEmail; ?></h2></li>
+            <li><h2>Address: <?php echo $contactAddress; ?></h2></li>
+            <ul>
+              <li><h2>City: <?php echo $contactCity; ?></h2></li>
+              <li><h2>State: <?php echo $contactState; ?></h2></li>
+              <li><h2>Zipcode: <?php echo $contactZip; ?></h2></li>
+            </ul>
+          </ul>
+        </div>
       </div>
       <!-- /.container -->
     </div>
     <!-- /.banner -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Contact</h1>
-        <ul class="contact-info">
-          <li><h2>Name: <?php echo $contactName; ?></h2></li>
-          <li><h2>Number: <?php echo $contactNumber; ?></h2></li>
-          <li><h2>Email: <?php echo $contactEmail; ?></h2></li>
-          <li><h2>Address: <?php echo $contactAddress; ?></h2></li>
-          <ul>
-            <li><h2>City: <?php echo $contactCity; ?></h2></li>
-            <li><h2>State: <?php echo $contactState; ?></h2></li>
-            <li><h2>Zipcode: <?php echo $contactZip; ?></h2></li>
-          </ul>
-        </ul>
-      </div>
-    </div>
-  
-  </div>
     <footer>
       <div class="container">
         <div class="row">
