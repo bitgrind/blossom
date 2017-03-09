@@ -98,7 +98,7 @@
             <div class="container bg-image">
               <div class="edit">
                 <div class="edit-header">
-                  <h1 class="editor-title">Dashboard Editor</h1>
+                  <h1>Dashboard Editor</h1>
                 </div>
                 <div class="edit-body">
                   <div class="row">
