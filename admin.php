@@ -167,6 +167,11 @@
                         <div class="panel-body">
                           <form id="paragraphEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
                             <div class="input-group">
+                              <label for="header-color">Site Title</label>
+                              <input type="text" id="businessName" name="businessNameChange" class="form-control">
+                            </div>
+<!--
+                            <div class="input-group">
                               <label for="paragraph-font-family">Font Family</label>
                               <select id="paragraphFontSelect">
                                 <option value="serif"><span class="serif-font">Serif</span></option>
@@ -174,10 +179,13 @@
                                 <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
                               </select>
                             </div>
+-->
+<!--
                             <div class="input-group">
                               <label for="paragraph-color">Paragraph Color</label>
                               <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                             </div>
+-->
                             <div class="edit-button">
                               <button id="shortDescSave" name="newShortDesc" value="shortDescChangeSubmit" class="btn btn-default save-buttons" type="submit">Save</button>
                             </div>
