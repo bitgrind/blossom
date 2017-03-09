@@ -30,8 +30,6 @@
   }
   $conn->close();
  ?>
-
-
  <!DOCTYPE html>
  <html>
    <head>
@@ -58,7 +56,6 @@
                  </button>
                  <a class="navbar-brand" href=""><?php echo $previewBusinessName; ?></a>
              </div>
-
              <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                  <ul class="nav navbar-nav">
@@ -76,9 +73,7 @@
      </nav>
 
      <div class="intro-header">
-
          <div class="container">
-
              <div class="row">
                  <div class="col-lg-12">
                      <div class="intro-message">
