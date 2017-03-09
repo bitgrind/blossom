@@ -10,14 +10,19 @@ body {
   color: rgba(#1277c1, 0.72);
   font-family: fantasy;
   padding-top: 20px;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> fb2b698c0992430bf055b216f51dbb1d11c77892
 
 .mainNav > li{
   padding-right: 15px;
 
 }
 .dashboard-h2-style {
-  font-size: 40px;
+  font-size: 3em;
+  
   padding-bottom: 10px;
 }
 
@@ -27,39 +32,18 @@ body {
   display: none;
 }
 
-.main-container {
-  height: 100vh;
-}
-
-.full-height {
-  height: 100%;
+/*** Alert ***/
+.alert {
+  margin-top: 15px;
 }
 
 .header {
   background-color: #333;
   border-bottom: #ccc;
-  color: #fff;
 }
 
 .bg-silver {
   background-color: #ccc;
-}
-
-.bg-image {
-/*
-  background-image: url(../../img/bg-blur.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-*/
-}
-
-.bg-blur {
-/*
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-*/
 }
 
 .logo h2 {
@@ -82,6 +66,12 @@ body {
 }
 
 .mainNav a:hover {
+  color: floralwhite;
+}
+
+/*** anchor ***/
+
+li a:hover {
   text-decoration: none;
   color: floralwhite;
 }
@@ -110,7 +100,7 @@ a:visited {
 
 .logo a:hover {
   text-decoration: none;
-  text-shadow: 0.5px 0.5px #ccc;
+  color: floralwhite;
 }
 
 
@@ -126,6 +116,10 @@ ul.sideNav {
 
 ul.sideNav a {
   color: #ccc;
+}
+
+ul.sideNav a:hover {
+  color: floralwhite;
 }
 
 /*** Dropdown ***/
@@ -154,6 +148,11 @@ ul.dropdown-menu {
 }
 
 /*** Edit Font options ***/
+
+.editor-title {
+  border: 1px solid #333;
+  background-color: whitesmoke;
+}
 
 .edit-button {
   text-align: center;
@@ -218,8 +217,13 @@ span.tango-orange {
   color: #ccc;
 }
 
+
 .btn-default {
   color: #333;
+}
+
+.save-buttons {
+  margin-top: 10px;
 }
 
 .change-pass-btn {
@@ -236,9 +240,6 @@ span.tango-orange {
 .iconStyle {
   padding-right: 5px;
 }
-.panels-style {
-  margin-top: 40px;
-}
 
 .panelH3 {
   text-align: center;
@@ -246,14 +247,25 @@ span.tango-orange {
   margin-top: -5px;
 }
 
+/*** Account ***/
+
 .account {
   margin-top: 25px;
+}
+
+.account a {
+  color: #333;
+}
+
+.account a:hover {
+  text-decoration: none;
 }
 
 .account h2 {
   text-align: center;
 }
 
+/*** Domains ***/
 .domains h2 {
   text-align: center;
 }

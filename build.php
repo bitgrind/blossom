@@ -6,7 +6,7 @@
   $contentBusinessName        = $_POST['business-name'];
   $contentDifferentStatement  = $_POST['different-statement'];
   $contentShortDesc           = $_POST['small-description'];
-  $contentUniqueDesc     = $_POST['unique-statement'];
+  $contentUniqueDesc          = $_POST['unique-statement'];
   $contentBusinessPitch       = $_POST['business-pitch'];
   $contentService1            = $_POST['service-item-1'];
   $contentService2            = $_POST['service-item-2'];
