@@ -16,3 +16,4 @@
 #footerStyle ul {display:inline-block;}
 #footerStyle li {width:30%;display:inline-block;}
 #footerStyle select.form-control {width: 30%; display:inline-block;}
+#footerStyle button{float:right;}
