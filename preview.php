@@ -41,8 +41,12 @@ $conn->close();
   <!-- Custom Google Web Font -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Add custom CSS here -->
   <link rel="stylesheet" href="css/preview.css">
+  <script src="js/preview.js">
+
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Preview your page</title>
 </head>
@@ -211,16 +215,15 @@ $conn->close();
       <form>
         <div class="form-group">
           <label>Choose your style!</label>
-          <select class="form-control">
+          <select class="form-control" id="styles">
             <option value="st1" name="styleChange" selected="selected">Style 1</option>
             <option value="st2" name="styleChange">Style 2</option>
             <option value="st3" name="styleChange">Style 3</option>
           </select>
-          <button type="submit" name="button" class="btn btn-default" id="change">Change</button>
+          <button type="button" name="button" class="btn btn-default" id="change">Change</button>
         </div>
       </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
   </html>
