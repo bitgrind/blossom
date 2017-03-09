@@ -7,8 +7,8 @@
 
   //check for forms
   print_r($GLOBALS);
-  if($_POST['headerEditForm']){
-	echo "<br><br>see header save<br><br>";
+  if($_POST['headerSave'] === 'newHeaderSave'){
+
 
   }
   /* Prepare statement */
@@ -28,8 +28,6 @@
       $adminContentIg         = $row['contentIg'];
       $adminContentLk         = $row['contentLk'];
       $adminContentTw         = $row['contentTw'];
-      echo "<br><br>while loop this is new loop22";
-      //print_r($GLOBALS);
       }
     }
   } else {
