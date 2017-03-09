@@ -223,7 +223,7 @@ include_once  "php/connect.php";
       </section>
       <footer>
         <hr class="intro-divider">
-        <div class="container">
+        <div>
           <div class="row">
             <div class="col-lg-12">
               <ul class="list-inline">
