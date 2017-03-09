@@ -5,12 +5,32 @@
 
   $adminSql ="SELECT * FROM `content` WHERE `contentId`=".$adminContentId;
 
-  //check for forms
+  //Header Form
   if($_POST['headerSave'] === 'newHeaderSave'){
 	//echo "see newHeader<br><br>";
-	   $headerSql ="UPDATE content SET contentBusinessName='Blossom NameChange' WHERE contentId = 1".$adminContentId;
+	   $headerSql ="UPDATE content SET contentBusinessName='Blossom NameChange' WHERE contentId = ".$adminContentId;
 	//print_r($headerSql);
 
+  }
+
+  //Short Description form
+  if($_POST['shortDescSave'] === 'newShortDescSave'){
+	//echo "see newHeader<br><br>";
+    $newShortDesc = $_POST['newShortDesc'];
+	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
+    $conn->query($shortDescSql);
+	//print_r($headerSql);
+    
+  }
+
+  //check for forms
+  if($_POST['shortDescSave'] === 'php name'){
+	//echo "see newHeader<br><br>";
+    $newShortDesc = $_POST['name of button'];
+	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
+    $conn->query($shortDescSql);
+	//print_r($headerSql);
+    
   }
   /* Prepare statement */
   if($_GET["contentId"]) {
@@ -109,7 +129,7 @@
                     <div class="col-md-6">
                       <div class="panel panel-default">
                         <div class="panel-heading">
-                          <h2>Header <?php echo $adminContentId; ?></h2>
+                          <h2>Title</h2>
                         </div>
                         <div class="panel-body">
                           <form id="headerEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
@@ -142,7 +162,7 @@
                     <div class="col-md-6">
                       <div class="panel panel-default">
                         <div class="panel-heading">
-                          <h2>Paragraph</h2>
+                          <h2>Short Description</h2>
                         </div>
                         <div class="panel-body">
                           <form id="paragraphEditForm" action="?contentId=<?php echo $adminContentId; ?>" method="post">
@@ -159,7 +179,7 @@
                               <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
                             </div>
                             <div class="edit-button">
-                              <button class="btn btn-default save-buttons" type="submit" id="paragraphSave" name="paragraphEditForm">Save</button>
+                              <button id="shortDescSave" name="newShortDesc" value="shortDescChangeSubmit" class="btn btn-default save-buttons" type="submit">Save</button>
                             </div>
                             <div class="alert paragraph-alert alert-success alert-dismissable">
                               <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
