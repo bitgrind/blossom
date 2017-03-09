@@ -4,8 +4,7 @@
 
 $(function(){
   $("#change").click(function(){
-    var e = document.getElementById("footerStyle");
-    var val = e.options[e.selectedIndex].value;
+    var val = $("#styles").val();
     if (val === "st1"){
       window.open("preview.php")
     }else if (val ==="st2"){
