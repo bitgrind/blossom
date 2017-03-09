@@ -25,7 +25,6 @@ if($_GET["contentId"]) {
       echo "while loop this is new loop22";
     }
   }
-}
   $conn->close();
 ?>
 <!DOCTYPE html>
@@ -40,7 +39,9 @@ if($_GET["contentId"]) {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Add custom CSS here -->
   <link rel="stylesheet" href="css/preview.css">
-  <script src="js/preview.js"></script>
+  <script src="js/preview.js">
+
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Preview your page</title>
 </head>

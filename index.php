@@ -103,7 +103,9 @@ include_once  "php/connect.php";
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox" id="caroImg">
           <div class="item active">
-            <img src="img/temp1.jpg" alt="Chania">
+            <a href="#" data-target="#signUp" data-toggle="modal">
+              <img src="img/temp1.jpg" alt="image">
+            </a>
           </div>
 
           <div class="item">
@@ -117,7 +119,7 @@ include_once  "php/connect.php";
               <img src="img/temp4.jpg" alt="image4">
             </a> -->
             <a href="#" data-target="#signUp" data-toggle="modal">
-              <img src="img/temp4.jpg" alt="demo2 image">
+              <img src="img/temp4.jpg" alt="last image">
             </a>
           </div>
         </div><!-- carousel-inner -->
@@ -148,11 +150,11 @@ include_once  "php/connect.php";
             <h2 id="caption">1. Choose a website template. </h2>
           </div>
           <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
+            <img src="img/dashboard.jpg" alt="" />
             <h2 id="caption">2. Fill out content for your website.</h2>
           </div>
           <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
+            <img src="img/foodCart1.jpg" alt="" />
             <h2 id="caption">3. Preview and publish!</h2>
           </div>
         </div>
