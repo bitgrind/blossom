@@ -43,8 +43,8 @@ include_once  "php/connect.php";
 </head>
 <body>
   <span id="body-bg"></span>
-  <section class="container" id="page1">
-    <!-- Static navbar -->
+  <!-- Static navbar -->
+  <header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -60,8 +60,8 @@ include_once  "php/connect.php";
       </div>
       <!--/.container-fluid -->
     </nav>
-
-
+  </header>
+  <section class="container" id="page1">
     <div id="landingContent">
       <div>
         <h1 id="heading">Blossom makes website for</h1>
