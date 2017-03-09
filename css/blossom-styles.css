@@ -1,4 +1,4 @@
-body:before {background-image:url('img/blossom.jpg');background-size:cover;position:fixed;}
+body {background-image:url('img/blossom.jpg');background-size:cover;position:fixed;}
 
 .navbar-inverse {background-color:#fff;}
 
