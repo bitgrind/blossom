@@ -39,6 +39,7 @@ include_once  "php/connect.php";
   <script src="js/home-script.js"></script>
   <title>Blossom CMS</title>
 </head>
+
 <body>
   <span id="body-bg"></span>
   <!-- Static navbar -->
@@ -183,16 +184,23 @@ include_once  "php/connect.php";
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 portfolio-item">
-            <a href="#">
-              <img class="img-responsive" src="img/band.jpg" alt="">
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="img/restuarant.jpg" alt="">
+          </a>
+          <h3>
+            <a href="#">Restaurants</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div><div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="img/restuarant.jpg" alt="">
+          </a>
+          <h3>
+            <a href="#">Restaurants</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
         </section>
 
         <footer>
