@@ -13,7 +13,6 @@ include_once  "php/connect.php";
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- BOOTSTRAP CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -296,7 +295,5 @@ include_once  "php/connect.php";
       </div>
   </div>
   <!-- END OF SING UP MODAL-->
-
 </body>
-
 </html>
