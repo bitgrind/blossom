@@ -218,7 +218,7 @@ include_once  "php/connect.php";
       </div>
     </div>
   </section>
-  <footer class="container">
+  <footer>
     <h1><a href="">Blossom</a></h1>
   </footer>
 
