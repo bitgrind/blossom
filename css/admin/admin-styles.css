@@ -66,40 +66,12 @@ ul.sideNav a:hover {
   text-decoration: none;
 }
 
-ul.sideNav a:visited {
-  text-decoration: none;
-}
-
 /** Logo **/
 .logo h2 {
   text-align: center;
   font-size: 50px;
   font-family: cursive;
 }
-
-
-/*** divs to hide ***/
-.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
-  display: none;
-}
-
-/*** Alert ***/
-.alert {
-  margin-top: 15px;
-}
-
-/*** anchor ***/
-
-li a:hover {
-  text-decoration: none;
-  color: floralwhite;
-}
-
-a:visited {
-  color: #ccc;
-  text-decoration: none;
-}
-
 
 .logo a {
   color: #ccc;
@@ -110,6 +82,15 @@ a:visited {
   color: floralwhite;
 }
 
+/*** divs to hide ***/
+.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
+  display: none;
+}
+
+/*** Alert ***/
+.alert {
+  margin-top: 15px;
+}
 
 /*** Dropdown ***/
 
