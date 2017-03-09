@@ -11,6 +11,7 @@ if($_GET["contentId"]) {
     while($row = $res->fetch_assoc()) {
       $previewContentId         = $row['contentId'];
       $previewUserId            = $row['contentUserId'];
+      $previewContactId         = $row['contentContactId'];
       $previewStyle             = $row['contentStyle'];
       $previewBusinessName      = $row['contentBusinessName'];
       $previewDiffDesc          = $row['contentDifferentStatement'];
@@ -22,10 +23,28 @@ if($_GET["contentId"]) {
       $previewContentIg         = $row['contentIg'];
       $previewContentLk         = $row['contentLk'];
       $previewContentTw         = $row['contentTw'];
-      echo "while loop this is new loop22";
     }
   }
 }
+
+if($previewContactId){
+  $previewContactSql ="SELECT * FROM `contact` WHERE `contactId`=".$previewContactId;
+  if($res2 = $conn->query($previewContactSql)){
+    while($row2 = $res2->fetch_assoc()) {
+      $contactId            = $row2['contactId'];
+      $contactContentId     = $row2['contactContentId'];
+      $contactName          = $row2['contactName'];
+      $contactNumber        = $row2['contactNumber'];
+      $contactEmail         = $row2['contactEmail'];
+      $contactAddress       = $row2['contactAddress'];
+      $contactCity          = $row2['contactCity'];
+      $contactState         = $row2['contactState'];
+      $contactZip           = $row2['contactZip'];
+
+    }
+  }
+}
+
   $conn->close();
 ?>
 <!DOCTYPE html>
