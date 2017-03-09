@@ -76,9 +76,7 @@ if($_GET["contentId"]) {
   </nav>
 
   <div class="intro-header">
-
     <div class="container">
-
       <div class="row">
         <div class="col-lg-12">
           <div class="intro-message">
@@ -96,10 +94,8 @@ if($_GET["contentId"]) {
           </div>
         </div>
       </div>
-
     </div>
     <!-- /.container -->
-
   </div>
   <!-- /.intro-header -->
   <div class="content-section-a">
@@ -115,10 +111,8 @@ if($_GET["contentId"]) {
           <img class="img-responsive" src="img/demo2/ipad.png" alt="">
         </div>
       </div>
-
     </div>
     <!-- /.container -->
-
   </div>
   <!-- /.content-section-a -->
 
@@ -132,17 +126,13 @@ if($_GET["contentId"]) {
           <p class="lead"><?php echo $previewBusinessPitch; ?></p>
         </div>
       </div>
-
     </div>
     <!-- /.container -->
-
   </div>
   <!-- /.content-section-b -->
 
   <div class="content-section-a">
-
     <div class="container">
-
       <div class="row">
         <div class="col-lg-5 col-sm-6">
           <hr class="section-heading-spacer">
@@ -152,17 +142,13 @@ if($_GET["contentId"]) {
             <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
           </div>
         </div>
-
       </div>
       <!-- /.container -->
-
     </div>
     <!-- /.content-section-a -->
 
     <div class="banner">
-
       <div class="container">
-
         <div class="row">
           <div class="col-lg-6">
             <h2>Connect with Blossom Team:</h2>
@@ -178,13 +164,10 @@ if($_GET["contentId"]) {
             </ul>
           </div>
         </div>
-
       </div>
       <!-- /.container -->
-
     </div>
     <!-- /.banner -->
-
     <footer>
       <div class="container">
         <div class="row">
@@ -222,4 +205,4 @@ if($_GET["contentId"]) {
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
-  </html>
+</html>
