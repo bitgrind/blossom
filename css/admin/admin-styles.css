@@ -9,9 +9,10 @@ body {
 }
 
 #siteName {
-  color: #ccc;
+  color: white;
   font-family: fantasy;
   padding-top: 20px;
+  padding-top: 55px;
 }
 
 /*** Main Nav ***/
@@ -19,7 +20,7 @@ body {
 .mainNav {
   list-style-type: none;
   text-align: center;
-  /*padding-top: 55px;*/
+  padding-top: 55px;
   padding-right: 10px;
 }
 

@@ -20,7 +20,7 @@
 	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
     $conn->query($shortDescSql);
 	//print_r($headerSql);
-    
+
   }
 
   //check for forms
@@ -30,7 +30,7 @@
 	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
     $conn->query($shortDescSql);
 	//print_r($headerSql);
-    
+
   }
   /* Prepare statement */
   if($_GET["contentId"]) {
@@ -93,8 +93,8 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
-        <div class="col-md-1">
-          <h5 id="sitName"><?php echo $adminBusinessName;?></h5>
+        <div class="col-md-1" >
+          <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
         </div> <!-- col-md-1 -->
       </div>
       <div class="row">
