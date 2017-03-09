@@ -34,8 +34,9 @@ body {
   color: hsl(330, 23%, 68%);
 }
 
-.mainNav a:visited {
+.mainNav a:active {
   text-decoration: none;
+  color: hsl(330, 23%, 68%);
 }
 
 .mainNav > li{
