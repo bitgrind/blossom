@@ -1,1 +1,15 @@
-#footerStyle {position: absolute;bottom:0;width:80%;height:70px;border-top-left-radius: 5px; border-top-right-radius: 5px;}
+#footerStyle {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #eee;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+#footerStyle h1 {margin:0;}
