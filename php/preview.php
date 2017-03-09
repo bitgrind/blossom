@@ -25,7 +25,6 @@ if($_GET["contentId"]) {
       echo "while loop this is new loop22";
     }
   }
-}
   $conn->close();
 ?>
 <!DOCTYPE html>
