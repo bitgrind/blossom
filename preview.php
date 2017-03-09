@@ -216,7 +216,7 @@ $conn->close();
             <option value="st2" name="styleChange">Style 2</option>
             <option value="st3" name="styleChange">Style 3</option>
           </select>
-          <button type="submit" name="button" class="btn btn-default" id="change">Change</button>
+          <button type="button" name="button" class="btn btn-default" id="change">Change</button>
         </div>
       </form>
     </div>
