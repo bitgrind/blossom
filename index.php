@@ -189,7 +189,7 @@ include_once  "php/connect.php";
             <img class="img-responsive" src="img/restuarant.jpg" alt="">
           </a>
           <h3>
-            <a href="#">Restaurants</a>
+            <a href="#">Small Businesses</a>
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div><div class="col-md-4 portfolio-item">
@@ -197,17 +197,26 @@ include_once  "php/connect.php";
             <img class="img-responsive" src="img/restuarant.jpg" alt="">
           </a>
           <h3>
-            <a href="#">Restaurants</a>
+            <a href="#">Food Carts</a>
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
-        </section>
+
+        <div class="col-md-4 portfolio-item">
+          <a href="#">
+            <img class="img-responsive" src="img/restuarant.jpg" alt="">
+          </a>
+          <h3>
+            <a href="#">Bands</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </section>
 
         <footer>
           <h1><a href="">Blossom</a></h1>
         </footer>
 
-  </div>
 
       <!---page3-->
 
