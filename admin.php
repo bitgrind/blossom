@@ -350,6 +350,65 @@
                 </div>
               </div>
               </div>
+              <div class="userInputs">
+                <div class="domains-header">
+                </div>
+                <div class="domains-body">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2>Your Inputs</h2>
+                    </div>
+                    <div class="panel-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th><a href="#">Input ID</a></th>
+                            <th><a href="#">Your Input</a></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="user-info" id="domainsID1">1</th>
+                            <th class="user-info" id="domainsURL1">$adminContentId</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">2</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">3</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">4</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">5</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">6</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">7</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">8</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                          <tr>
+                            <th class="user-info" id="domainsID2">9</th>
+                            <th class="user-info" id="domainsURL2">https://www.unitarian.com</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                </div>
             </div>
         </div>
       </div>
