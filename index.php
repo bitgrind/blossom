@@ -150,11 +150,11 @@ include_once  "php/connect.php";
             <h2 id="caption">1. Choose a website template. </h2>
           </div>
           <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
+            <img src="img/dashboard.jpg" alt="" />
             <h2 id="caption">2. Fill out content for your website.</h2>
           </div>
           <div class="col-md-4">
-            <img src="img/placeholder.png" alt="" />
+            <img src="img/foodCart.jpg" alt="" />
             <h2 id="caption">3. Preview and publish!</h2>
           </div>
         </div>
