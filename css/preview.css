@@ -24,6 +24,10 @@ body > div {height:100vh;}
     padding: 10px;
 }
 
+ul.contact-info {list-style-type: none;}
+ul.contact-info li {list-style: none;}
+
+
 #footerStyle h1 {margin:0;display:inline-block;}
 #footerStyle ul {display:inline-block;}
 #footerStyle li {width:30%;display:inline-block;}

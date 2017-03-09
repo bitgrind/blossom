@@ -57,7 +57,7 @@ $conn->close();
           <h2><a href="index.php">Blossom Build</a></h2>
         </div><!-- logo -->
       </div> <!-- col-md-6 -->
-      <div class="col-md-5">
+      <div class="col-md-6">
         <ul class="mainNav">
           <li><a href="build.php">Build Questionnaire</a></li>
           <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
@@ -65,9 +65,6 @@ $conn->close();
           <li><a href="index.php">Log Out</a></li>
         </ul>
       </div><!-- close col-md-5 -->
-      <div class="col-md-1" >
-        <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
-      </div> <!-- col-md-1 -->
     </div><!-- row header close -->
 <div class="col-md-10">
     <form name="buildForm" class="client-question-form" action="?" method="POST">

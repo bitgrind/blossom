@@ -42,6 +42,24 @@
   } else {
     echo "query Failure" .$conn->error;
   }
+
+  if($contactContactId){
+    $contactContactSql ="SELECT * FROM `contact` WHERE `contactContentId`=".$adminContentId;
+    if($res2 = $conn->query($contactContactSql)){
+      while($row2 = $res2->fetch_assoc()) {
+        $contactId            = $row2['contactId'];
+        $contactContentId     = $row2['contactContentId'];
+        $contactName          = $row2['contactName'];
+        $contactNumber        = $row2['contactNumber'];
+        $contactEmail         = $row2['contactEmail'];
+        $contactAddress       = $row2['contactAddress'];
+        $contactCity          = $row2['contactCity'];
+        $contactState         = $row2['contactState'];
+        $contactZip           = $row2['contactZip'];
+
+      }
+    }
+  }
   $conn->close();
 ?>
 <!DOCTYPE html>
@@ -258,13 +276,15 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th><a href="#">Email</a></th>
-                          <th><a href="#">Websites</a></th>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Websites</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="user-info" id="accountEmail">example@gmail.com</th>
+                          <th class="user-info"><?php echo $contactName; ?></th>
+                          <th class="user-info" id="accountEmail"><?php echo $contactEmail; ?></th>
                           <th class="user-info" id="accountWebsite">https://blossom.com</th>
                         </tr>
                       </tbody>
@@ -331,8 +351,8 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th><a href="#">ID</a></th>
-                          <th><a href="#">Domain URL</a></th>
+                          <th>ID</th>
+                          <th>Domain URL</th>
                         </tr>
                       </thead>
                       <tbody>
