@@ -1,5 +1,37 @@
-body{
-  font-family: 'Rasa', sans-serif;
+body {
+  color: #333;
+}
+
+/** Header **/
+.header {
+  background-color: #333;
+  border-bottom: #ccc;
+}
+
+#siteName {
+  color: #ccc;
+  font-style: italic;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+  padding-top: 20px;
+  padding-top: 25px;
+}
+
+/*** Main Nav ***/
+
+.mainNav {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 55px;
+  padding-right: 10px;
+}
+
+.mainNav a {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.mainNav a:hover {
+  color: hsl(330, 23%, 68%);
 }
 
 .mainNav a:active {
@@ -63,8 +95,121 @@ ul.sideNav a:hover {
   color: floralwhite;
 }
 
+/*** divs to hide ***/
+.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
+  display: none;
+}
+
+/*** Alert ***/
+.alert {
+  margin-top: 15px;
+}
+
+/*** Dropdown ***/
+.dropdown {
+  width: 100%;
+}
+
+.dropdown-btn {
+  width: 100%;
+}
+
+.caret {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #333;
+}
+
+ul.dropdown-menu {
+  width: 100%;
+}
+
+/*** Edit Div ***/
+
+.edit h1 {
+  border: 1px solid #333;
+  background-color: whitesmoke;
+}
+
+.edit-button {
+  text-align: center;
+}
+
+.edit .input-group {
+  padding: 5px;
+}
+
+.edit h2 {
+  text-align: center;
+}
+
+.edit h1 {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
 
 
+/*** Panel Styles ***/
+
+.panel-default > .panel-heading {
+  background-color: #333;
+  color: #ccc;
+}
+
+
+.btn-default {
+  color: #333;
+}
+
+.save-buttons {
+  margin-top: 10px;
+}
+
+.change-pass-btn {
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.change-email-btn {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.iconStyle {
+  padding-right: 5px;
+}
+
+.panelH3 {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+
+/*** Account ***/
+
+.account {
+  margin-top: 25px;
+}
+
+.account a {
+  color: #333;
+}
+
+.account a:hover {
+  text-decoration: none;
+}
+
+.account h2 {
+  text-align: center;
+}
+
+/*** Domains ***/
+.domains h2 {
+  text-align: center;
+}
 
 
 
