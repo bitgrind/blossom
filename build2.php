@@ -69,7 +69,7 @@ $conn->close();
         <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
       </div> <!-- col-md-1 -->
     </div><!-- row header close -->
-
+<div class="col-md-10">
     <form name="buildForm" class="client-question-form" action="?" method="POST">
     <div class="col-md-12">
       <div class="input-group">
@@ -179,6 +179,7 @@ $conn->close();
                       </button>
                     </div> <!-- button styles -->
                   </form> <!-- form builder -->
+                </div>
   </div> <!-- container fluid -->
 
     <!-- JQuery CDN -->
