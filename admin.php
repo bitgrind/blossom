@@ -64,7 +64,7 @@
         
         <div class="col-md-5">
           <ul class="mainNav">
-            <li><a href="admin.php">Admin</a> </li>
+            <li><a href="admin.php">Admin</a></li>
             <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li><a href="#">Support</a></li>
           </ul>
@@ -73,8 +73,8 @@
           <h5 id="sitName"><?php echo $adminBusinessName;?></h5>
         </div> <!-- col-md-1 -->
       </div>
-      <div class="row">
-          <div class="col-md-2 side-nav1">
+      <div class="row side-nav1">
+          <div class="col-md-2">
             <h2 class="dashboard-h2-style">Dashboard</h2>
             <div class="dropdown">
               <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
