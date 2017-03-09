@@ -217,9 +217,8 @@ include_once  "php/connect.php";
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
       </div>
     </div>
-
   </section>
-  <footer>
+  <footer class="container">
     <h1><a href="">Blossom</a></h1>
   </footer>
 
