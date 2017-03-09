@@ -64,8 +64,8 @@
 
         <div class="col-md-5">
           <ul class="mainNav">
-            <li>Admin <a href="admin.php"></a></li>
-            <li>Domain<a href="https://www.godaddy.com/domains/domain-name-search"></a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="https://www.godaddy.com/domains/domain-name-search">Domain</a></li>
             <li>Support</li>
           </ul>
         </div>
