@@ -29,10 +29,12 @@ $contactZip                 = $_POST['contact-zip'];
 if($_POST['buildForm']) {
   if($contactFullName) {
     $insertContact = "INSERT INTO `contact`(`contentId`, `contactName`, `contactNumber`, `contactEmail`, `contactAddress`, `contactCity`, `contactState`, `contactZip`) VALUES ('".$contactContentId."', '".$contactFullName."', '".$contactPhone."', '".$contactEmail."', '".$contactAddress."', '".$contactCity."', '".$contactState."', '".$contactZip."')";
+    $result = $conn->query($insertContent);
     $newContactId = mysqli_insert_id($conn);
   }
-  if($conn->query($insertContent)){
+  if($contentBusinessName){
     $insertContent = "INSERT INTO `content`(`contentUserId`, `contentContactId`, `contentStyle`, `contentBusinessName`, `contentDifferentStatement`, `contentShortDesc`, `contentUniqueDesc`, `contentBusinessPitch`, `contentServices`, `contentFb`, `contentIg`, `contentLk`, `contentTw`) VALUES ('".$contentUserId."', '".$newContactId."', '".$contentStyleUrl."', '".$contentBusinessName."', '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
+    $result2 = $conn->query($insertContent);
     $newContentId = mysqli_insert_id($conn);
     header('Location: admin.php?contentId='.$newContentId);
   }
