@@ -59,133 +59,67 @@ include_once  "php/connect.php";
       <!--/.container-fluid -->
     </nav>
   </header>
-  <section class="container" id="page1">
-    <div id="landingContent">
-      <div>
-        <h1 id="heading">Blossom makes website for</h1>
-        <h1><span id="js-typed"></span></h1>
-        <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
-      </div>
-
-      <div class="type-wrap">
-        <div id="typed-strings">
-          <p>personal users.</p>
-          <p>small businesses</p>
-          <p>food carts</p>
-          <p>bands</p>
-          <p>artists</p>
-          <p>restaurants</p>
+  <div class="content">
+    <section class="container" id="page1">
+      <div id="landingContent">
+        <div>
+          <h1 id="heading">Blossom makes website for</h1>
+          <h1><span id="js-typed"></span></h1>
+          <h2>Blossom is a CMS management system at heart and has awesome features that make organizing and managing your content a snap.</h2>
         </div>
-        <span id="typed" style="white-space:pre;"></span>
+
+        <div class="type-wrap">
+          <div id="typed-strings">
+            <p>personal users.</p>
+            <p>small businesses</p>
+            <p>food carts</p>
+            <p>bands</p>
+            <p>artists</p>
+            <p>restaurants</p>
+          </div>
+          <span id="typed" style="white-space:pre;"></span>
+        </div>
+
+
+
+        <div id="buttons">
+          <button data-toggle="modal" data-target="#signUp" type="button" class="btn btn-default">Register now!</button>
+          <button type="button" class="btn btn-default"><a href="#page2" class="page-scroll"> How it works</a></button>
+        </div>
       </div>
+    </section>
+    <!--page1-->
 
+    <section class="container" id="page2">
+      <h1>Demo pages</h1>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" id="caroImg">
+          <div class="item active">
+            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp1.jpg" alt="image one"></a>
+          </div>
 
-      <div id="buttons">
-        <button data-toggle="modal" data-target="#signUp" type="button" class="btn btn-default">Register now!</button>
-        <button type="button" class="btn btn-default"><a href="#page2" class="page-scroll"> How it works</a></button>
-      </div>
-    </div>
-  </section>
-  <!--page1-->
+          <div class="item">
+            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.JPG" alt="demo2 image"></a>
+          </div>
 
-  <section class="container" id="page2">
-    <h1>Demo pages</h1>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+          <div class="item">
+            <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp4.jpg" alt="image three"></a>
+          </div>
+        </div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" id="caroImg">
-    <div class="item active">
-      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp1.jpg" alt="image one"></a>
-    </div>
-
-    <div class="item">
-      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.jpg" alt="demo2 image"></a>
-    </div>
-
-    <div class="item">
-      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/temp4.jpg" alt="image three"></a>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  </section>
-
-  <section class="container" id="page3">
-    <div class="row">
-      <h1>Here's how it works</h1>
-      <p>
-        After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
-        types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
-    </div>
-    <div class="row" id="steps">
-      <div class="col-md-4">
-        <img src="img/placeholder.png" alt="" />
-        <h2 id="caption">1. Choose a website template. </h2>
-      </div>
-      <div class="col-md-4">
-        <img src="img/placeholder.png" alt="" />
-        <h2 id="caption">2. Fill out content for your website.</h2>
-      </div>
-      <div class="col-md-4">
-        <img src="img/placeholder.png" alt="" />
-        <h2 id="caption">3. Preview and publish!</h2>
-      </div>
-    </div>
-  </section>
-  <!--page2-->
-
-  <section class="container" id="page4">
-    <div class="row">
-      <h1>Who should use Blossom?</h1>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/personal.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Personal users</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/artist.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Artists</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/restuarant.jpg" alt="">
-        </a>
-        <h3>
-            <a href="#">Restaurants</a>
-          </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="img/band.jpg" alt="">
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -194,9 +128,78 @@ include_once  "php/connect.php";
       </div>
     </section>
 
-      <footer>
-        <h1><a href="">Blossom</a></h1>
-      </footer>
+    <section class="container" id="page3">
+      <div class="row">
+        <h1>Here's how it works</h1>
+        <p>
+          After signing up users will be able to create and modify web pages and be able preview pages before publishing. At this time there is no automatic archiving of previous designs or configurations. Uploads are permitted but limited to specific image file
+          types. Users will be able to select a template and apply their own design preferences. Custom configurations are saved to the users profile.</p>
+        </div>
+        <div class="row" id="steps">
+          <div class="col-md-4">
+            <img src="img/placeholder.png" alt="" />
+            <h2 id="caption">1. Choose a website template. </h2>
+          </div>
+          <div class="col-md-4">
+            <img src="img/placeholder.png" alt="" />
+            <h2 id="caption">2. Fill out content for your website.</h2>
+          </div>
+          <div class="col-md-4">
+            <img src="img/placeholder.png" alt="" />
+            <h2 id="caption">3. Preview and publish!</h2>
+          </div>
+        </div>
+      </section>
+      <!--page2-->
+
+      <section class="container" id="page4">
+        <div class="row">
+          <h1>Who should use Blossom?</h1>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/personal.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Personal users</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/artist.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Artists</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/restuarant.jpg" alt="">
+            </a>
+            <h3>
+              <a href="#">Restaurants</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 portfolio-item">
+            <a href="#">
+              <img class="img-responsive" src="img/band.jpg" alt="">
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+        <footer>
+          <h1><a href="">Blossom</a></h1>
+        </footer>
+
+  </div>
 
       <!---page3-->
 
