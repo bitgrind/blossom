@@ -1,3 +1,5 @@
+body:before {background-image:url('img/blossom.jpg');background-size:cover;position:fixed;}
+
 .navbar-inverse {background-color:#fff;}
 
 .navbar-inverse .navbar-brand {color:#333;}
