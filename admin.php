@@ -19,14 +19,6 @@
     $conn->query($shortDescSql);
   }
 
-//  //Background Form
-//  if($_POST['shortDescSave'] === 'php name'){
-//	//echo "see newHeader<br><br>";
-//    $newShortDesc = $_POST['name of button'];
-//	   $shortDescSql ="UPDATE content SET contentShortDesc='" . $newShortDesc . "' WHERE contentId = ".$adminContentId;
-//    $conn->query($shortDescSql);
-//  }
-
   /* Prepare statement */
   if($_GET["contentId"]) {
     if($res = $conn->query($adminSql)){
@@ -88,8 +80,8 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
-        <div class="col-md-1">
-          <h5 id="sitName"><?php echo $adminBusinessName;?></h5>
+        <div class="col-md-1" >
+          <h5 id="siteName"><?php echo $adminBusinessName;?></h5>
         </div> <!-- col-md-1 -->
       </div>
       <div class="row">

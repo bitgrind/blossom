@@ -9,9 +9,11 @@ body {
 }
 
 #siteName {
-  color: rgba(#1277c1, 0.72);
-  font-family: fantasy;
+  color: #ccc;
+  font-style: italic;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
   padding-top: 20px;
+  padding-top: 25px;
 }
 
 /*** Main Nav ***/
@@ -20,6 +22,7 @@ body {
   list-style-type: none;
   text-align: center;
   padding-top: 55px;
+  padding-right: 10px;
 }
 
 .mainNav a {

@@ -25,7 +25,6 @@ if($_GET["contentId"]) {
       echo "while loop this is new loop22";
     }
   }
-}
   $conn->close();
 ?>
 <!DOCTYPE html>
@@ -40,19 +39,8 @@ if($_GET["contentId"]) {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Add custom CSS here -->
   <link rel="stylesheet" href="css/preview.css">
-  <script type="text/javascript">
-  $(function(){
-    $("#change").click(function(){
-      var val = $("#styles").val();
-      if (val === "st1"){
-        window.open("preview.php?contentId=" + <?php echo $previewContentId ?>, "_self")
-      }else if (val ==="st2"){
-        window.open("demo2b.php?contentId=" + <?php echo $previewContentId ?>,"_self")
-      }else if(val ==="st3"){
-        window.open("demo2.php?contentId=" + <?php echo $previewContentId ?>,"_self")
-      }
-    });
-  });//jQuery
+  <script src="js/preview.js">
+
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <title>Preview your page</title>
@@ -87,7 +75,9 @@ if($_GET["contentId"]) {
   </nav>
 
   <div class="intro-header">
+
     <div class="container">
+
       <div class="row">
         <div class="col-lg-12">
           <div class="intro-message">
@@ -105,8 +95,10 @@ if($_GET["contentId"]) {
           </div>
         </div>
       </div>
+
     </div>
     <!-- /.container -->
+
   </div>
   <!-- /.intro-header -->
   <div class="content-section-a">
@@ -122,8 +114,10 @@ if($_GET["contentId"]) {
           <img class="img-responsive" src="img/demo2/ipad.png" alt="">
         </div>
       </div>
+
     </div>
     <!-- /.container -->
+
   </div>
   <!-- /.content-section-a -->
 
@@ -137,13 +131,17 @@ if($_GET["contentId"]) {
           <p class="lead"><?php echo $previewBusinessPitch; ?></p>
         </div>
       </div>
+
     </div>
     <!-- /.container -->
+
   </div>
   <!-- /.content-section-b -->
 
   <div class="content-section-a">
+
     <div class="container">
+
       <div class="row">
         <div class="col-lg-5 col-sm-6">
           <hr class="section-heading-spacer">
@@ -153,13 +151,17 @@ if($_GET["contentId"]) {
             <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
           </div>
         </div>
+
       </div>
       <!-- /.container -->
+
     </div>
     <!-- /.content-section-a -->
 
     <div class="banner">
+
       <div class="container">
+
         <div class="row">
           <div class="col-lg-6">
             <h2>Connect with Blossom Team:</h2>
@@ -175,10 +177,13 @@ if($_GET["contentId"]) {
             </ul>
           </div>
         </div>
+
       </div>
       <!-- /.container -->
+
     </div>
     <!-- /.banner -->
+
     <footer>
       <div class="container">
         <div class="row">
@@ -216,4 +221,4 @@ if($_GET["contentId"]) {
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
-</html>
+  </html>
