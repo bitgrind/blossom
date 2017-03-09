@@ -42,6 +42,24 @@
   } else {
     echo "query Failure" .$conn->error;
   }
+
+  if($contactContactId){
+    $contactContactSql ="SELECT * FROM `contact` WHERE `contactContentId`=".$adminContentId;
+    if($res2 = $conn->query($contactContactSql)){
+      while($row2 = $res2->fetch_assoc()) {
+        $contactId            = $row2['contactId'];
+        $contactContentId     = $row2['contactContentId'];
+        $contactName          = $row2['contactName'];
+        $contactNumber        = $row2['contactNumber'];
+        $contactEmail         = $row2['contactEmail'];
+        $contactAddress       = $row2['contactAddress'];
+        $contactCity          = $row2['contactCity'];
+        $contactState         = $row2['contactState'];
+        $contactZip           = $row2['contactZip'];
+
+      }
+    }
+  }
   $conn->close();
 ?>
 <!DOCTYPE html>

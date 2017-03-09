@@ -28,7 +28,7 @@ $contactZip                 = $_POST['contact-zip'];
 
 if($_POST['buildForm']) {
   if($contactFullName) {
-    $insertContact = "INSERT INTO `contact`(`contactContentId`, `contactName`, `contactNumber`, `contactEmail`, `contactAddress`, `contactCity`, `contactState`, `contactZip`) VALUES ('".$contactContentId."', '".$contactFullName."', '".$contactPhone."', '".$contactEmail."', '".$contactAddress."', '".$contactCity."', '".$contactState."', '".$contactZip."')";
+    $insertContact = "INSERT INTO `contact`(`contactName`, `contactNumber`, `contactEmail`, `contactAddress`, `contactCity`, `contactState`, `contactZip`) VALUES ('".$contactFullName."', '".$contactPhone."', '".$contactEmail."', '".$contactAddress."', '".$contactCity."', '".$contactState."', '".$contactZip."')";
     $result = $conn->query($insertContact);
     $newContactId = mysqli_insert_id($conn);
   }
