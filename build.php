@@ -1,54 +1,45 @@
 <?php
-
-  include_once  "php/connect.php";
-
+include_once  "php/connect.php";
 //CONTENT VARIBLES
-  $contentBusinessName        = $_POST['business-name'];
-  $contentDifferentStatement  = $_POST['different-statement'];
-  $contentShortDesc           = $_POST['small-description'];
-  $contentUniqueDesc          = $_POST['unique-statement'];
-  $contentBusinessPitch       = $_POST['business-pitch'];
-  $contentService1            = $_POST['service-item-1'];
-  $contentService2            = $_POST['service-item-2'];
-  $contentService3            = $_POST['service-item-3'];
-  $contentService4            = $_POST['service-item-4'];
-  $contentFb                  = $_POST['social-link-facebook'];
-  $contentIg                  = $_POST['social-link-instagram'];
-  $contentLk                  = $_POST['social-link-linkedin'];
-  $contentTw                  = $_POST['social-link-twitter'];
+$contentBusinessName        = $_POST['business-name'];
+$contentDifferentStatement  = $_POST['different-statement'];
+$contentShortDesc           = $_POST['small-description'];
+$contentUniqueDesc          = $_POST['unique-statement'];
+$contentBusinessPitch       = $_POST['business-pitch'];
+$contentService1            = $_POST['service-item-1'];
+$contentService2            = $_POST['service-item-2'];
+$contentService3            = $_POST['service-item-3'];
+$contentService4            = $_POST['service-item-4'];
+$contentFb                  = $_POST['social-link-facebook'];
+$contentIg                  = $_POST['social-link-instagram'];
+$contentLk                  = $_POST['social-link-linkedin'];
+$contentTw                  = $_POST['social-link-twitter'];
 
 //CONTACT VARIBLES
-  $contactFullName            = $_POST['contact-full-name'];
-  $contactPhone               = $_POST['contact-phone'];
-  $contactEmail               = $_POST['contact-email'];
-  $contactAddress             = $_POST['contact-address'];
-  $contactCity                = $_POST['contact-city'];
-  $contactState               = $_POST['contact-state'];
-  $contactZip                 = $_POST['contact-zip'];
+$contactFullName            = $_POST['contact-full-name'];
+$contactPhone               = $_POST['contact-phone'];
+$contactEmail               = $_POST['contact-email'];
+$contactAddress             = $_POST['contact-address'];
+$contactCity                = $_POST['contact-city'];
+$contactState               = $_POST['contact-state'];
+$contactZip                 = $_POST['contact-zip'];
 
-//USER VARIBLES
-  //$userName ="";
+$contentUserId = $_GET["userId"];
+$contentContactId = "1";
 
-  $contentUserId = $_GET["userId"];
-  $contentContactId = "1";
+//INSERTING new Content into Table
+$contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
 
-  //INSERTING new Content into Table
-  $contentSql="INSERT INTO content (contentUserId, contentContactId, contentStyle, contentBusinessName, contentDifferentStatement, contentShortDesc, contentUniqueDesc, contentBusinessPitch, contentServices, contentFb, contentIg, contentLk, contentTw) VALUES ('".$contentUserId."', '".$contentContactId."', '".$contentStyleUrl."', '".$contentBusinessName."' '".$contentDifferentStatement."', '".$contentShortDesc."', '".$contentUniqueDesc."', '".$contentBusinessPitch."', '".$contentService1."', '".$contentFb."', '".$contentIg."', '".$contentLk."', '".$contentTw."')";
-
-  print_r($POST);
-
-  /* Prepare statement */
-  if($_POST['buildForm'] === "newBuildForm") {
-    if($conn->query($contentSql)){
-      $contentId = mysqli_insert_id($conn);
-      header('Location: admin.php?contentId='.$contentId);
-    }
+if($_POST['buildForm'] === "newBuildForm") {
+  if($conn->query($contentSql)){
+    $contentId = mysqli_insert_id($conn);
+    header('Location: admin.php?contentId='.$contentId);
   }
-  $conn->close();
- ?>
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
