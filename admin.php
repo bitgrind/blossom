@@ -54,7 +54,7 @@
     <script>var jscontentId = <?php echo $adminContentId; ?>;console.log(jscontentId);</script>
 </head>
 <body class="bg-silver">
-  <div class="container-fluid main-container">
+  <div class="container-fluid">
       <div class="row header">
         <div class="col-md-6">
           <div class="logo">
@@ -336,6 +336,7 @@
             </div>
             </div>
           </div>
+        </div>
         </div>
     </div>
   </div>
