@@ -1,3 +1,34 @@
+<?php
+include_once  "php/connect.php";
+$previewUserId = $_GET["userId"];
+$previewContentId = $_GET["contentId"];
+
+$previewSql ="SELECT * FROM `content` WHERE `contentId`=".$previewContentId;
+
+/* Prepare statement */
+if($_GET["contentId"]) {
+  if($res = $conn->query($previewSql)){
+    while($row = $res->fetch_assoc()) {
+      $previewContentId         = $row['contentId'];
+      $previewUserId            = $row['contentUserId'];
+      $previewStyle             = $row['contentStyle'];
+      $previewBusinessName      = $row['contentBusinessName'];
+      $previewDiffDesc          = $row['contentDifferentStatement'];
+      $previewShortDesc         = $row['contentShortDesc'];
+      $previewUniqueDesc        = $row['contentUniqueDesc'];
+      $previewBusinessPitch     = $row['contentBusinessPitch'];
+      $previewServcies          = $row['contentServices'];
+      $previewContentFb         = $row['contentFb'];
+      $previewContentIg         = $row['contentIg'];
+      $previewContentLk         = $row['contentLk'];
+      $previewContentTw         = $row['contentTw'];
+      echo "while loop this is new loop22";
+    }
+  }
+}
+  $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
