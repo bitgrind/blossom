@@ -141,138 +141,101 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                       <div class="panel-heading">
                         <h2>Paragraph</h2>
                       </div>
                       <div class="panel-body">
-<!--
-                        <div class="input-group">
-                          <label for="header-text">Header Text</label>
-                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                        </div>
--->
-                        <div class="input-group">
-                          <label for="paragraph-font-family">Font Family</label>
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                            <li><a href="#" class="serif-font">Serif</a></li>
-                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                            <li><a href="#" class="cursive-font">Cursive</a></li>
-                            </ul>
+                        <form id="paragraphEditForm" action="?" method="post">
+                          <div class="input-group">
+                            <label for="paragraph-font-family">Font Family</label>
+                            <select id="paragraphFontSelect">
+                              <option value="serif"><span class="serif-font">Serif</span></option>
+                              <option value="sans-serif"><span class="sans-serif-font">Sans-Serif</span></option>
+                              <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
+                            </select>
                           </div>
-                        </div>
-                        <div class="input-group">
-                          <label for="paragraph-color">Paragraph Color</label>
-                          <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                        </div>
+                          <div class="input-group">
+                            <label for="paragraph-color">Paragraph Color</label>
+                            <input type="text" id="paragraph-color" name="paragraph-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                          </div>
+                          <div class="edit-button">
+                            <button class="btn btn-default save-buttons" type="submit" id="paragraphSave" name="paragraphEditForm">Save</button>
+                          </div>
+                          <div class="alert paragraph-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                       <div class="panel-heading">
                         <h2>Background Color</h2>
                       </div>
                       <div class="panel-body">
-<!--
-                        <div class="input-group">
-                          <label for="header-text">Header Text</label>
-                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                        </div>
--->
-                        <div class="input-group">
-                          <label for="header-font-family">Select a preselected color</label>
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Color Choices
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#"><span class="firebrick-red">Firebrick Red</span></a></li>
-                              <li><a href="#" class="collosal-blue"><span class="collosal-blue">Collosal Blue</span></a></li>
-                              <li><a href="#" class="tango-orange"><span class="tango-orange">Tango Orange</span></a></li>
-                            </ul>
+                        <form id="backgroundEditForm" action="?" method="post">
+                          <div class="input-group">
+                            <label for="header-font-family">Select a preselected color</label>
+                            <select id="backgroundColorSelect">
+                              <option value="red"><span class="firebrick-red">Firebrick Red</span></option>
+                              <option value="blue"><span class="collosal-blue">Collosal Blue</span></option>
+                              <option value="orange"><span class="tango-orange">Tango Orange</span></option>
+                            </select>
                           </div>
-                        </div>
-                        <div class="input-group">
-                          <label for="background-color">Background Color</label>
-                          <input type="text" id="background-color" name="background-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                        </div>
+                          <div class="input-group">
+                            <label for="background-color">Background Color</label>
+                            <input type="text" id="background-color" name="background-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                          </div>
+                          <div class="edit-button">
+                            <button class="btn btn-default save-buttons" type="submit" id="backgroundSave" name="backgroundEditForm">Save</button>
+                          </div>
+                          <div class="alert background-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
+                  <!-- GOLD PLATING -->
                   <div class="col-md-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h2>Unknown</h2>
+                        <h2>Theme Selection</h2>
                       </div>
                       <div class="panel-body">
-<!--
-                        <div class="input-group">
-                          <label for="header-text">Header Text</label>
-                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                        </div>
--->
-                        <div class="input-group">
-                          <label for="header-font-family">Font Family</label>
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                            <li><a href="#" class="serif-font">Serif</a></li>
-                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                            <li><a href="#" class="cursive-font">Cursive</a></li>
-                            </ul>
+                        <form id="themeEditForm" action="?" method="post">
+                          <div class="input-group">
+                            <label for="themeSelect">Select a theme</label>
+                            <select id="themeSelect">
+                              <option value="template1">Theme 1</option>
+                              <option value="template2">Theme 2</option>
+                            </select>
                           </div>
-                        </div>
-                        <div class="input-group">
-                          <label for="header-color">Paragraph Color</label>
-                          <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                        </div>
+                          <div class="edit-button">
+                            <button class="btn btn-default save-buttons" type="submit" id="themeSave" name="themeEditForm">Save</button>
+                          </div>
+                          <div class="alert theme-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="site1">
-              <div class="site1-header">
-                <h2>ZnergyTheAndroid.com</h2>
-              </div>
-              <div class="site1-body">
-                <h3>Android Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Java</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>HTML/CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Java + Script</h3>
-                <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum.</footer>
-              </div>
-            </div>
-            <div class="site2">
-              <div class="site2-header">
-                <h2>ThisIsCamelCase.com</h2>
-              </div>
-              <div class="site2-body">
-                <h3>Camel Case</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Writing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>Things to know</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</p>
-                <h3>The truth about letters</h3>
-                <footer>Lorem ipsum dolor sit amet, consectetur adipiscing elite. Suspendisse congue ipsum at vestibulum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat erat convallis lorem sodales, ac volutpat justo fermentum. Suspendisse congue ipsum at vestibulum gravida.</footer>
-              </div>
-            </div>
           <div class="account">
             <div class="account-header">
             </div>
             <div class="account-body">
-              <div class="panel panel-primary">
+              <div class="panel panel-default">
                 <div class="panel-heading">
                   <h2>Account Information</h2>
                 </div>
@@ -309,7 +272,7 @@
                     </div>
                     <div class="buttonStyles change-pass-btn">
                       <a href="https://google.com" target="_blank">
-                        <button class="btn btn-primary" type="submit" id="changePasswordBtn">
+                        <button class="btn btn-default" type="submit" id="changePasswordBtn">
                           <span class="glyphicon glyphicon-transfer iconStyle"></span>Change Password
                         </button>
                       </a>
@@ -329,7 +292,7 @@
                     </div>
                     <div class="buttonStyles change-email-btn">
                       <a href="https://google.com" target="_blank">
-                        <button class="btn btn-primary" type="submit" id="changeEmailBtn">
+                        <button class="btn btn-default" type="submit" id="changeEmailBtn">
                           <span class="glyphicon glyphicon-transfer iconStyle"></span>Change Email
                         </button>
                       </a>
@@ -345,7 +308,7 @@
             <div class="domains-header">
             </div>
             <div class="domains-body">
-              <div class="panel panel-primary">
+              <div class="panel panel-default">
                 <div class="panel-heading">
                   <h2>Registered Domains</h2>
                 </div>
