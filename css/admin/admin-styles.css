@@ -66,6 +66,11 @@ ul.sideNav a:hover {
   text-decoration: none;
 }
 
+/* Text that changes from site1 -> site2 (vice versa) */
+#active-dropdown-text {
+  font-size: 20px;
+}
+
 /** Logo **/
 .logo h2 {
   text-align: center;
@@ -93,7 +98,6 @@ ul.sideNav a:hover {
 }
 
 /*** Dropdown ***/
-
 .dropdown {
   width: 100%;
 }
@@ -102,24 +106,19 @@ ul.sideNav a:hover {
   width: 100%;
 }
 
-#active-dropdown-text {
-  font-size: 20px;
-}
-
 .caret {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #333;
-  color: #fff;
 }
 
 ul.dropdown-menu {
   width: 100%;
 }
 
-/*** Edit Font options ***/
+/*** Edit Div ***/
 
-.editor-title {
+.edit h1 {
   border: 1px solid #333;
   background-color: whitesmoke;
 }
