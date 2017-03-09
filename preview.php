@@ -78,9 +78,9 @@ if($_GET["contentId"]) {
       <div class="row">
         <div class="col-lg-12">
           <div class="intro-message">
-            <h1><?php echo $previewContentId; ?></h1>
-            <h3><?php echo $previewDiffDesc; ?></h3>
+            <h1><?php echo $previewBusinessName; ?></h1>
             <hr class="intro-divider">
+            <h3><?php echo $previewDiffDesc; ?></h3>
             <ul class="list-inline intro-social-buttons">
               <li><a href="http://blossom.rosecityvinyl.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
               </li>
