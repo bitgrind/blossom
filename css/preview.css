@@ -1,5 +1,5 @@
 #footerStyle {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 80%;
     height: 70px;
@@ -12,4 +12,6 @@
     padding: 10px;
 }
 
-#footerStyle h1 {margin:0;}
+#footerStyle h1 {margin:0;display:inline-block;}
+#footerStyle ul {display:inline-block;}
+#footerStyle li {width:30%;display:inline-block;}
