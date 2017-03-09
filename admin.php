@@ -90,7 +90,7 @@
             <hr />
             <ul class="sideNav">
               <li><a href="#" id="editNav">Edit</a></li>
-              <li><a href="preview.php?contentId="<?php echo $adminContentId; ?>"" id="previewNav" target="_blank">Preview</a></li>
+              <li><a href="preview.php?contentId=<?php echo $adminContentId; ?>" id="previewNav" target="_blank">Preview</a></li>
               <li><a href="#" id="accountNav">Account</a></li>
              <!-- <li><a href="#">Addons</a></li>
               <li><a href="#">Cart</a></li>
