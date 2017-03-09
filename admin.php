@@ -74,11 +74,11 @@
             <h5><?php echo $adminBusinessName;?></h5>
           </div> <!-- col-md-1 -->
     </div>
-      <div class="row full-height">
-        <div class="col-md-2 side-nav1 full-height container">
-          <h2>Dashboard</h2>
+      <div class="row">
+        <div class="col-md-2 side-nav1">
+          <h2 class="dashboard-h2-style">Dashboard</h2>
           <div class="dropdown">
-            <button class="btn btn-primary dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
+            <button class="btn btn-default dropdown-btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span id="active-dropdown-text">Site 1</span>  <span class="caret"></span></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site1" value="site1">Site1</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="site2" value="site2">Site2</a></li>
@@ -99,39 +99,44 @@
           <div class="container bg-image">
             <div class="edit">
               <div class="edit-header">
-                <h1>Dashboard Editor</h1>
+                <h1 class="editor-title">Dashboard Editor</h1>
               </div>
               <div class="edit-body">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                       <div class="panel-heading">
                         <h2>Header <?php echo $adminContentId; ?></h2>
                       </div>
                       <div class="panel-body">
+                        <form id="headerEditForm" action="?" method="post">
 <!--
-                        <div class="input-group">
-                          <label for="header-text">Header Text</label>
-                          <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
-                        </div>
--->
-                        <!-- Need to do work here, see trello comment -->
-                        <div class="input-group">
-                          <label for="header-font-family">Font Family</label>
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Font Choices
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                            <li><a href="#" class="serif-font">Serif</a></li>
-                            <li><a href="#" class="sans-serif-font">Sans-Serif</a></li>
-                            <li><a href="#" class="cursive-font">Cursive</a></li>
-                            </ul>
+                          <div class="input-group">
+                            <label for="header-text">Header Text</label>
+                            <textarea class="form-control" id="header-text" name="header-text" placeholder="Type a new header" type="text"></textarea>
                           </div>
-                        </div>
-                        <div class="input-group">
-                          <label for="header-color">Header Color</label>
-                          <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
-                        </div>
+-->
+                          <!-- Need to do work here, see trello comment -->
+                          <div class="input-group">
+                            <label for="header-font-family">Font Family</label>
+                            <select id="headerFontSelect">
+                              <option value="serif"><span class="serif-font">Serif</span></option>
+                              <option value="sans-serif"><span class="sans-serif-font">Sans-Serif</span></option>
+                              <option value="cursive-font"><span class="cursive-font">Cursive</span></option>
+                            </select>
+                          </div>
+                          <div class="input-group">
+                            <label for="header-color">Header Color</label>
+                            <input type="text" id="header-color" name="header-color" class="form-control" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true">
+                          </div>
+                          <div class="edit-button">
+                            <button class="btn btn-default save-buttons" type="submit" id="headerSave" name="headerEditForm">Save</button>
+                          </div>
+                          <div class="alert header-alert alert-success alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Success!</strong> your changes have been saved.
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
