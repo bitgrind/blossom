@@ -91,7 +91,7 @@ include_once  "php/connect.php";
 
   <!--page2-->
   <section class="container" id="page2">
-    <h1>Demo pages</h1>
+    <!-- <h1>Demo pages</h1> -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
       <ol class="carousel-indicators">
