@@ -16,9 +16,16 @@ a:hover{
   min-width: 100%;
 max-width: 100%;
 }
+.panel-heading{
+    background-color: #333;
+}
 
 h2{
   font-size: 2em;
+}
+
+#questionnaireH2{
+  color: #ccc;
 }
 
 a#logo{

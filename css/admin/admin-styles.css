@@ -65,7 +65,7 @@ ul.sideNav a {
 }
 
 ul.sideNav a:hover {
-  color: floralwhite;
+  color: hsl(330, 23%, 68%);
   text-decoration: none;
 }
 
