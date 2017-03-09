@@ -108,7 +108,9 @@ include_once  "php/connect.php";
     </div>
 
     <div class="item">
-      <a href="index.php" data-target="#signUP" data-toggle="modal"> <img src="img/demo2-sample.jpg" alt="demo2 imamge"></a>
+      <a href="index.php" data-target="#signUP" data-toggle="modal">
+        <img src="img/demo2-sample.JPG" alt="demo2 image">
+      </a>
     </div>
 
       <div class="item">
