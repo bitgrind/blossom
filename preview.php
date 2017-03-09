@@ -212,9 +212,10 @@ $conn->close();
         <div class="form-group">
           <label>Choose your style!</label>
           <select class="form-control">
-            <option>Style 1</option>
-            <option>Style 2</option>
-            <option>Style 3</option>
+            <option value="st1" name="styleChange">Style 1</option>
+            <option value="st2" name="styleChange">Style 2</option>
+            <option value="st3" name="styleChange">Style 3</option>
+            <button type="submit" name="button">Change</button>
           </select>
         </div>
       </form>
