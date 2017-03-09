@@ -45,6 +45,7 @@ if($_GET["contentId"]) {
 
     <!-- Add custom CSS here -->
     <link href="css/demo2/demo2-A.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/preview.css">
     <script type="text/javascript">
     $(function(){
       $("#change").click(function(){
