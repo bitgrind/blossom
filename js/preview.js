@@ -1,7 +1,4 @@
 
-
-
-
 $(function(){
   $("#change").click(function(){
     var val = $("#styles").val();
