@@ -16,6 +16,16 @@ body {
   padding-top: 25px;
 }
 
+/*** Input Group ***/
+
+.input-group {
+  padding: 10px;
+}
+
+.input-group label {
+  font-size: 25px;
+}
+
 /*** Main Nav ***/
 
 .mainNav {
